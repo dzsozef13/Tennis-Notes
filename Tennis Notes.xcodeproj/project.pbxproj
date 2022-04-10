@@ -75,6 +75,7 @@
 		BCEE15E4280357190051BE2F /* PlayerNote+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEE15DC280357190051BE2F /* PlayerNote+CoreDataProperties.swift */; };
 		BCEE15E5280357190051BE2F /* TargetNote+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEE15DD280357190051BE2F /* TargetNote+CoreDataClass.swift */; };
 		BCEE15E6280357190051BE2F /* TargetNote+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEE15DE280357190051BE2F /* TargetNote+CoreDataProperties.swift */; };
+		BCEE15EF28036F930051BE2F /* TableSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEE15EE28036F930051BE2F /* TableSelector.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -148,6 +149,7 @@
 		BCEE15DC280357190051BE2F /* PlayerNote+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PlayerNote+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		BCEE15DD280357190051BE2F /* TargetNote+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TargetNote+CoreDataClass.swift"; sourceTree = "<group>"; };
 		BCEE15DE280357190051BE2F /* TargetNote+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TargetNote+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		BCEE15EE28036F930051BE2F /* TableSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableSelector.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -346,6 +348,7 @@
 		BCC8F42D2802346A00F9AAB3 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				BCEE15ED28036F790051BE2F /* UI */,
 				BCC8F42E2802346A00F9AAB3 /* FocusViewModel.swift */,
 				BCC8F42F2802346A00F9AAB3 /* FocusViewControllerProtocol.swift */,
 				BCC8F4302802346A00F9AAB3 /* FocusViewController.swift */,
@@ -525,6 +528,14 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		BCEE15ED28036F790051BE2F /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				BCEE15EE28036F930051BE2F /* TableSelector.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -635,6 +646,7 @@
 				BCC8F4762802346B00F9AAB3 /* NotesPresenter.swift in Sources */,
 				BCC8F47F2802346B00F9AAB3 /* NotesRouterProtocol.swift in Sources */,
 				BCC8F4582802346B00F9AAB3 /* SettingsRouter.swift in Sources */,
+				BCEE15EF28036F930051BE2F /* TableSelector.swift in Sources */,
 				BCC8F47A2802346B00F9AAB3 /* NotesViewControllerProtocol.swift in Sources */,
 				BCEE15E1280357190051BE2F /* ErrorNote+CoreDataClass.swift in Sources */,
 				BCC8F4712802346B00F9AAB3 /* FocusEntityGateway.swift in Sources */,

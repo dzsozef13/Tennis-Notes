@@ -19,11 +19,15 @@ class FocusViewController: UIViewController {
     // MARK: UI Constants
 
     // MARK: Variables
+    private var targetsTableIsSelected: Bool?
+    private var errorsTableIsSelected: Bool?
 
     // MARK: UI Objects
 
     // MARK: Interface Builder Outlets
-
+    @IBOutlet weak var tableSelectorTargets: UIButton?
+    @IBOutlet weak var tableSelectorErrors: UIButton?
+    
     // MARK: Interface Builder Actions
 
     // MARK: Lifecycle Methods
@@ -53,6 +57,11 @@ class FocusViewController: UIViewController {
 extension FocusViewController {
     private func initializeViews() {
         // Initialize ViewController on load
+        initializeTableSelectors()
+    }
+    
+    private func initializeTableSelectors() {
+        
     }
 }
 
