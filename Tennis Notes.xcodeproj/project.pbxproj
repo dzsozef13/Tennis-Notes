@@ -9,64 +9,149 @@
 /* Begin PBXBuildFile section */
 		BCC8F3D1280224DC00F9AAB3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC8F3D0280224DC00F9AAB3 /* AppDelegate.swift */; };
 		BCC8F3D3280224DC00F9AAB3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC8F3D2280224DC00F9AAB3 /* SceneDelegate.swift */; };
-		BCC8F3D5280224DC00F9AAB3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC8F3D4280224DC00F9AAB3 /* ViewController.swift */; };
 		BCC8F3D8280224DC00F9AAB3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCC8F3D6280224DC00F9AAB3 /* Main.storyboard */; };
 		BCC8F3DA280224DE00F9AAB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCC8F3D9280224DE00F9AAB3 /* Assets.xcassets */; };
 		BCC8F3DD280224DE00F9AAB3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCC8F3DB280224DE00F9AAB3 /* LaunchScreen.storyboard */; };
-		BCC8F3E8280224DE00F9AAB3 /* Tennis_NotesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC8F3E7280224DE00F9AAB3 /* Tennis_NotesTests.swift */; };
-		BCC8F3F2280224DE00F9AAB3 /* Tennis_NotesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC8F3F1280224DE00F9AAB3 /* Tennis_NotesUITests.swift */; };
-		BCC8F3F4280224DE00F9AAB3 /* Tennis_NotesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC8F3F3280224DE00F9AAB3 /* Tennis_NotesUITestsLaunchTests.swift */; };
+		BCC8F44D2802346B00F9AAB3 /* SettingsPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC8F4032802346A00F9AAB3 /* SettingsPresenterProtocol.swift */; };
+		BCC8F44E2802346B00F9AAB3 /* SettingsEventHandlerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC8F4042802346A00F9AAB3 /* SettingsEventHandlerProtocol.swift */; };
+		BCC8F44F2802346B00F9AAB3 /* SettingsRouteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC8F4052802346A00F9AAB3 /* SettingsRouteModel.swift */; };
+		BCC8F4502802346B00F9AAB3 /* SettingsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC8F4062802346A00F9AAB3 /* SettingsPresenter.swift */; };
+		BCC8F4512802346B00F9AAB3 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC8F4082802346A00F9AAB3 /* SettingsViewModel.swift */; };
+		BCC8F4522802346B00F9AAB3 /* SettingsViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC8F4092802346A00F9AAB3 /* SettingsViewControllerProtocol.swift */; };
+		BCC8F4532802346B00F9AAB3 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC8F40A2802346A00F9AAB3 /* SettingsViewController.swift */; };
+		BCC8F4542802346B00F9AAB3 /* SettingsInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC8F40C2802346A00F9AAB3 /* SettingsInteractorProtocol.swift */; };
+		BCC8F4552802346B00F9AAB3 /* SettingsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC8F40D2802346A00F9AAB3 /* SettingsInteractor.swift */; };
+		BCC8F4562802346B00F9AAB3 /* SettingsEntityGatewayProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC8F40F2802346A00F9AAB3 /* SettingsEntityGatewayProtocol.swift */; };
+		BCC8F4572802346B00F9AAB3 /* SettingsEntityGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC8F4102802346A00F9AAB3 /* SettingsEntityGateway.swift */; };
+		BCC8F4582802346B00F9AAB3 /* SettingsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC8F4122802346A00F9AAB3 /* SettingsRouter.swift */; };
+		BCC8F4592802346B00F9AAB3 /* SettingsRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC8F4132802346A00F9AAB3 /* SettingsRouterProtocol.swift */; };
+		BCC8F45A2802346B00F9AAB3 /* HomePresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC8F4162802346A00F9AAB3 /* HomePresenterProtocol.swift */; };
+		BCC8F45B2802346B00F9AAB3 /* HomeEventHandlerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC8F4172802346A00F9AAB3 /* HomeEventHandlerProtocol.swift */; };
+		BCC8F45C2802346B00F9AAB3 /* HomeRouteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC8F4182802346A00F9AAB3 /* HomeRouteModel.swift */; };
+		BCC8F45D2802346B00F9AAB3 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC8F4192802346A00F9AAB3 /* HomePresenter.swift */; };
+		BCC8F45E2802346B00F9AAB3 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC8F41B2802346A00F9AAB3 /* HomeViewModel.swift */; };
+		BCC8F45F2802346B00F9AAB3 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC8F41C2802346A00F9AAB3 /* HomeViewController.swift */; };
+		BCC8F4602802346B00F9AAB3 /* HomeViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC8F41D2802346A00F9AAB3 /* HomeViewControllerProtocol.swift */; };
+		BCC8F4612802346B00F9AAB3 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC8F41F2802346A00F9AAB3 /* HomeInteractor.swift */; };
+		BCC8F4622802346B00F9AAB3 /* HomeInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC8F4202802346A00F9AAB3 /* HomeInteractorProtocol.swift */; };
+		BCC8F4632802346B00F9AAB3 /* HomeEntityGatewayProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC8F4222802346A00F9AAB3 /* HomeEntityGatewayProtocol.swift */; };
+		BCC8F4642802346B00F9AAB3 /* HomeEntityGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC8F4232802346A00F9AAB3 /* HomeEntityGateway.swift */; };
+		BCC8F4652802346B00F9AAB3 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC8F4252802346A00F9AAB3 /* HomeRouter.swift */; };
+		BCC8F4662802346B00F9AAB3 /* HomeRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC8F4262802346A00F9AAB3 /* HomeRouterProtocol.swift */; };
+		BCC8F4672802346B00F9AAB3 /* FocusEventHandlerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC8F4292802346A00F9AAB3 /* FocusEventHandlerProtocol.swift */; };
+		BCC8F4682802346B00F9AAB3 /* FocusRouteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC8F42A2802346A00F9AAB3 /* FocusRouteModel.swift */; };
+		BCC8F4692802346B00F9AAB3 /* FocusPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC8F42B2802346A00F9AAB3 /* FocusPresenterProtocol.swift */; };
+		BCC8F46A2802346B00F9AAB3 /* FocusPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC8F42C2802346A00F9AAB3 /* FocusPresenter.swift */; };
+		BCC8F46B2802346B00F9AAB3 /* FocusViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC8F42E2802346A00F9AAB3 /* FocusViewModel.swift */; };
+		BCC8F46C2802346B00F9AAB3 /* FocusViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC8F42F2802346A00F9AAB3 /* FocusViewControllerProtocol.swift */; };
+		BCC8F46D2802346B00F9AAB3 /* FocusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC8F4302802346A00F9AAB3 /* FocusViewController.swift */; };
+		BCC8F46E2802346B00F9AAB3 /* FocusInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC8F4322802346A00F9AAB3 /* FocusInteractorProtocol.swift */; };
+		BCC8F46F2802346B00F9AAB3 /* FocusInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC8F4332802346A00F9AAB3 /* FocusInteractor.swift */; };
+		BCC8F4702802346B00F9AAB3 /* FocusEntityGatewayProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC8F4352802346A00F9AAB3 /* FocusEntityGatewayProtocol.swift */; };
+		BCC8F4712802346B00F9AAB3 /* FocusEntityGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC8F4362802346A00F9AAB3 /* FocusEntityGateway.swift */; };
+		BCC8F4722802346B00F9AAB3 /* FocusRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC8F4382802346A00F9AAB3 /* FocusRouter.swift */; };
+		BCC8F4732802346B00F9AAB3 /* FocusRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC8F4392802346A00F9AAB3 /* FocusRouterProtocol.swift */; };
+		BCC8F4742802346B00F9AAB3 /* NotesPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC8F43C2802346A00F9AAB3 /* NotesPresenterProtocol.swift */; };
+		BCC8F4752802346B00F9AAB3 /* NotesEventHandlerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC8F43D2802346A00F9AAB3 /* NotesEventHandlerProtocol.swift */; };
+		BCC8F4762802346B00F9AAB3 /* NotesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC8F43E2802346A00F9AAB3 /* NotesPresenter.swift */; };
+		BCC8F4772802346B00F9AAB3 /* NotesRouteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC8F43F2802346A00F9AAB3 /* NotesRouteModel.swift */; };
+		BCC8F4782802346B00F9AAB3 /* NotesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC8F4412802346A00F9AAB3 /* NotesViewModel.swift */; };
+		BCC8F4792802346B00F9AAB3 /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC8F4422802346A00F9AAB3 /* NotesViewController.swift */; };
+		BCC8F47A2802346B00F9AAB3 /* NotesViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC8F4432802346A00F9AAB3 /* NotesViewControllerProtocol.swift */; };
+		BCC8F47B2802346B00F9AAB3 /* NotesInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC8F4452802346A00F9AAB3 /* NotesInteractorProtocol.swift */; };
+		BCC8F47C2802346B00F9AAB3 /* NotesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC8F4462802346A00F9AAB3 /* NotesInteractor.swift */; };
+		BCC8F47D2802346B00F9AAB3 /* NotesEntityGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC8F4482802346A00F9AAB3 /* NotesEntityGateway.swift */; };
+		BCC8F47E2802346B00F9AAB3 /* NotesEntityGatewayProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC8F4492802346A00F9AAB3 /* NotesEntityGatewayProtocol.swift */; };
+		BCC8F47F2802346B00F9AAB3 /* NotesRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC8F44B2802346A00F9AAB3 /* NotesRouterProtocol.swift */; };
+		BCC8F4802802346B00F9AAB3 /* NotesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC8F44C2802346A00F9AAB3 /* NotesRouter.swift */; };
+		BCC8F4862802523900F9AAB3 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BCC8F4842802523900F9AAB3 /* Model.xcdatamodeld */; };
+		BCC8F4882802E54200F9AAB3 /* RouteModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC8F4872802E54200F9AAB3 /* RouteModelProtocol.swift */; };
+		BCC8F48A2802E55D00F9AAB3 /* RouteProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC8F4892802E55D00F9AAB3 /* RouteProtocol.swift */; };
+		BCEE15DF280357190051BE2F /* MatchNote+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEE15D7280357190051BE2F /* MatchNote+CoreDataClass.swift */; };
+		BCEE15E0280357190051BE2F /* MatchNote+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEE15D8280357190051BE2F /* MatchNote+CoreDataProperties.swift */; };
+		BCEE15E1280357190051BE2F /* ErrorNote+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEE15D9280357190051BE2F /* ErrorNote+CoreDataClass.swift */; };
+		BCEE15E2280357190051BE2F /* ErrorNote+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEE15DA280357190051BE2F /* ErrorNote+CoreDataProperties.swift */; };
+		BCEE15E3280357190051BE2F /* PlayerNote+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEE15DB280357190051BE2F /* PlayerNote+CoreDataClass.swift */; };
+		BCEE15E4280357190051BE2F /* PlayerNote+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEE15DC280357190051BE2F /* PlayerNote+CoreDataProperties.swift */; };
+		BCEE15E5280357190051BE2F /* TargetNote+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEE15DD280357190051BE2F /* TargetNote+CoreDataClass.swift */; };
+		BCEE15E6280357190051BE2F /* TargetNote+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEE15DE280357190051BE2F /* TargetNote+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		BCC8F3E4280224DE00F9AAB3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BCC8F3C5280224DC00F9AAB3 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = BCC8F3CC280224DC00F9AAB3;
-			remoteInfo = "Tennis Notes";
-		};
-		BCC8F3EE280224DE00F9AAB3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BCC8F3C5280224DC00F9AAB3 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = BCC8F3CC280224DC00F9AAB3;
-			remoteInfo = "Tennis Notes";
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		BCC8F3CD280224DC00F9AAB3 /* Tennis Notes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tennis Notes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCC8F3D0280224DC00F9AAB3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BCC8F3D2280224DC00F9AAB3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BCC8F3D4280224DC00F9AAB3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BCC8F3D7280224DC00F9AAB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BCC8F3D9280224DE00F9AAB3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BCC8F3DC280224DE00F9AAB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BCC8F3DE280224DE00F9AAB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BCC8F3E3280224DE00F9AAB3 /* Tennis NotesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tennis NotesTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BCC8F3E7280224DE00F9AAB3 /* Tennis_NotesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tennis_NotesTests.swift; sourceTree = "<group>"; };
-		BCC8F3ED280224DE00F9AAB3 /* Tennis NotesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tennis NotesUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BCC8F3F1280224DE00F9AAB3 /* Tennis_NotesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tennis_NotesUITests.swift; sourceTree = "<group>"; };
-		BCC8F3F3280224DE00F9AAB3 /* Tennis_NotesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tennis_NotesUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		BCC8F4032802346A00F9AAB3 /* SettingsPresenterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsPresenterProtocol.swift; sourceTree = "<group>"; };
+		BCC8F4042802346A00F9AAB3 /* SettingsEventHandlerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsEventHandlerProtocol.swift; sourceTree = "<group>"; };
+		BCC8F4052802346A00F9AAB3 /* SettingsRouteModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsRouteModel.swift; sourceTree = "<group>"; };
+		BCC8F4062802346A00F9AAB3 /* SettingsPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsPresenter.swift; sourceTree = "<group>"; };
+		BCC8F4082802346A00F9AAB3 /* SettingsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		BCC8F4092802346A00F9AAB3 /* SettingsViewControllerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewControllerProtocol.swift; sourceTree = "<group>"; };
+		BCC8F40A2802346A00F9AAB3 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		BCC8F40C2802346A00F9AAB3 /* SettingsInteractorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsInteractorProtocol.swift; sourceTree = "<group>"; };
+		BCC8F40D2802346A00F9AAB3 /* SettingsInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsInteractor.swift; sourceTree = "<group>"; };
+		BCC8F40F2802346A00F9AAB3 /* SettingsEntityGatewayProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsEntityGatewayProtocol.swift; sourceTree = "<group>"; };
+		BCC8F4102802346A00F9AAB3 /* SettingsEntityGateway.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsEntityGateway.swift; sourceTree = "<group>"; };
+		BCC8F4122802346A00F9AAB3 /* SettingsRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsRouter.swift; sourceTree = "<group>"; };
+		BCC8F4132802346A00F9AAB3 /* SettingsRouterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsRouterProtocol.swift; sourceTree = "<group>"; };
+		BCC8F4162802346A00F9AAB3 /* HomePresenterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePresenterProtocol.swift; sourceTree = "<group>"; };
+		BCC8F4172802346A00F9AAB3 /* HomeEventHandlerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeEventHandlerProtocol.swift; sourceTree = "<group>"; };
+		BCC8F4182802346A00F9AAB3 /* HomeRouteModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeRouteModel.swift; sourceTree = "<group>"; };
+		BCC8F4192802346A00F9AAB3 /* HomePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		BCC8F41B2802346A00F9AAB3 /* HomeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		BCC8F41C2802346A00F9AAB3 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		BCC8F41D2802346A00F9AAB3 /* HomeViewControllerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewControllerProtocol.swift; sourceTree = "<group>"; };
+		BCC8F41F2802346A00F9AAB3 /* HomeInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		BCC8F4202802346A00F9AAB3 /* HomeInteractorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeInteractorProtocol.swift; sourceTree = "<group>"; };
+		BCC8F4222802346A00F9AAB3 /* HomeEntityGatewayProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeEntityGatewayProtocol.swift; sourceTree = "<group>"; };
+		BCC8F4232802346A00F9AAB3 /* HomeEntityGateway.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeEntityGateway.swift; sourceTree = "<group>"; };
+		BCC8F4252802346A00F9AAB3 /* HomeRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		BCC8F4262802346A00F9AAB3 /* HomeRouterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeRouterProtocol.swift; sourceTree = "<group>"; };
+		BCC8F4292802346A00F9AAB3 /* FocusEventHandlerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FocusEventHandlerProtocol.swift; sourceTree = "<group>"; };
+		BCC8F42A2802346A00F9AAB3 /* FocusRouteModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FocusRouteModel.swift; sourceTree = "<group>"; };
+		BCC8F42B2802346A00F9AAB3 /* FocusPresenterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FocusPresenterProtocol.swift; sourceTree = "<group>"; };
+		BCC8F42C2802346A00F9AAB3 /* FocusPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FocusPresenter.swift; sourceTree = "<group>"; };
+		BCC8F42E2802346A00F9AAB3 /* FocusViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FocusViewModel.swift; sourceTree = "<group>"; };
+		BCC8F42F2802346A00F9AAB3 /* FocusViewControllerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FocusViewControllerProtocol.swift; sourceTree = "<group>"; };
+		BCC8F4302802346A00F9AAB3 /* FocusViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FocusViewController.swift; sourceTree = "<group>"; };
+		BCC8F4322802346A00F9AAB3 /* FocusInteractorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FocusInteractorProtocol.swift; sourceTree = "<group>"; };
+		BCC8F4332802346A00F9AAB3 /* FocusInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FocusInteractor.swift; sourceTree = "<group>"; };
+		BCC8F4352802346A00F9AAB3 /* FocusEntityGatewayProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FocusEntityGatewayProtocol.swift; sourceTree = "<group>"; };
+		BCC8F4362802346A00F9AAB3 /* FocusEntityGateway.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FocusEntityGateway.swift; sourceTree = "<group>"; };
+		BCC8F4382802346A00F9AAB3 /* FocusRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FocusRouter.swift; sourceTree = "<group>"; };
+		BCC8F4392802346A00F9AAB3 /* FocusRouterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FocusRouterProtocol.swift; sourceTree = "<group>"; };
+		BCC8F43C2802346A00F9AAB3 /* NotesPresenterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotesPresenterProtocol.swift; sourceTree = "<group>"; };
+		BCC8F43D2802346A00F9AAB3 /* NotesEventHandlerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotesEventHandlerProtocol.swift; sourceTree = "<group>"; };
+		BCC8F43E2802346A00F9AAB3 /* NotesPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotesPresenter.swift; sourceTree = "<group>"; };
+		BCC8F43F2802346A00F9AAB3 /* NotesRouteModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotesRouteModel.swift; sourceTree = "<group>"; };
+		BCC8F4412802346A00F9AAB3 /* NotesViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotesViewModel.swift; sourceTree = "<group>"; };
+		BCC8F4422802346A00F9AAB3 /* NotesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotesViewController.swift; sourceTree = "<group>"; };
+		BCC8F4432802346A00F9AAB3 /* NotesViewControllerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotesViewControllerProtocol.swift; sourceTree = "<group>"; };
+		BCC8F4452802346A00F9AAB3 /* NotesInteractorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotesInteractorProtocol.swift; sourceTree = "<group>"; };
+		BCC8F4462802346A00F9AAB3 /* NotesInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotesInteractor.swift; sourceTree = "<group>"; };
+		BCC8F4482802346A00F9AAB3 /* NotesEntityGateway.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotesEntityGateway.swift; sourceTree = "<group>"; };
+		BCC8F4492802346A00F9AAB3 /* NotesEntityGatewayProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotesEntityGatewayProtocol.swift; sourceTree = "<group>"; };
+		BCC8F44B2802346A00F9AAB3 /* NotesRouterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotesRouterProtocol.swift; sourceTree = "<group>"; };
+		BCC8F44C2802346A00F9AAB3 /* NotesRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotesRouter.swift; sourceTree = "<group>"; };
+		BCC8F4852802523900F9AAB3 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		BCC8F4872802E54200F9AAB3 /* RouteModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteModelProtocol.swift; sourceTree = "<group>"; };
+		BCC8F4892802E55D00F9AAB3 /* RouteProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteProtocol.swift; sourceTree = "<group>"; };
+		BCEE15D7280357190051BE2F /* MatchNote+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MatchNote+CoreDataClass.swift"; sourceTree = "<group>"; };
+		BCEE15D8280357190051BE2F /* MatchNote+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MatchNote+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		BCEE15D9280357190051BE2F /* ErrorNote+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ErrorNote+CoreDataClass.swift"; sourceTree = "<group>"; };
+		BCEE15DA280357190051BE2F /* ErrorNote+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ErrorNote+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		BCEE15DB280357190051BE2F /* PlayerNote+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PlayerNote+CoreDataClass.swift"; sourceTree = "<group>"; };
+		BCEE15DC280357190051BE2F /* PlayerNote+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PlayerNote+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		BCEE15DD280357190051BE2F /* TargetNote+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TargetNote+CoreDataClass.swift"; sourceTree = "<group>"; };
+		BCEE15DE280357190051BE2F /* TargetNote+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TargetNote+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		BCC8F3CA280224DC00F9AAB3 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BCC8F3E0280224DE00F9AAB3 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BCC8F3EA280224DE00F9AAB3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -80,8 +165,6 @@
 			isa = PBXGroup;
 			children = (
 				BCC8F3CF280224DC00F9AAB3 /* Tennis Notes */,
-				BCC8F3E6280224DE00F9AAB3 /* Tennis NotesTests */,
-				BCC8F3F0280224DE00F9AAB3 /* Tennis NotesUITests */,
 				BCC8F3CE280224DC00F9AAB3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,8 +173,6 @@
 			isa = PBXGroup;
 			children = (
 				BCC8F3CD280224DC00F9AAB3 /* Tennis Notes.app */,
-				BCC8F3E3280224DE00F9AAB3 /* Tennis NotesTests.xctest */,
-				BCC8F3ED280224DE00F9AAB3 /* Tennis NotesUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -99,32 +180,341 @@
 		BCC8F3CF280224DC00F9AAB3 /* Tennis Notes */ = {
 			isa = PBXGroup;
 			children = (
-				BCC8F3D0280224DC00F9AAB3 /* AppDelegate.swift */,
-				BCC8F3D2280224DC00F9AAB3 /* SceneDelegate.swift */,
-				BCC8F3D4280224DC00F9AAB3 /* ViewController.swift */,
-				BCC8F3D6280224DC00F9AAB3 /* Main.storyboard */,
-				BCC8F3D9280224DE00F9AAB3 /* Assets.xcassets */,
-				BCC8F3DB280224DE00F9AAB3 /* LaunchScreen.storyboard */,
-				BCC8F3DE280224DE00F9AAB3 /* Info.plist */,
+				BCC8F48328023A7500F9AAB3 /* App */,
+				BCC8F4822802349500F9AAB3 /* Resources */,
+				BCC8F4002802346A00F9AAB3 /* Components */,
+				BCC8F4812802347D00F9AAB3 /* Storyboards */,
 			);
 			path = "Tennis Notes";
 			sourceTree = "<group>";
 		};
-		BCC8F3E6280224DE00F9AAB3 /* Tennis NotesTests */ = {
+		BCC8F4002802346A00F9AAB3 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				BCC8F3E7280224DE00F9AAB3 /* Tennis_NotesTests.swift */,
+				BCC8F4142802346A00F9AAB3 /* Home */,
+				BCC8F4272802346A00F9AAB3 /* Focus */,
+				BCC8F43A2802346A00F9AAB3 /* Notes */,
+				BCC8F4012802346A00F9AAB3 /* Settings */,
 			);
-			path = "Tennis NotesTests";
+			path = Components;
 			sourceTree = "<group>";
 		};
-		BCC8F3F0280224DE00F9AAB3 /* Tennis NotesUITests */ = {
+		BCC8F4012802346A00F9AAB3 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
-				BCC8F3F1280224DE00F9AAB3 /* Tennis_NotesUITests.swift */,
-				BCC8F3F3280224DE00F9AAB3 /* Tennis_NotesUITestsLaunchTests.swift */,
+				BCC8F4072802346A00F9AAB3 /* View */,
+				BCC8F4022802346A00F9AAB3 /* Presenter */,
+				BCC8F40B2802346A00F9AAB3 /* Interactor */,
+				BCC8F40E2802346A00F9AAB3 /* EntityGateway */,
+				BCC8F4112802346A00F9AAB3 /* Router */,
 			);
-			path = "Tennis NotesUITests";
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		BCC8F4022802346A00F9AAB3 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				BCC8F4032802346A00F9AAB3 /* SettingsPresenterProtocol.swift */,
+				BCC8F4042802346A00F9AAB3 /* SettingsEventHandlerProtocol.swift */,
+				BCC8F4052802346A00F9AAB3 /* SettingsRouteModel.swift */,
+				BCC8F4062802346A00F9AAB3 /* SettingsPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		BCC8F4072802346A00F9AAB3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BCC8F4082802346A00F9AAB3 /* SettingsViewModel.swift */,
+				BCC8F4092802346A00F9AAB3 /* SettingsViewControllerProtocol.swift */,
+				BCC8F40A2802346A00F9AAB3 /* SettingsViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BCC8F40B2802346A00F9AAB3 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				BCC8F40C2802346A00F9AAB3 /* SettingsInteractorProtocol.swift */,
+				BCC8F40D2802346A00F9AAB3 /* SettingsInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		BCC8F40E2802346A00F9AAB3 /* EntityGateway */ = {
+			isa = PBXGroup;
+			children = (
+				BCC8F40F2802346A00F9AAB3 /* SettingsEntityGatewayProtocol.swift */,
+				BCC8F4102802346A00F9AAB3 /* SettingsEntityGateway.swift */,
+			);
+			path = EntityGateway;
+			sourceTree = "<group>";
+		};
+		BCC8F4112802346A00F9AAB3 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				BCC8F4122802346A00F9AAB3 /* SettingsRouter.swift */,
+				BCC8F4132802346A00F9AAB3 /* SettingsRouterProtocol.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		BCC8F4142802346A00F9AAB3 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				BCC8F41A2802346A00F9AAB3 /* View */,
+				BCC8F4152802346A00F9AAB3 /* Presenter */,
+				BCC8F41E2802346A00F9AAB3 /* Interactor */,
+				BCC8F4212802346A00F9AAB3 /* EntityGateway */,
+				BCC8F4242802346A00F9AAB3 /* Router */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		BCC8F4152802346A00F9AAB3 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				BCC8F4162802346A00F9AAB3 /* HomePresenterProtocol.swift */,
+				BCC8F4172802346A00F9AAB3 /* HomeEventHandlerProtocol.swift */,
+				BCC8F4182802346A00F9AAB3 /* HomeRouteModel.swift */,
+				BCC8F4192802346A00F9AAB3 /* HomePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		BCC8F41A2802346A00F9AAB3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BCC8F41B2802346A00F9AAB3 /* HomeViewModel.swift */,
+				BCC8F41C2802346A00F9AAB3 /* HomeViewController.swift */,
+				BCC8F41D2802346A00F9AAB3 /* HomeViewControllerProtocol.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BCC8F41E2802346A00F9AAB3 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				BCC8F41F2802346A00F9AAB3 /* HomeInteractor.swift */,
+				BCC8F4202802346A00F9AAB3 /* HomeInteractorProtocol.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		BCC8F4212802346A00F9AAB3 /* EntityGateway */ = {
+			isa = PBXGroup;
+			children = (
+				BCC8F4222802346A00F9AAB3 /* HomeEntityGatewayProtocol.swift */,
+				BCC8F4232802346A00F9AAB3 /* HomeEntityGateway.swift */,
+			);
+			path = EntityGateway;
+			sourceTree = "<group>";
+		};
+		BCC8F4242802346A00F9AAB3 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				BCC8F4252802346A00F9AAB3 /* HomeRouter.swift */,
+				BCC8F4262802346A00F9AAB3 /* HomeRouterProtocol.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		BCC8F4272802346A00F9AAB3 /* Focus */ = {
+			isa = PBXGroup;
+			children = (
+				BCC8F42D2802346A00F9AAB3 /* View */,
+				BCC8F4282802346A00F9AAB3 /* Presenter */,
+				BCC8F4312802346A00F9AAB3 /* Interactor */,
+				BCC8F4342802346A00F9AAB3 /* EntityGateway */,
+				BCC8F4372802346A00F9AAB3 /* Router */,
+			);
+			path = Focus;
+			sourceTree = "<group>";
+		};
+		BCC8F4282802346A00F9AAB3 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				BCC8F4292802346A00F9AAB3 /* FocusEventHandlerProtocol.swift */,
+				BCC8F42A2802346A00F9AAB3 /* FocusRouteModel.swift */,
+				BCC8F42B2802346A00F9AAB3 /* FocusPresenterProtocol.swift */,
+				BCC8F42C2802346A00F9AAB3 /* FocusPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		BCC8F42D2802346A00F9AAB3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BCC8F42E2802346A00F9AAB3 /* FocusViewModel.swift */,
+				BCC8F42F2802346A00F9AAB3 /* FocusViewControllerProtocol.swift */,
+				BCC8F4302802346A00F9AAB3 /* FocusViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BCC8F4312802346A00F9AAB3 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				BCC8F4322802346A00F9AAB3 /* FocusInteractorProtocol.swift */,
+				BCC8F4332802346A00F9AAB3 /* FocusInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		BCC8F4342802346A00F9AAB3 /* EntityGateway */ = {
+			isa = PBXGroup;
+			children = (
+				BCC8F4352802346A00F9AAB3 /* FocusEntityGatewayProtocol.swift */,
+				BCC8F4362802346A00F9AAB3 /* FocusEntityGateway.swift */,
+			);
+			path = EntityGateway;
+			sourceTree = "<group>";
+		};
+		BCC8F4372802346A00F9AAB3 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				BCC8F4382802346A00F9AAB3 /* FocusRouter.swift */,
+				BCC8F4392802346A00F9AAB3 /* FocusRouterProtocol.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		BCC8F43A2802346A00F9AAB3 /* Notes */ = {
+			isa = PBXGroup;
+			children = (
+				BCC8F4402802346A00F9AAB3 /* View */,
+				BCC8F43B2802346A00F9AAB3 /* Presenter */,
+				BCC8F4442802346A00F9AAB3 /* Interactor */,
+				BCC8F4472802346A00F9AAB3 /* EntityGateway */,
+				BCC8F44A2802346A00F9AAB3 /* Router */,
+			);
+			path = Notes;
+			sourceTree = "<group>";
+		};
+		BCC8F43B2802346A00F9AAB3 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				BCC8F43C2802346A00F9AAB3 /* NotesPresenterProtocol.swift */,
+				BCC8F43D2802346A00F9AAB3 /* NotesEventHandlerProtocol.swift */,
+				BCC8F43E2802346A00F9AAB3 /* NotesPresenter.swift */,
+				BCC8F43F2802346A00F9AAB3 /* NotesRouteModel.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		BCC8F4402802346A00F9AAB3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BCC8F4412802346A00F9AAB3 /* NotesViewModel.swift */,
+				BCC8F4422802346A00F9AAB3 /* NotesViewController.swift */,
+				BCC8F4432802346A00F9AAB3 /* NotesViewControllerProtocol.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BCC8F4442802346A00F9AAB3 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				BCC8F4452802346A00F9AAB3 /* NotesInteractorProtocol.swift */,
+				BCC8F4462802346A00F9AAB3 /* NotesInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		BCC8F4472802346A00F9AAB3 /* EntityGateway */ = {
+			isa = PBXGroup;
+			children = (
+				BCC8F4482802346A00F9AAB3 /* NotesEntityGateway.swift */,
+				BCC8F4492802346A00F9AAB3 /* NotesEntityGatewayProtocol.swift */,
+			);
+			path = EntityGateway;
+			sourceTree = "<group>";
+		};
+		BCC8F44A2802346A00F9AAB3 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				BCC8F44B2802346A00F9AAB3 /* NotesRouterProtocol.swift */,
+				BCC8F44C2802346A00F9AAB3 /* NotesRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		BCC8F4812802347D00F9AAB3 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				BCC8F3D6280224DC00F9AAB3 /* Main.storyboard */,
+				BCC8F3DB280224DE00F9AAB3 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		BCC8F4822802349500F9AAB3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BCC8F3DE280224DE00F9AAB3 /* Info.plist */,
+				BCC8F3D9280224DE00F9AAB3 /* Assets.xcassets */,
+				BCC8F4842802523900F9AAB3 /* Model.xcdatamodeld */,
+				BCEE15E72803574D0051BE2F /* Model */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		BCC8F48328023A7500F9AAB3 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				BCC8F3D0280224DC00F9AAB3 /* AppDelegate.swift */,
+				BCC8F3D2280224DC00F9AAB3 /* SceneDelegate.swift */,
+				BCC8F4892802E55D00F9AAB3 /* RouteProtocol.swift */,
+				BCC8F4872802E54200F9AAB3 /* RouteModelProtocol.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		BCEE15E72803574D0051BE2F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BCEE15EA280357CC0051BE2F /* Target */,
+				BCEE15EB280357D30051BE2F /* Error */,
+				BCEE15E8280357B90051BE2F /* Player */,
+				BCEE15E9280357C60051BE2F /* Match */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BCEE15E8280357B90051BE2F /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				BCEE15DB280357190051BE2F /* PlayerNote+CoreDataClass.swift */,
+				BCEE15DC280357190051BE2F /* PlayerNote+CoreDataProperties.swift */,
+			);
+			path = Player;
+			sourceTree = "<group>";
+		};
+		BCEE15E9280357C60051BE2F /* Match */ = {
+			isa = PBXGroup;
+			children = (
+				BCEE15D7280357190051BE2F /* MatchNote+CoreDataClass.swift */,
+				BCEE15D8280357190051BE2F /* MatchNote+CoreDataProperties.swift */,
+			);
+			path = Match;
+			sourceTree = "<group>";
+		};
+		BCEE15EA280357CC0051BE2F /* Target */ = {
+			isa = PBXGroup;
+			children = (
+				BCEE15DD280357190051BE2F /* TargetNote+CoreDataClass.swift */,
+				BCEE15DE280357190051BE2F /* TargetNote+CoreDataProperties.swift */,
+			);
+			path = Target;
+			sourceTree = "<group>";
+		};
+		BCEE15EB280357D30051BE2F /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				BCEE15D9280357190051BE2F /* ErrorNote+CoreDataClass.swift */,
+				BCEE15DA280357190051BE2F /* ErrorNote+CoreDataProperties.swift */,
+			);
+			path = Error;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,42 +537,6 @@
 			productReference = BCC8F3CD280224DC00F9AAB3 /* Tennis Notes.app */;
 			productType = "com.apple.product-type.application";
 		};
-		BCC8F3E2280224DE00F9AAB3 /* Tennis NotesTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = BCC8F3FA280224DE00F9AAB3 /* Build configuration list for PBXNativeTarget "Tennis NotesTests" */;
-			buildPhases = (
-				BCC8F3DF280224DE00F9AAB3 /* Sources */,
-				BCC8F3E0280224DE00F9AAB3 /* Frameworks */,
-				BCC8F3E1280224DE00F9AAB3 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				BCC8F3E5280224DE00F9AAB3 /* PBXTargetDependency */,
-			);
-			name = "Tennis NotesTests";
-			productName = "Tennis NotesTests";
-			productReference = BCC8F3E3280224DE00F9AAB3 /* Tennis NotesTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		BCC8F3EC280224DE00F9AAB3 /* Tennis NotesUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = BCC8F3FD280224DE00F9AAB3 /* Build configuration list for PBXNativeTarget "Tennis NotesUITests" */;
-			buildPhases = (
-				BCC8F3E9280224DE00F9AAB3 /* Sources */,
-				BCC8F3EA280224DE00F9AAB3 /* Frameworks */,
-				BCC8F3EB280224DE00F9AAB3 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				BCC8F3EF280224DE00F9AAB3 /* PBXTargetDependency */,
-			);
-			name = "Tennis NotesUITests";
-			productName = "Tennis NotesUITests";
-			productReference = BCC8F3ED280224DE00F9AAB3 /* Tennis NotesUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -195,14 +549,6 @@
 				TargetAttributes = {
 					BCC8F3CC280224DC00F9AAB3 = {
 						CreatedOnToolsVersion = 13.3;
-					};
-					BCC8F3E2280224DE00F9AAB3 = {
-						CreatedOnToolsVersion = 13.3;
-						TestTargetID = BCC8F3CC280224DC00F9AAB3;
-					};
-					BCC8F3EC280224DE00F9AAB3 = {
-						CreatedOnToolsVersion = 13.3;
-						TestTargetID = BCC8F3CC280224DC00F9AAB3;
 					};
 				};
 			};
@@ -220,8 +566,6 @@
 			projectRoot = "";
 			targets = (
 				BCC8F3CC280224DC00F9AAB3 /* Tennis Notes */,
-				BCC8F3E2280224DE00F9AAB3 /* Tennis NotesTests */,
-				BCC8F3EC280224DE00F9AAB3 /* Tennis NotesUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -237,20 +581,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BCC8F3E1280224DE00F9AAB3 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BCC8F3EB280224DE00F9AAB3 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -258,43 +588,75 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BCC8F3D5280224DC00F9AAB3 /* ViewController.swift in Sources */,
+				BCC8F4562802346B00F9AAB3 /* SettingsEntityGatewayProtocol.swift in Sources */,
+				BCC8F4732802346B00F9AAB3 /* FocusRouterProtocol.swift in Sources */,
+				BCC8F4692802346B00F9AAB3 /* FocusPresenterProtocol.swift in Sources */,
+				BCC8F45C2802346B00F9AAB3 /* HomeRouteModel.swift in Sources */,
+				BCC8F4612802346B00F9AAB3 /* HomeInteractor.swift in Sources */,
+				BCC8F4642802346B00F9AAB3 /* HomeEntityGateway.swift in Sources */,
+				BCC8F45D2802346B00F9AAB3 /* HomePresenter.swift in Sources */,
+				BCC8F46D2802346B00F9AAB3 /* FocusViewController.swift in Sources */,
+				BCC8F4752802346B00F9AAB3 /* NotesEventHandlerProtocol.swift in Sources */,
+				BCC8F47E2802346B00F9AAB3 /* NotesEntityGatewayProtocol.swift in Sources */,
+				BCC8F46A2802346B00F9AAB3 /* FocusPresenter.swift in Sources */,
+				BCC8F45B2802346B00F9AAB3 /* HomeEventHandlerProtocol.swift in Sources */,
+				BCC8F47B2802346B00F9AAB3 /* NotesInteractorProtocol.swift in Sources */,
+				BCEE15E4280357190051BE2F /* PlayerNote+CoreDataProperties.swift in Sources */,
+				BCEE15DF280357190051BE2F /* MatchNote+CoreDataClass.swift in Sources */,
+				BCC8F4702802346B00F9AAB3 /* FocusEntityGatewayProtocol.swift in Sources */,
+				BCC8F4632802346B00F9AAB3 /* HomeEntityGatewayProtocol.swift in Sources */,
+				BCC8F44E2802346B00F9AAB3 /* SettingsEventHandlerProtocol.swift in Sources */,
+				BCC8F4652802346B00F9AAB3 /* HomeRouter.swift in Sources */,
+				BCC8F44F2802346B00F9AAB3 /* SettingsRouteModel.swift in Sources */,
+				BCC8F45F2802346B00F9AAB3 /* HomeViewController.swift in Sources */,
+				BCC8F4532802346B00F9AAB3 /* SettingsViewController.swift in Sources */,
+				BCC8F4602802346B00F9AAB3 /* HomeViewControllerProtocol.swift in Sources */,
+				BCEE15E3280357190051BE2F /* PlayerNote+CoreDataClass.swift in Sources */,
+				BCC8F4882802E54200F9AAB3 /* RouteModelProtocol.swift in Sources */,
+				BCC8F46E2802346B00F9AAB3 /* FocusInteractorProtocol.swift in Sources */,
+				BCEE15E5280357190051BE2F /* TargetNote+CoreDataClass.swift in Sources */,
+				BCC8F44D2802346B00F9AAB3 /* SettingsPresenterProtocol.swift in Sources */,
+				BCC8F47C2802346B00F9AAB3 /* NotesInteractor.swift in Sources */,
+				BCC8F46B2802346B00F9AAB3 /* FocusViewModel.swift in Sources */,
+				BCC8F4572802346B00F9AAB3 /* SettingsEntityGateway.swift in Sources */,
 				BCC8F3D1280224DC00F9AAB3 /* AppDelegate.swift in Sources */,
+				BCC8F45A2802346B00F9AAB3 /* HomePresenterProtocol.swift in Sources */,
 				BCC8F3D3280224DC00F9AAB3 /* SceneDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BCC8F3DF280224DE00F9AAB3 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BCC8F3E8280224DE00F9AAB3 /* Tennis_NotesTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BCC8F3E9280224DE00F9AAB3 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BCC8F3F2280224DE00F9AAB3 /* Tennis_NotesUITests.swift in Sources */,
-				BCC8F3F4280224DE00F9AAB3 /* Tennis_NotesUITestsLaunchTests.swift in Sources */,
+				BCEE15E2280357190051BE2F /* ErrorNote+CoreDataProperties.swift in Sources */,
+				BCC8F4772802346B00F9AAB3 /* NotesRouteModel.swift in Sources */,
+				BCC8F4762802346B00F9AAB3 /* NotesPresenter.swift in Sources */,
+				BCC8F47F2802346B00F9AAB3 /* NotesRouterProtocol.swift in Sources */,
+				BCC8F4582802346B00F9AAB3 /* SettingsRouter.swift in Sources */,
+				BCC8F47A2802346B00F9AAB3 /* NotesViewControllerProtocol.swift in Sources */,
+				BCEE15E1280357190051BE2F /* ErrorNote+CoreDataClass.swift in Sources */,
+				BCC8F4712802346B00F9AAB3 /* FocusEntityGateway.swift in Sources */,
+				BCC8F4502802346B00F9AAB3 /* SettingsPresenter.swift in Sources */,
+				BCC8F47D2802346B00F9AAB3 /* NotesEntityGateway.swift in Sources */,
+				BCC8F4592802346B00F9AAB3 /* SettingsRouterProtocol.swift in Sources */,
+				BCC8F45E2802346B00F9AAB3 /* HomeViewModel.swift in Sources */,
+				BCC8F4802802346B00F9AAB3 /* NotesRouter.swift in Sources */,
+				BCC8F4522802346B00F9AAB3 /* SettingsViewControllerProtocol.swift in Sources */,
+				BCEE15E0280357190051BE2F /* MatchNote+CoreDataProperties.swift in Sources */,
+				BCC8F4672802346B00F9AAB3 /* FocusEventHandlerProtocol.swift in Sources */,
+				BCC8F4862802523900F9AAB3 /* Model.xcdatamodeld in Sources */,
+				BCC8F4542802346B00F9AAB3 /* SettingsInteractorProtocol.swift in Sources */,
+				BCC8F46C2802346B00F9AAB3 /* FocusViewControllerProtocol.swift in Sources */,
+				BCC8F48A2802E55D00F9AAB3 /* RouteProtocol.swift in Sources */,
+				BCC8F4682802346B00F9AAB3 /* FocusRouteModel.swift in Sources */,
+				BCC8F4662802346B00F9AAB3 /* HomeRouterProtocol.swift in Sources */,
+				BCC8F4512802346B00F9AAB3 /* SettingsViewModel.swift in Sources */,
+				BCC8F4742802346B00F9AAB3 /* NotesPresenterProtocol.swift in Sources */,
+				BCEE15E6280357190051BE2F /* TargetNote+CoreDataProperties.swift in Sources */,
+				BCC8F4722802346B00F9AAB3 /* FocusRouter.swift in Sources */,
+				BCC8F46F2802346B00F9AAB3 /* FocusInteractor.swift in Sources */,
+				BCC8F4792802346B00F9AAB3 /* NotesViewController.swift in Sources */,
+				BCC8F4552802346B00F9AAB3 /* SettingsInteractor.swift in Sources */,
+				BCC8F4622802346B00F9AAB3 /* HomeInteractorProtocol.swift in Sources */,
+				BCC8F4782802346B00F9AAB3 /* NotesViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		BCC8F3E5280224DE00F9AAB3 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = BCC8F3CC280224DC00F9AAB3 /* Tennis Notes */;
-			targetProxy = BCC8F3E4280224DE00F9AAB3 /* PBXContainerItemProxy */;
-		};
-		BCC8F3EF280224DE00F9AAB3 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = BCC8F3CC280224DC00F9AAB3 /* Tennis Notes */;
-			targetProxy = BCC8F3EE280224DE00F9AAB3 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		BCC8F3D6280224DC00F9AAB3 /* Main.storyboard */ = {
@@ -366,7 +728,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -420,7 +782,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -439,7 +801,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = GN373832EQ;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Tennis Notes/Info.plist";
+				INFOPLIST_FILE = "Tennis Notes/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -454,7 +816,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -467,7 +829,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = GN373832EQ;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Tennis Notes/Info.plist";
+				INFOPLIST_FILE = "Tennis Notes/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -482,83 +844,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		BCC8F3FB280224DE00F9AAB3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = GN373832EQ;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.intuitivecomputers.Tennis-NotesTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tennis Notes.app/Tennis Notes";
-			};
-			name = Debug;
-		};
-		BCC8F3FC280224DE00F9AAB3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = GN373832EQ;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.intuitivecomputers.Tennis-NotesTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tennis Notes.app/Tennis Notes";
-			};
-			name = Release;
-		};
-		BCC8F3FE280224DE00F9AAB3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = GN373832EQ;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.intuitivecomputers.Tennis-NotesUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Tennis Notes";
-			};
-			name = Debug;
-		};
-		BCC8F3FF280224DE00F9AAB3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = GN373832EQ;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.intuitivecomputers.Tennis-NotesUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Tennis Notes";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -583,25 +869,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BCC8F3FA280224DE00F9AAB3 /* Build configuration list for PBXNativeTarget "Tennis NotesTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				BCC8F3FB280224DE00F9AAB3 /* Debug */,
-				BCC8F3FC280224DE00F9AAB3 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		BCC8F3FD280224DE00F9AAB3 /* Build configuration list for PBXNativeTarget "Tennis NotesUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				BCC8F3FE280224DE00F9AAB3 /* Debug */,
-				BCC8F3FF280224DE00F9AAB3 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BCC8F4842802523900F9AAB3 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BCC8F4852802523900F9AAB3 /* Model.xcdatamodel */,
+			);
+			currentVersion = BCC8F4852802523900F9AAB3 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = BCC8F3C5280224DC00F9AAB3 /* Project object */;
 }
