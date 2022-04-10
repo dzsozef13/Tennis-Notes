@@ -1,0 +1,30 @@
+
+/* Class = "UITabBarItem"; title = "Notes"; ObjectID = "2Pw-jQ-idi"; */
+"2Pw-jQ-idi.title" = "Notes";
+
+/* Class = "UINavigationItem"; title = "Hello, Jozsef! 🎾"; ObjectID = "KZY-gN-AoX"; */
+"KZY-gN-AoX.title" = "Hello, Jozsef! 🎾";
+
+/* Class = "UIButton"; configuration.title = "Errors"; ObjectID = "Lxd-4r-eTP"; */
+"Lxd-4r-eTP.configuration.title" = "Errors";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Lxd-4r-eTP"; */
+"Lxd-4r-eTP.normalTitle" = "Button";
+
+/* Class = "UITabBarItem"; title = "Focus"; ObjectID = "MOf-q1-0Bj"; */
+"MOf-q1-0Bj.title" = "Focus";
+
+/* Class = "UINavigationItem"; title = "Notes ✏️"; ObjectID = "e8V-gm-JRu"; */
+"e8V-gm-JRu.title" = "Notes ✏️";
+
+/* Class = "UINavigationItem"; title = "Focus 🎯"; ObjectID = "pIX-zq-AMK"; */
+"pIX-zq-AMK.title" = "Focus 🎯";
+
+/* Class = "UITabBarItem"; title = "Home"; ObjectID = "qMQ-q1-ZnV"; */
+"qMQ-q1-ZnV.title" = "Home";
+
+/* Class = "UIButton"; configuration.title = "Targets"; ObjectID = "s1B-dG-xvF"; */
+"s1B-dG-xvF.configuration.title" = "Targets";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "s1B-dG-xvF"; */
+"s1B-dG-xvF.normalTitle" = "Button";
