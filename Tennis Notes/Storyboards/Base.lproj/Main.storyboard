@@ -1,14 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="iGN-iL-ZGB">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Home View Controller-->
+        <!--Tab Bar Controller-->
+        <scene sceneID="rbj-UR-Ul4">
+            <objects>
+                <tabBarController id="iGN-iL-ZGB" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" itemPositioning="centered" id="xji-jm-PIr">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="VDa-d4-jBY" kind="relationship" relationship="viewControllers" id="wEy-vg-FJB"/>
+                        <segue destination="h3Q-J3-H0k" kind="relationship" relationship="viewControllers" id="Nxs-Du-eYA"/>
+                        <segue destination="oaQ-IG-r1j" kind="relationship" relationship="viewControllers" id="7aj-Pg-xSS"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Daj-5U-C0B" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-425" y="80"/>
+        </scene>
+        <!--Hello, Jozsef! 🎾-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="Tennis_Notes" customModuleProvider="target" sceneMemberID="viewController">
@@ -16,17 +38,116 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Hello, Jozsef! 🎾" largeTitleDisplayMode="always" id="KZY-gN-AoX"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="30" y="71"/>
+            <point key="canvasLocation" x="1449" y="-680"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="oBG-1j-ifO">
+            <objects>
+                <navigationController id="VDa-d4-jBY" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Home" image="tennis-ball" id="qMQ-q1-ZnV"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="w3I-IT-2cW">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="jK7-HF-IeE"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AL9-zj-MUv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="487" y="-680"/>
+        </scene>
+        <!--Focus-->
+        <scene sceneID="rDk-Pf-eHG">
+            <objects>
+                <navigationController id="h3Q-J3-H0k" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Focus" id="MOf-q1-0Bj">
+                        <imageReference key="image" image="eyeglasses" catalog="system" symbolScale="large"/>
+                    </tabBarItem>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="xbz-Yl-WMq">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="SCO-eF-Hio" kind="relationship" relationship="rootViewController" id="Bf1-of-DNU"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ln3-ZA-QuI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="487" y="80"/>
+        </scene>
+        <!--Focus 🎯-->
+        <scene sceneID="jfR-QX-98X">
+            <objects>
+                <viewController id="SCO-eF-Hio" customClass="FocusViewController" customModule="Tennis_Notes" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ovU-SY-vCB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="JPm-lo-NRH"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Focus 🎯" largeTitleDisplayMode="always" id="pIX-zq-AMK"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bav-tV-Aaf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1448" y="80"/>
+        </scene>
+        <!--Notes-->
+        <scene sceneID="njP-jp-fqd">
+            <objects>
+                <navigationController id="oaQ-IG-r1j" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Notes" id="2Pw-jQ-idi">
+                        <imageReference key="image" image="bookmark" catalog="system" symbolScale="large"/>
+                    </tabBarItem>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="jjU-eL-zqu">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="X4c-zp-jB9" kind="relationship" relationship="rootViewController" id="WHE-ZN-yBw"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rHU-0v-HdM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="487" y="828"/>
+        </scene>
+        <!--Notes ✏️-->
+        <scene sceneID="JZX-xN-d8Y">
+            <objects>
+                <viewController id="X4c-zp-jB9" customClass="NotesViewController" customModule="Tennis_Notes" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WwQ-VK-cFr">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Ow6-Xs-ktG"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Notes ✏️" largeTitleDisplayMode="always" id="e8V-gm-JRu"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FLW-Jv-JuD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1448" y="828"/>
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
+        <image name="bookmark" catalog="system" width="112" height="128"/>
+        <image name="eyeglasses" catalog="system" width="128" height="54"/>
+        <image name="tennis-ball" width="24" height="24"/>
     </resources>
 </document>

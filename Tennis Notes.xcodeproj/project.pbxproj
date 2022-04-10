@@ -183,6 +183,7 @@
 				BCC8F48328023A7500F9AAB3 /* App */,
 				BCC8F4822802349500F9AAB3 /* Resources */,
 				BCC8F4002802346A00F9AAB3 /* Components */,
+				BCEE15E72803574D0051BE2F /* Model */,
 				BCC8F4812802347D00F9AAB3 /* Storyboards */,
 			);
 			path = "Tennis Notes";
@@ -454,7 +455,7 @@
 				BCC8F3DE280224DE00F9AAB3 /* Info.plist */,
 				BCC8F3D9280224DE00F9AAB3 /* Assets.xcassets */,
 				BCC8F4842802523900F9AAB3 /* Model.xcdatamodeld */,
-				BCEE15E72803574D0051BE2F /* Model */,
+				BCEE15EC2803594B0051BE2F /* Fonts */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -515,6 +516,13 @@
 				BCEE15DA280357190051BE2F /* ErrorNote+CoreDataProperties.swift */,
 			);
 			path = Error;
+			sourceTree = "<group>";
+		};
+		BCEE15EC2803594B0051BE2F /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
