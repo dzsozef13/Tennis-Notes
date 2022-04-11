@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC83F8392804A75B00D73527 /* PressableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC83F8382804A75B00D73527 /* PressableView.swift */; };
 		BCC8F3D1280224DC00F9AAB3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC8F3D0280224DC00F9AAB3 /* AppDelegate.swift */; };
 		BCC8F3D3280224DC00F9AAB3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC8F3D2280224DC00F9AAB3 /* SceneDelegate.swift */; };
 		BCC8F3D8280224DC00F9AAB3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCC8F3D6280224DC00F9AAB3 /* Main.storyboard */; };
@@ -86,6 +87,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BC83F8382804A75B00D73527 /* PressableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PressableView.swift; sourceTree = "<group>"; };
 		BCC8F3CD280224DC00F9AAB3 /* Tennis Notes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tennis Notes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCC8F3D0280224DC00F9AAB3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BCC8F3D2280224DC00F9AAB3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -179,6 +181,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BC83F8362804A62400D73527 /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				BC9D58192804CCD3008038DD /* Enums */,
+				BC83F83A2804BAA000D73527 /* Classes */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		BC83F83A2804BAA000D73527 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				BC83F8382804A75B00D73527 /* PressableView.swift */,
+				BCEE15EE28036F930051BE2F /* TableSelector.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		BC9D58192804CCD3008038DD /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
 		BCC8F3C4280224DC00F9AAB3 = {
 			isa = PBXGroup;
 			children = (
@@ -210,6 +237,7 @@
 		BCC8F4002802346A00F9AAB3 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				BC83F8362804A62400D73527 /* Global */,
 				BCC8F4142802346A00F9AAB3 /* Home */,
 				BCC8F4272802346A00F9AAB3 /* Focus */,
 				BCC8F43A2802346A00F9AAB3 /* Notes */,
@@ -364,7 +392,6 @@
 		BCC8F42D2802346A00F9AAB3 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				BCEE15ED28036F790051BE2F /* UI */,
 				BCC8F42E2802346A00F9AAB3 /* FocusViewModel.swift */,
 				BCC8F42F2802346A00F9AAB3 /* FocusViewControllerProtocol.swift */,
 				BCC8F4302802346A00F9AAB3 /* FocusViewController.swift */,
@@ -549,14 +576,6 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
-		BCEE15ED28036F790051BE2F /* UI */ = {
-			isa = PBXGroup;
-			children = (
-				BCEE15EE28036F930051BE2F /* TableSelector.swift */,
-			);
-			path = UI;
-			sourceTree = "<group>";
-		};
 		BCEE160128037AB50051BE2F /* Swiftgen */ = {
 			isa = PBXGroup;
 			children = (
@@ -718,6 +737,7 @@
 				BCC8F4722802346B00F9AAB3 /* FocusRouter.swift in Sources */,
 				BCC8F46F2802346B00F9AAB3 /* FocusInteractor.swift in Sources */,
 				BCC8F4792802346B00F9AAB3 /* NotesViewController.swift in Sources */,
+				BC83F8392804A75B00D73527 /* PressableView.swift in Sources */,
 				BCC8F4552802346B00F9AAB3 /* SettingsInteractor.swift in Sources */,
 				BCC8F4622802346B00F9AAB3 /* HomeInteractorProtocol.swift in Sources */,
 				BCC8F4782802346B00F9AAB3 /* NotesViewModel.swift in Sources */,

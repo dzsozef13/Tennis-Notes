@@ -20,30 +20,22 @@ internal typealias AssetImageTypeAlias = ImageAsset.Image
 // MARK: - Asset Catalogs
 
 // swiftlint:disable identifier_name line_length nesting type_body_length type_name
-internal enum Asset {
+internal enum Assets {
   internal enum Colors {
-    internal enum Colors {
-      internal static let accentColor = ColorAsset(name: "AccentColor")
-      internal enum Background {
-        internal static let backgroundPrimary = ColorAsset(name: "BackgroundPrimary")
-        internal static let backgroundQuaternary = ColorAsset(name: "BackgroundQuaternary")
-        internal static let backgroundSecondary = ColorAsset(name: "BackgroundSecondary")
-        internal static let backgroundTertiary = ColorAsset(name: "BackgroundTertiary")
-      }
-      internal enum Text {
-        internal static let textDark = ColorAsset(name: "TextDark")
-        internal static let textLight = ColorAsset(name: "TextLight")
-        internal static let textPrimary = ColorAsset(name: "TextPrimary")
-        internal static let textQuaternary = ColorAsset(name: "TextQuaternary")
-        internal static let textSecondary = ColorAsset(name: "TextSecondary")
-        internal static let textTertiary = ColorAsset(name: "TextTertiary")
-      }
-    }
+    internal static let accentColor = ColorAsset(name: "AccentColor")
+    internal static let backgroundPrimary = ColorAsset(name: "BackgroundPrimary")
+    internal static let backgroundQuaternary = ColorAsset(name: "BackgroundQuaternary")
+    internal static let backgroundSecondary = ColorAsset(name: "BackgroundSecondary")
+    internal static let backgroundTertiary = ColorAsset(name: "BackgroundTertiary")
+    internal static let textDarkPrimary = ColorAsset(name: "TextDarkPrimary")
+    internal static let textDarkSecondary = ColorAsset(name: "TextDarkSecondary")
+    internal static let textDarkTertiary = ColorAsset(name: "TextDarkTertiary")
+    internal static let textLightPrimary = ColorAsset(name: "TextLightPrimary")
+    internal static let textLightSecondary = ColorAsset(name: "TextLightSecondary")
+    internal static let textLightTertiary = ColorAsset(name: "TextLightTertiary")
   }
   internal enum Icons {
-    internal enum Icons {
-      internal static let tennisBall = ImageAsset(name: "tennis-ball")
-    }
+    internal static let tennisBall = ImageAsset(name: "tennis-ball")
   }
   internal enum Images {
     internal static let tennisAppPalette = ImageAsset(name: "Tennis app palette")

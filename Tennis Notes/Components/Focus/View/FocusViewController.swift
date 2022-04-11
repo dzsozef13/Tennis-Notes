@@ -25,11 +25,26 @@ class FocusViewController: UIViewController {
     // MARK: UI Objects
 
     // MARK: Interface Builder Outlets
-    @IBOutlet weak var tableSelectorTargets: UIButton?
-    @IBOutlet weak var tableSelectorErrors: UIButton?
+    
+    // Table Selectors
+    @IBOutlet weak var tableSelectorTargets: UIView?
+    @IBOutlet weak var tableSelectorTitleTargets: UILabel?
+    @IBOutlet weak var tableSelectorErrors: UIView?
+    @IBOutlet weak var tableSelectorTitleErrors: UILabel?
     
     // MARK: Interface Builder Actions
-
+    
+    // Table Selector Actions
+    @IBAction func didTapSelectorTargets(_ sender: Any) {
+        eventHandler.didTapSelectorTargets()
+        
+    }
+    
+    @IBAction func didTapSelectorErrors(_ sender: Any) {
+        eventHandler.didTapSelectorErrors()
+        
+    }
+    
     // MARK: Lifecycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -75,6 +90,7 @@ extension FocusViewController {
 
 // MARK: View Controller Protocol
 extension FocusViewController: FocusViewControllerProtocol {
+    
     // MARK: Language Refreshing
     func languageRefresh() {
         assert(Thread.isMainThread)
@@ -85,6 +101,15 @@ extension FocusViewController: FocusViewControllerProtocol {
     func themeRefresh() {
         assert(Thread.isMainThread)
         // Refresh ViewController on theme change
+    }
+}
+
+// MARK: Animations
+extension FocusViewController {
+    private func animateTableSelectorSelect(selector: UIView) {
+        UIView.animate(withDuration: 0.05, delay: 0, options: .curveEaseInOut, animations: {
+            selector.backgroundColor
+        }, completion: nil)
     }
 }
 

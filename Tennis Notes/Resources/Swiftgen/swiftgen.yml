@@ -29,8 +29,6 @@
      - ../Images.xcassets
    outputs:
      - templateName: swift5
-       params:
-         forceProvidesNamespaces: true
        output: ../Generated/Assets.swift
 
 

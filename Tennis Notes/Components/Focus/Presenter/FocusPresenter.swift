@@ -67,6 +67,15 @@ extension FocusPresenter: FocusEventHandlerProtocol {
     func traitCollectionDidChange() {
         viewController?.themeRefresh()
     }
+    
+    // MARK: Actions sent from UI
+    func didTapSelectorTargets() {
+        
+    }
+    
+    func didTapSelectorErrors() {
+        
+    }
 }
 
 // MARK: Presenter

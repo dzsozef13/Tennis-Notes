@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="iGN-iL-ZGB">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_1" orientation="portrait" appearance="dark"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Image references" minToolsVersion="12.0"/>
@@ -77,7 +77,7 @@
                         <imageReference key="image" image="eyeglasses" catalog="system" symbolScale="large"/>
                     </tabBarItem>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="xbz-Yl-WMq">
-                        <rect key="frame" x="0.0" y="44" width="414" height="104"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <textAttributes key="largeTitleTextAttributes">
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -102,31 +102,59 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZmQ-rp-2Jp">
                                 <rect key="frame" x="0.0" y="148" width="414" height="72"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Qvu-5l-YVG">
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Qvu-5l-YVG">
                                         <rect key="frame" x="16" y="16" width="382" height="40"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s1B-dG-xvF">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SSo-Dv-nyJ" customClass="TableSelector" customModule="Tennis_Notes" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="183" height="40"/>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="Targets" cornerStyle="medium">
-                                                    <backgroundConfiguration key="background">
-                                                        <color key="backgroundColor" name="AccentColor"/>
-                                                    </backgroundConfiguration>
-                                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="16"/>
-                                                    <color key="baseForegroundColor" name="BackgroundPrimary"/>
-                                                </buttonConfiguration>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lxd-4r-eTP">
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Targets" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NEC-ga-IwA">
+                                                        <rect key="frame" x="61.5" y="10" width="60" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                        <color key="textColor" name="TextDarkPrimary"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" name="AccentColor"/>
+                                                <gestureRecognizers/>
+                                                <constraints>
+                                                    <constraint firstItem="NEC-ga-IwA" firstAttribute="centerX" secondItem="SSo-Dv-nyJ" secondAttribute="centerX" id="1cO-Va-OFx"/>
+                                                    <constraint firstItem="NEC-ga-IwA" firstAttribute="centerY" secondItem="SSo-Dv-nyJ" secondAttribute="centerY" id="Ise-Sk-GDO"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <integer key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="JgF-PP-KEg" appends="YES" id="GBH-jr-sbz"/>
+                                                </connections>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y33-6X-hWX" customClass="TableSelector" customModule="Tennis_Notes" customModuleProvider="target">
                                                 <rect key="frame" x="199" y="0.0" width="183" height="40"/>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="Errors" cornerStyle="medium">
-                                                    <backgroundConfiguration key="background">
-                                                        <color key="backgroundColor" name="BackgroundSecondary"/>
-                                                    </backgroundConfiguration>
-                                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="16"/>
-                                                    <color key="baseForegroundColor" name="BackgroundQuaternary"/>
-                                                </buttonConfiguration>
-                                            </button>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Errors" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9wZ-nY-gXD">
+                                                        <rect key="frame" x="67.5" y="10" width="48.5" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                        <color key="textColor" name="TextLightTertiary"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" name="BackgroundTertiary"/>
+                                                <gestureRecognizers/>
+                                                <constraints>
+                                                    <constraint firstItem="9wZ-nY-gXD" firstAttribute="centerY" secondItem="Y33-6X-hWX" secondAttribute="centerY" id="8tg-Zd-nbn"/>
+                                                    <constraint firstItem="9wZ-nY-gXD" firstAttribute="centerX" secondItem="Y33-6X-hWX" secondAttribute="centerX" id="fB1-Gy-cqG"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <integer key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="yDO-fC-OEB" appends="YES" id="jTi-c2-s0Z"/>
+                                                </connections>
+                                            </view>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </stackView>
@@ -151,11 +179,22 @@
                     </view>
                     <navigationItem key="navigationItem" title="Focus 🎯" largeTitleDisplayMode="always" id="pIX-zq-AMK"/>
                     <connections>
-                        <outlet property="tableSelectorErrors" destination="Lxd-4r-eTP" id="nWw-Lk-jTz"/>
-                        <outlet property="tableSelectorTargets" destination="s1B-dG-xvF" id="uec-FS-lbD"/>
+                        <outlet property="tableSelectorErrors" destination="Y33-6X-hWX" id="wyQ-Zo-gR9"/>
+                        <outlet property="tableSelectorTargets" destination="SSo-Dv-nyJ" id="0fl-ya-A1B"/>
+                        <outlet property="tableSelectorTitleErrors" destination="9wZ-nY-gXD" id="1ns-ld-c5B"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bav-tV-Aaf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="JgF-PP-KEg">
+                    <connections>
+                        <action selector="didTapSelectorTargets:" destination="SCO-eF-Hio" id="xV3-i8-84s"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="yDO-fC-OEB">
+                    <connections>
+                        <action selector="didTapSelectorErrors:" destination="SCO-eF-Hio" id="NDA-va-y8f"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1448" y="80"/>
         </scene>
@@ -205,14 +244,14 @@
         <namedColor name="AccentColor">
             <color red="0.76470588235294112" green="0.8784313725490196" blue="0.12549019607843137" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <namedColor name="BackgroundPrimary">
-            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <namedColor name="BackgroundTertiary">
+            <color red="0.13300000131130219" green="0.13300000131130219" blue="0.13300000131130219" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <namedColor name="BackgroundQuaternary">
-            <color red="0.26666666666666666" green="0.26666666666666666" blue="0.26666666666666666" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-        </namedColor>
-        <namedColor name="BackgroundSecondary">
+        <namedColor name="TextDarkPrimary">
             <color red="0.082352941176470587" green="0.082352941176470587" blue="0.082352941176470587" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TextLightTertiary">
+            <color red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

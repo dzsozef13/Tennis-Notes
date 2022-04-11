@@ -12,4 +12,7 @@ protocol FocusEventHandlerProtocol {
     func didLoad()
     func willAppear()
     func traitCollectionDidChange()
+    
+    func didTapSelectorTargets()
+    func didTapSelectorErrors()
 }
