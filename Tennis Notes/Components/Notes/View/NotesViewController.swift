@@ -14,18 +14,38 @@ class NotesViewController: UIViewController {
         }
     }
 
-    // MARK: Views
-
-    // MARK: UI Constants
-
+    // MARK: Table Cases
+    enum Table: Equatable {
+        case players
+        case matches
+    }
+    
     // MARK: Variables
+    private var selectedTable: Table = .players
 
     // MARK: UI Objects
 
     // MARK: Interface Builder Outlets
+    // Table Selectors
+    @IBOutlet weak var tableSelectorPlayers: TableSelector?
+    @IBOutlet weak var tableSelectorMatches: TableSelector?
+
+    // MARK: Interface Builder Outlets
 
     // MARK: Interface Builder Actions
-
+    @IBAction func didTapSelectorPlayers(_ sender: Any) {
+//        eventHandler.didTapSelectorTargets()
+        selectedTable = .players
+        refreshTableSelectors()
+    }
+    
+    @IBAction func didTapSelectorMatches(_ sender: Any) {
+//        eventHandler.didTapSelectorErrors()
+        selectedTable = .matches
+        refreshTableSelectors()
+    }
+    
+    
     // MARK: Lifecycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -53,6 +73,15 @@ class NotesViewController: UIViewController {
 extension NotesViewController {
     private func initializeViews() {
         // Initialize ViewController on load
+        initializeTableSelectors()
+    }
+    
+    private func initializeTableSelectors() {
+        // Set titles
+        tableSelectorPlayers?.setTitleLabel(for: "Players")
+        tableSelectorMatches?.setTitleLabel(for: "Matches")
+
+        refreshTableSelectors()
     }
 }
 
@@ -61,6 +90,19 @@ extension NotesViewController {
     private func refresh() {
         assert(Thread.isMainThread)
         // Refresh ViewController on ViewModel changes
+    }
+    
+    private func refreshTableSelectors() {
+        // Deactivate all
+        tableSelectorPlayers?.deactivateSelector()
+        tableSelectorMatches?.deactivateSelector()
+        // Select expected
+        switch selectedTable {
+        case .players:
+            tableSelectorPlayers?.activateSelector()
+        case .matches:
+            tableSelectorMatches?.activateSelector()
+        }
     }
 }
 

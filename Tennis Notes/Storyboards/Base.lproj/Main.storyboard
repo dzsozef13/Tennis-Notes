@@ -55,7 +55,7 @@
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="w3I-IT-2cW">
-                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="104"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <textAttributes key="largeTitleTextAttributes">
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -77,7 +77,7 @@
                         <imageReference key="image" image="eyeglasses" catalog="system" symbolScale="large"/>
                     </tabBarItem>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="xbz-Yl-WMq">
-                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="104"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <textAttributes key="largeTitleTextAttributes">
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -99,7 +99,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZmQ-rp-2Jp">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZmQ-rp-2Jp" userLabel="Table Selector View">
                                 <rect key="frame" x="0.0" y="148" width="414" height="72"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Qvu-5l-YVG">
@@ -108,9 +108,9 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SSo-Dv-nyJ" customClass="TableSelector" customModule="Tennis_Notes" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="183" height="40"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Targets" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NEC-ga-IwA">
-                                                        <rect key="frame" x="61.5" y="10" width="60" height="20.5"/>
-                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3WN-8w-6Ox">
+                                                        <rect key="frame" x="68" y="9.5" width="47" height="21.5"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                                         <color key="textColor" name="TextDarkPrimary"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -118,8 +118,8 @@
                                                 <color key="backgroundColor" name="AccentColor"/>
                                                 <gestureRecognizers/>
                                                 <constraints>
-                                                    <constraint firstItem="NEC-ga-IwA" firstAttribute="centerX" secondItem="SSo-Dv-nyJ" secondAttribute="centerX" id="1cO-Va-OFx"/>
-                                                    <constraint firstItem="NEC-ga-IwA" firstAttribute="centerY" secondItem="SSo-Dv-nyJ" secondAttribute="centerY" id="Ise-Sk-GDO"/>
+                                                    <constraint firstItem="3WN-8w-6Ox" firstAttribute="centerX" secondItem="SSo-Dv-nyJ" secondAttribute="centerX" id="RbI-iu-2Vt"/>
+                                                    <constraint firstItem="3WN-8w-6Ox" firstAttribute="centerY" secondItem="SSo-Dv-nyJ" secondAttribute="centerY" id="oFL-qL-B3W"/>
                                                 </constraints>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -127,24 +127,25 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
+                                                    <outlet property="titleLabel" destination="3WN-8w-6Ox" id="YPR-De-mqS"/>
                                                     <outletCollection property="gestureRecognizers" destination="JgF-PP-KEg" appends="YES" id="GBH-jr-sbz"/>
                                                 </connections>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y33-6X-hWX" customClass="TableSelector" customModule="Tennis_Notes" customModuleProvider="target">
                                                 <rect key="frame" x="199" y="0.0" width="183" height="40"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Errors" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9wZ-nY-gXD">
-                                                        <rect key="frame" x="67.5" y="10" width="48.5" height="20.5"/>
-                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
-                                                        <color key="textColor" name="TextLightTertiary"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QL4-6m-7oM">
+                                                        <rect key="frame" x="68" y="9.5" width="47" height="21.5"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                        <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
                                                 <color key="backgroundColor" name="BackgroundTertiary"/>
                                                 <gestureRecognizers/>
                                                 <constraints>
-                                                    <constraint firstItem="9wZ-nY-gXD" firstAttribute="centerY" secondItem="Y33-6X-hWX" secondAttribute="centerY" id="8tg-Zd-nbn"/>
-                                                    <constraint firstItem="9wZ-nY-gXD" firstAttribute="centerX" secondItem="Y33-6X-hWX" secondAttribute="centerX" id="fB1-Gy-cqG"/>
+                                                    <constraint firstItem="QL4-6m-7oM" firstAttribute="centerX" secondItem="Y33-6X-hWX" secondAttribute="centerX" id="Eq7-Rf-aWd"/>
+                                                    <constraint firstItem="QL4-6m-7oM" firstAttribute="centerY" secondItem="Y33-6X-hWX" secondAttribute="centerY" id="HuW-bX-UWx"/>
                                                 </constraints>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -152,6 +153,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
+                                                    <outlet property="titleLabel" destination="QL4-6m-7oM" id="4va-mJ-XFn"/>
                                                     <outletCollection property="gestureRecognizers" destination="yDO-fC-OEB" appends="YES" id="jTi-c2-s0Z"/>
                                                 </connections>
                                             </view>
@@ -181,7 +183,6 @@
                     <connections>
                         <outlet property="tableSelectorErrors" destination="Y33-6X-hWX" id="wyQ-Zo-gR9"/>
                         <outlet property="tableSelectorTargets" destination="SSo-Dv-nyJ" id="0fl-ya-A1B"/>
-                        <outlet property="tableSelectorTitleErrors" destination="9wZ-nY-gXD" id="1ns-ld-c5B"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bav-tV-Aaf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -227,12 +228,104 @@
                     <view key="view" contentMode="scaleToFill" id="WwQ-VK-cFr">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CDv-bc-RCf" userLabel="Table Selector View">
+                                <rect key="frame" x="0.0" y="148" width="414" height="72"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="NDl-VE-I2H">
+                                        <rect key="frame" x="16" y="16" width="382" height="40"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IMc-1P-GfH" customClass="TableSelector" customModule="Tennis_Notes" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="183" height="40"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EAO-4B-dkd">
+                                                        <rect key="frame" x="68" y="9.5" width="47" height="21.5"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                        <color key="textColor" name="TextDarkPrimary"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" name="AccentColor"/>
+                                                <gestureRecognizers/>
+                                                <constraints>
+                                                    <constraint firstItem="EAO-4B-dkd" firstAttribute="centerY" secondItem="IMc-1P-GfH" secondAttribute="centerY" id="CBy-cU-toS"/>
+                                                    <constraint firstItem="EAO-4B-dkd" firstAttribute="centerX" secondItem="IMc-1P-GfH" secondAttribute="centerX" id="xU6-5m-q33"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <integer key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <outlet property="titleLabel" destination="EAO-4B-dkd" id="43g-gj-fv5"/>
+                                                    <outletCollection property="gestureRecognizers" destination="4jY-QV-I9C" appends="YES" id="CPw-qi-hM2"/>
+                                                </connections>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cMM-x6-7qC" customClass="TableSelector" customModule="Tennis_Notes" customModuleProvider="target">
+                                                <rect key="frame" x="199" y="0.0" width="183" height="40"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xcz-a8-8Dl">
+                                                        <rect key="frame" x="68" y="9.5" width="47" height="21.5"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" name="BackgroundTertiary"/>
+                                                <gestureRecognizers/>
+                                                <constraints>
+                                                    <constraint firstItem="Xcz-a8-8Dl" firstAttribute="centerY" secondItem="cMM-x6-7qC" secondAttribute="centerY" id="5WL-hJ-YUL"/>
+                                                    <constraint firstItem="Xcz-a8-8Dl" firstAttribute="centerX" secondItem="cMM-x6-7qC" secondAttribute="centerX" id="f25-kB-taf"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <integer key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <outlet property="titleLabel" destination="Xcz-a8-8Dl" id="tgK-KJ-Sqx"/>
+                                                    <outletCollection property="gestureRecognizers" destination="H4J-Wy-oER" appends="YES" id="len-VF-fpI"/>
+                                                </connections>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="NDl-VE-I2H" firstAttribute="top" secondItem="CDv-bc-RCf" secondAttribute="top" constant="16" id="bke-Gr-z5M"/>
+                                    <constraint firstItem="NDl-VE-I2H" firstAttribute="leading" secondItem="CDv-bc-RCf" secondAttribute="leading" constant="16" id="erc-op-qEW"/>
+                                    <constraint firstAttribute="height" constant="72" id="fML-ls-27i"/>
+                                    <constraint firstAttribute="bottom" secondItem="NDl-VE-I2H" secondAttribute="bottom" constant="16" id="pI3-Pm-ACa"/>
+                                    <constraint firstAttribute="trailing" secondItem="NDl-VE-I2H" secondAttribute="trailing" constant="16" id="str-gI-x62"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Ow6-Xs-ktG"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="CDv-bc-RCf" firstAttribute="top" secondItem="Ow6-Xs-ktG" secondAttribute="top" id="0Rv-ND-30e"/>
+                            <constraint firstItem="CDv-bc-RCf" firstAttribute="leading" secondItem="Ow6-Xs-ktG" secondAttribute="leading" id="K37-w0-lD8"/>
+                            <constraint firstItem="CDv-bc-RCf" firstAttribute="trailing" secondItem="Ow6-Xs-ktG" secondAttribute="trailing" id="Knh-jx-QDN"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Notes ✏️" largeTitleDisplayMode="always" id="e8V-gm-JRu"/>
+                    <connections>
+                        <outlet property="tableSelectorMatches" destination="cMM-x6-7qC" id="CR6-NX-Hso"/>
+                        <outlet property="tableSelectorPlayers" destination="IMc-1P-GfH" id="p5V-EV-rX6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FLW-Jv-JuD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="4jY-QV-I9C">
+                    <connections>
+                        <action selector="didTapSelectorPlayers:" destination="X4c-zp-jB9" id="s2x-C8-MJU"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="H4J-Wy-oER">
+                    <connections>
+                        <action selector="didTapSelectorMatches:" destination="X4c-zp-jB9" id="kTW-rt-Rm2"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1448" y="828"/>
         </scene>
@@ -249,9 +342,6 @@
         </namedColor>
         <namedColor name="TextDarkPrimary">
             <color red="0.082352941176470587" green="0.082352941176470587" blue="0.082352941176470587" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="TextLightTertiary">
-            <color red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

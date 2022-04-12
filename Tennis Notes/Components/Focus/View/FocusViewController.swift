@@ -14,35 +14,34 @@ class FocusViewController: UIViewController {
         }
     }
 
-    // MARK: Views
-
-    // MARK: UI Constants
-
+    // MARK: Table Cases
+    enum Table: Equatable {
+        case targets
+        case errors
+    }
+    
     // MARK: Variables
-    private var targetsTableIsSelected: Bool?
-    private var errorsTableIsSelected: Bool?
+    private var selectedTable: Table = .targets
 
     // MARK: UI Objects
 
     // MARK: Interface Builder Outlets
-    
     // Table Selectors
-    @IBOutlet weak var tableSelectorTargets: UIView?
-    @IBOutlet weak var tableSelectorTitleTargets: UILabel?
-    @IBOutlet weak var tableSelectorErrors: UIView?
-    @IBOutlet weak var tableSelectorTitleErrors: UILabel?
+    @IBOutlet weak var tableSelectorTargets: TableSelector?
+    @IBOutlet weak var tableSelectorErrors: TableSelector?
     
     // MARK: Interface Builder Actions
-    
     // Table Selector Actions
     @IBAction func didTapSelectorTargets(_ sender: Any) {
         eventHandler.didTapSelectorTargets()
-        
+        selectedTable = .targets
+        refreshTableSelectors()
     }
     
     @IBAction func didTapSelectorErrors(_ sender: Any) {
         eventHandler.didTapSelectorErrors()
-        
+        selectedTable = .errors
+        refreshTableSelectors()
     }
     
     // MARK: Lifecycle Methods
@@ -54,6 +53,7 @@ class FocusViewController: UIViewController {
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        initializeViews()
         eventHandler.willAppear()
     }
 
@@ -76,7 +76,11 @@ extension FocusViewController {
     }
     
     private func initializeTableSelectors() {
-        
+        // Set titles
+        tableSelectorTargets?.setTitleLabel(for: "Targets")
+        tableSelectorErrors?.setTitleLabel(for: "Errors")
+
+        refreshTableSelectors()
     }
 }
 
@@ -85,6 +89,19 @@ extension FocusViewController {
     private func refresh() {
         assert(Thread.isMainThread)
         // Refresh ViewController on ViewModel changes
+    }
+    
+    private func refreshTableSelectors() {
+        // Deactivate all
+        tableSelectorTargets?.deactivateSelector()
+        tableSelectorErrors?.deactivateSelector()
+        // Select expected
+        switch selectedTable {
+        case .targets:
+            tableSelectorTargets?.activateSelector()
+        case .errors:
+            tableSelectorErrors?.activateSelector()
+        }
     }
 }
 
