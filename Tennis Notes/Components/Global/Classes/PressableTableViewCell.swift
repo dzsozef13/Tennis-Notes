@@ -1,19 +1,19 @@
 //
-//  PressableView.swift
+//  PressableTableViewCell.swift
 //  Tennis Notes
 //
-//  Created by Punk József on 2022. 04. 11..
+//  Created by Punk József on 2022. 04. 15..
 //
 
 import UIKit
 
-class PressableView: UIView {
+class PressableTableViewCell: UITableViewCell {
     
     // MARK: Static Values
-    static let animationLength = 0.05
+    static let animationLength = 0.1
     static let scaleAnimationValue: CGFloat = 0.98
     static let dimAlphaValue: CGFloat = 0.9
-    
+
     // MARK: Lifecycle Methods
     public override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesBegan(touches, with: event)
@@ -34,17 +34,17 @@ class PressableView: UIView {
     func pressAnimation() {
         self.isUserInteractionEnabled = false
         DispatchQueue.main.async {
-            UIView.animate(withDuration: PressableView.animationLength, animations: {
-                self.transform = CGAffineTransform(scaleX: PressableView.scaleAnimationValue, y: PressableView.scaleAnimationValue)
-                self.alpha = PressableView.dimAlphaValue
+            UIView.animate(withDuration: PressableTableViewCell.animationLength, animations: {
+                self.transform = CGAffineTransform(scaleX: PressableTableViewCell.scaleAnimationValue, y: PressableTableViewCell.scaleAnimationValue)
+                self.alpha = PressableTableViewCell.dimAlphaValue
             })
         }
     }
 
     func releaseAnimation() {
-        let delay = PressableView.animationLength
+        let delay = PressableTableViewCell.animationLength
         DispatchQueue.main.async {
-            UIView.animate(withDuration: PressableView.animationLength, delay: delay, animations: {
+            UIView.animate(withDuration: PressableTableViewCell.animationLength, delay: delay, animations: {
                 self.transform = .identity
                 self.alpha = 1
             }, completion: { finished in
@@ -53,3 +53,4 @@ class PressableView: UIView {
         }
     }
 }
+

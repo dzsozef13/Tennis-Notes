@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC219DE8280A117A0002D210 /* TargetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC219DE7280A117A0002D210 /* TargetTableViewCell.swift */; };
+		BC219DEA280A11870002D210 /* ErrorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC219DE9280A11870002D210 /* ErrorTableViewCell.swift */; };
+		BC219DEC280A1BD60002D210 /* HintTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC219DEB280A1BD60002D210 /* HintTableViewCell.swift */; };
+		BC219DEE280A21CE0002D210 /* PressableTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC219DED280A21CD0002D210 /* PressableTableViewCell.swift */; };
 		BC83F8392804A75B00D73527 /* PressableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC83F8382804A75B00D73527 /* PressableView.swift */; };
 		BCC8F3D1280224DC00F9AAB3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC8F3D0280224DC00F9AAB3 /* AppDelegate.swift */; };
 		BCC8F3D3280224DC00F9AAB3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC8F3D2280224DC00F9AAB3 /* SceneDelegate.swift */; };
@@ -87,6 +91,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BC219DE7280A117A0002D210 /* TargetTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetTableViewCell.swift; sourceTree = "<group>"; };
+		BC219DE9280A11870002D210 /* ErrorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorTableViewCell.swift; sourceTree = "<group>"; };
+		BC219DEB280A1BD60002D210 /* HintTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HintTableViewCell.swift; sourceTree = "<group>"; };
+		BC219DED280A21CD0002D210 /* PressableTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PressableTableViewCell.swift; sourceTree = "<group>"; };
 		BC83F8382804A75B00D73527 /* PressableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PressableView.swift; sourceTree = "<group>"; };
 		BCC8F3CD280224DC00F9AAB3 /* Tennis Notes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tennis Notes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCC8F3D0280224DC00F9AAB3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -181,6 +189,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BC219DE6280A11640002D210 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				BC219DE7280A117A0002D210 /* TargetTableViewCell.swift */,
+				BC219DE9280A11870002D210 /* ErrorTableViewCell.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
 		BC83F8362804A62400D73527 /* Global */ = {
 			isa = PBXGroup;
 			children = (
@@ -195,6 +212,8 @@
 			children = (
 				BC83F8382804A75B00D73527 /* PressableView.swift */,
 				BCEE15EE28036F930051BE2F /* TableSelector.swift */,
+				BC219DEB280A1BD60002D210 /* HintTableViewCell.swift */,
+				BC219DED280A21CD0002D210 /* PressableTableViewCell.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -369,6 +388,7 @@
 		BCC8F4272802346A00F9AAB3 /* Focus */ = {
 			isa = PBXGroup;
 			children = (
+				BC219DE6280A11640002D210 /* UI */,
 				BCC8F42D2802346A00F9AAB3 /* View */,
 				BCC8F4282802346A00F9AAB3 /* Presenter */,
 				BCC8F4312802346A00F9AAB3 /* Interactor */,
@@ -710,6 +730,7 @@
 				BCEE15E2280357190051BE2F /* ErrorNote+CoreDataProperties.swift in Sources */,
 				BCC8F4772802346B00F9AAB3 /* NotesRouteModel.swift in Sources */,
 				BCC8F4762802346B00F9AAB3 /* NotesPresenter.swift in Sources */,
+				BC219DEA280A11870002D210 /* ErrorTableViewCell.swift in Sources */,
 				BCEE1609280380D10051BE2F /* Strings.swift in Sources */,
 				BCC8F47F2802346B00F9AAB3 /* NotesRouterProtocol.swift in Sources */,
 				BCC8F4582802346B00F9AAB3 /* SettingsRouter.swift in Sources */,
@@ -731,9 +752,12 @@
 				BCC8F48A2802E55D00F9AAB3 /* RouteProtocol.swift in Sources */,
 				BCC8F4682802346B00F9AAB3 /* FocusRouteModel.swift in Sources */,
 				BCC8F4662802346B00F9AAB3 /* HomeRouterProtocol.swift in Sources */,
+				BC219DEE280A21CE0002D210 /* PressableTableViewCell.swift in Sources */,
 				BCC8F4512802346B00F9AAB3 /* SettingsViewModel.swift in Sources */,
 				BCC8F4742802346B00F9AAB3 /* NotesPresenterProtocol.swift in Sources */,
 				BCEE15E6280357190051BE2F /* TargetNote+CoreDataProperties.swift in Sources */,
+				BC219DE8280A117A0002D210 /* TargetTableViewCell.swift in Sources */,
+				BC219DEC280A1BD60002D210 /* HintTableViewCell.swift in Sources */,
 				BCC8F4722802346B00F9AAB3 /* FocusRouter.swift in Sources */,
 				BCC8F46F2802346B00F9AAB3 /* FocusInteractor.swift in Sources */,
 				BCC8F4792802346B00F9AAB3 /* NotesViewController.swift in Sources */,

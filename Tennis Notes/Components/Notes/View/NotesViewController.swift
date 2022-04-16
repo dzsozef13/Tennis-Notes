@@ -120,4 +120,3 @@ extension NotesViewController: NotesViewControllerProtocol {
         // Refresh ViewController on theme change
     }
 }
-

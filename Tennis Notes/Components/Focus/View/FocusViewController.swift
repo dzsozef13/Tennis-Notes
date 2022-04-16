@@ -79,7 +79,6 @@ extension FocusViewController {
         // Set titles
         tableSelectorTargets?.setTitleLabel(for: "Targets")
         tableSelectorErrors?.setTitleLabel(for: "Errors")
-
         refreshTableSelectors()
     }
 }
@@ -121,12 +120,24 @@ extension FocusViewController: FocusViewControllerProtocol {
     }
 }
 
-// MARK: Animations
-extension FocusViewController {
-    private func animateTableSelectorSelect(selector: UIView) {
-        UIView.animate(withDuration: 0.05, delay: 0, options: .curveEaseInOut, animations: {
-            selector.backgroundColor
-        }, completion: nil)
+extension FocusViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        // TODO: Add edit function?
     }
 }
 
+extension FocusViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: HintTableViewCell.identifier, for: indexPath) as! HintTableViewCell
+        cell.setupView(icon: UIImage(systemName: "plus") ?? UIImage(), title: "New Target", message: "Add a new target you want to focus on next time you go to practice or play a match.")
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return UITableView.automaticDimension
+    }
+}
