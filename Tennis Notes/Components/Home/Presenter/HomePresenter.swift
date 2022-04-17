@@ -46,6 +46,7 @@ class HomePresenter {
 
 // MARK: Event Handler
 extension HomePresenter: HomeEventHandlerProtocol {
+    
     func prepare(for segue: UIStoryboardSegue) {
         if let scene = segue.identifier {
             let selector = NSSelectorFromString("routeTo\(scene)WithSegue:")
@@ -66,6 +67,24 @@ extension HomePresenter: HomeEventHandlerProtocol {
 
     func traitCollectionDidChange() {
         viewController?.themeRefresh()
+    }
+    
+    // MARK: Segues
+    
+    func didTapTargetsShortcut() {
+ 
+    }
+    
+    func didTapErrorsShortcut() {
+        
+    }
+    
+    func didTapPlayersShortcut() {
+        
+    }
+    
+    func didTapMatchesShortcut() {
+        
     }
 }
 

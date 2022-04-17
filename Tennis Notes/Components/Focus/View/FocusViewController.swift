@@ -13,6 +13,8 @@ class FocusViewController: UIViewController {
             refresh()
         }
     }
+    
+    public var delegate: ShortcutDelegate?
 
     // MARK: Table Cases
     enum Table: Equatable {
@@ -72,7 +74,12 @@ class FocusViewController: UIViewController {
 extension FocusViewController {
     private func initializeViews() {
         // Initialize ViewController on load
+        initializeTitle()
         initializeTableSelectors()
+    }
+    
+    private func initializeTitle() {
+        title = "Focus"
     }
     
     private func initializeTableSelectors() {
@@ -107,6 +114,19 @@ extension FocusViewController {
 // MARK: View Controller Protocol
 extension FocusViewController: FocusViewControllerProtocol {
     
+    // MARK: Shortcuts
+    @objc public func showTargetsTable() {
+        eventHandler.didTapSelectorTargets()
+        selectedTable = .targets
+        refreshTableSelectors()
+    }
+    
+    @objc public func showErrorsTable() {
+        eventHandler.didTapSelectorErrors()
+        selectedTable = .errors
+        refreshTableSelectors()
+    }
+    
     // MARK: Language Refreshing
     func languageRefresh() {
         assert(Thread.isMainThread)
@@ -120,6 +140,7 @@ extension FocusViewController: FocusViewControllerProtocol {
     }
 }
 
+// MARK: Table View
 extension FocusViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         // TODO: Add edit function?
@@ -139,5 +160,15 @@ extension FocusViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return UITableView.automaticDimension
+    }
+}
+
+protocol ShortcutDelegate: AnyObject {
+    func showTable(shortcut: Shortcut)
+}
+
+extension FocusViewController: ShortcutDelegate {
+    func showTable(shortcut: Shortcut) {
+        
     }
 }

@@ -20,12 +20,39 @@ class HomeViewController: UIViewController {
 
     // MARK: Variables
 
-    // MARK: UI Objects
+    // MARK: Quotes
+    private var quotes: [Quote?] = []
 
     // MARK: Interface Builder Outlets
-
+    // Quote labels
+    @IBOutlet weak var quoteLabel: UILabel?
+    @IBOutlet weak var quoteAuthorLabel: UILabel?
+    
+    // Shortcuts
+    @IBOutlet weak var targetsShortcutView: PressableView?
+    @IBOutlet weak var errorsShortcutView: PressableView?
+    @IBOutlet weak var playersShortcutView: PressableView?
+    @IBOutlet weak var matchesShortcutView: PressableView?
+    
     // MARK: Interface Builder Actions
-
+    // Shortcuts
+    @IBAction func didTapTargetsShortcut(_ sender: Any) {
+        eventHandler.didTapTargetsShortcut()
+        tapTabItem(item: .targets)
+    }
+    @IBAction func didTapErrorsShortcut(_ sender: Any) {
+        eventHandler.didTapErrorsShortcut()
+        tapTabItem(item: .errors)
+    }
+    @IBAction func didTapPlayersShortcut(_ sender: Any) {
+        eventHandler.didTapPlayersShortcut()
+        tapTabItem(item: .players)
+    }
+    @IBAction func didTapMatchesShortcut(_ sender: Any) {
+        eventHandler.didTapMatchesShortcut()
+        tapTabItem(item: .matches)
+    }
+    
     // MARK: Lifecycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,6 +62,7 @@ class HomeViewController: UIViewController {
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        initializeQuotes()
         eventHandler.willAppear()
     }
 
@@ -53,6 +81,24 @@ class HomeViewController: UIViewController {
 extension HomeViewController {
     private func initializeViews() {
         // Initialize ViewController on load
+        initializeTitle()
+    }
+    
+    private func initializeTitle() {
+        title = "Home"
+    }
+    
+    private func initializeQuotes() {
+        let manager = QuotesManager()
+        self.quotes = manager.quotes
+        let randomIndex = Int(arc4random_uniform(UInt32(quotes.count - 1)))
+        let randomQuote = self.quotes[randomIndex]!
+        printRandomQuote(quote: randomQuote)
+    }
+    
+    private func printRandomQuote(quote: Quote) {
+        self.quoteLabel?.text = "\("\"")\(quote.quote)\("\"")"
+        self.quoteAuthorLabel?.text = "\("- ")\(quote.author)"
     }
 }
 
@@ -61,6 +107,20 @@ extension HomeViewController {
     private func refresh() {
         assert(Thread.isMainThread)
         // Refresh ViewController on ViewModel changes
+    }
+    
+    private func tapTabItem(item: Shortcut) {
+        tabBarController?.selectedIndex = item.tabBarItemIndex()
+        switch item {
+        case .targets, .errors:
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let secondVC = storyboard.instantiateViewController(withIdentifier: "Focus")
+            secondVC.delegate = self
+        case .players, .matches:
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let secondVC = storyboard.instantiateViewController(withIdentifier: "Notes")
+            secondVC.delegate = self
+        }
     }
 }
 

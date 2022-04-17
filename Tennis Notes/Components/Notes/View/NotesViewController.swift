@@ -20,6 +20,9 @@ class NotesViewController: UIViewController {
         case matches
     }
     
+    // MARK: Notification
+    private let notificationCenter: NotificationCenter = .default
+    
     // MARK: Variables
     private var selectedTable: Table = .players
 
@@ -73,7 +76,12 @@ class NotesViewController: UIViewController {
 extension NotesViewController {
     private func initializeViews() {
         // Initialize ViewController on load
+        initializeTitle()
         initializeTableSelectors()
+    }
+    
+    private func initializeTitle() {
+        title = "Notes"
     }
     
     private func initializeTableSelectors() {
@@ -118,5 +126,18 @@ extension NotesViewController: NotesViewControllerProtocol {
     func themeRefresh() {
         assert(Thread.isMainThread)
         // Refresh ViewController on theme change
+    }
+}
+
+// MARK: Notification Events
+extension NotesViewController {
+    public func showTargetsTable() {
+        selectedTable = .players
+        refreshTableSelectors()
+    }
+    
+    public func showErrorsTable() {
+        selectedTable = .matches
+        refreshTableSelectors()
     }
 }

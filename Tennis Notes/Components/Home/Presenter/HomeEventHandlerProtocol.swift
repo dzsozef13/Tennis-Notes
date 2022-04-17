@@ -12,4 +12,9 @@ protocol HomeEventHandlerProtocol {
     func didLoad()
     func willAppear()
     func traitCollectionDidChange()
+    
+    func didTapTargetsShortcut()
+    func didTapErrorsShortcut()
+    func didTapPlayersShortcut()
+    func didTapMatchesShortcut()
 }
