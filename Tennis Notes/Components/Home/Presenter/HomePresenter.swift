@@ -17,6 +17,9 @@ class HomePresenter {
             refreshViewModel()
         }
     }
+    
+    private let shortcutDelay: CGFloat = 0.25
+    private let notificationCenter = NotificationCenter.default
 
     // MARK: Routing data
 
@@ -70,21 +73,24 @@ extension HomePresenter: HomeEventHandlerProtocol {
     }
     
     // MARK: Segues
-    
     func didTapTargetsShortcut() {
- 
+        DispatchQueue.main.asyncAfter(deadline: .now() + shortcutDelay, execute: {
+            self.notificationCenter.post(name: NSNotification.Name(rawValue: Shortcut.targets.rawValue), object: nil)
+        })
     }
     
     func didTapErrorsShortcut() {
-        
+        DispatchQueue.main.asyncAfter(deadline: .now() + shortcutDelay, execute: {
+            self.notificationCenter.post(name: NSNotification.Name(rawValue: Shortcut.errors.rawValue), object: nil)
+        })
     }
     
     func didTapPlayersShortcut() {
-        
+        notificationCenter.post(name: NSNotification.Name(rawValue: Shortcut.players.rawValue), object: nil)
     }
     
     func didTapMatchesShortcut() {
-        
+        notificationCenter.post(name: NSNotification.Name(rawValue: Shortcut.matches.rawValue), object: nil)
     }
 }
 

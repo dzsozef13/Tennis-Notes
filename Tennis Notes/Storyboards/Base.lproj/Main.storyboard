@@ -49,19 +49,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iHH-A8-0me" userLabel="Quote View">
-                                <rect key="frame" x="16" y="204" width="382" height="241"/>
+                                <rect key="frame" x="16" y="204" width="382" height="273"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Ium-38-Gyw">
-                                        <rect key="frame" x="0.0" y="0.0" width="382" height="241"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="273"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tennis is a tough sport – there are no draws." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="16" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RdE-2A-2am">
-                                                <rect key="frame" x="0.0" y="0.0" width="382" height="201"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="382" height="233"/>
                                                 <fontDescription key="fontDescription" name="RobotoMono-Italic" family="Roboto Mono" pointSize="32"/>
                                                 <color key="textColor" name="TextLightPrimary"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="- Roger Federer" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dnF-tn-osd">
-                                                <rect key="frame" x="0.0" y="201" width="382" height="40"/>
+                                                <rect key="frame" x="0.0" y="233" width="382" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="Zyk-QQ-Yte"/>
                                                 </constraints>
@@ -82,16 +82,16 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bdz-1M-JZ2" userLabel="Shortcuts View">
-                                <rect key="frame" x="16" y="509" width="382" height="240"/>
+                                <rect key="frame" x="16" y="541" width="382" height="208"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="lcj-qP-loz">
-                                        <rect key="frame" x="0.0" y="0.0" width="382" height="240"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="208"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="bKs-yi-Iqo">
-                                                <rect key="frame" x="0.0" y="0.0" width="183" height="240"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="183" height="208"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W3u-7v-ZEC" customClass="PressableView" customModule="Tennis_Notes" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="0.0" width="183" height="112"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="183" height="96"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vjn-ty-auE">
                                                                 <rect key="frame" x="16" y="16" width="40" height="40"/>
@@ -118,8 +118,8 @@
                                                                 </userDefinedRuntimeAttributes>
                                                             </view>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Targets" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iZT-PU-RzT">
-                                                                <rect key="frame" x="16" y="73.5" width="77.5" height="26.5"/>
-                                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                                                <rect key="frame" x="16" y="64.5" width="59" height="19.5"/>
+                                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                                                 <color key="textColor" name="TextLightSecondary"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
@@ -133,7 +133,7 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chevron.right" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="9vk-5E-n2x">
-                                                                <rect key="frame" x="97.5" y="79.5" width="16" height="14.5"/>
+                                                                <rect key="frame" x="79" y="67" width="16" height="14.5"/>
                                                                 <color key="tintColor" name="TextLightSecondary"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="16" id="OxX-JA-uoH"/>
@@ -145,6 +145,7 @@
                                                         <color key="backgroundColor" name="BackgroundSecondary"/>
                                                         <gestureRecognizers/>
                                                         <constraints>
+                                                            <constraint firstAttribute="height" constant="96" id="2mq-eM-Poa"/>
                                                             <constraint firstItem="Vjn-ty-auE" firstAttribute="top" secondItem="W3u-7v-ZEC" secondAttribute="top" constant="16" id="AMX-kp-EXQ"/>
                                                             <constraint firstItem="Bjy-S3-fCl" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Vjn-ty-auE" secondAttribute="trailing" constant="8" symbolic="YES" id="H4p-Sh-Gd4"/>
                                                             <constraint firstItem="9vk-5E-n2x" firstAttribute="leading" secondItem="iZT-PU-RzT" secondAttribute="trailing" constant="4" id="IpM-h5-07i"/>
@@ -165,7 +166,7 @@
                                                         </connections>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ngm-wb-0NK" customClass="PressableView" customModule="Tennis_Notes" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="128" width="183" height="112"/>
+                                                        <rect key="frame" x="0.0" y="112" width="183" height="96"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OGu-96-DeG">
                                                                 <rect key="frame" x="16" y="16" width="40" height="40"/>
@@ -192,8 +193,8 @@
                                                                 </userDefinedRuntimeAttributes>
                                                             </view>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Players" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FHr-8k-VZ5">
-                                                                <rect key="frame" x="16" y="73.5" width="76" height="26.5"/>
-                                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                                                <rect key="frame" x="16" y="64.5" width="57.5" height="19.5"/>
+                                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                                                 <color key="textColor" name="TextLightSecondary"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
@@ -207,7 +208,7 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chevron.right" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="NCK-mF-ACA">
-                                                                <rect key="frame" x="96" y="79.5" width="16" height="14.5"/>
+                                                                <rect key="frame" x="77.5" y="67" width="16" height="14.5"/>
                                                                 <color key="tintColor" name="TextLightSecondary"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="16" id="14n-va-BTC"/>
@@ -226,6 +227,7 @@
                                                             <constraint firstItem="FHr-8k-VZ5" firstAttribute="leading" secondItem="Ngm-wb-0NK" secondAttribute="leading" constant="16" id="d02-EP-TS0"/>
                                                             <constraint firstItem="OGu-96-DeG" firstAttribute="leading" secondItem="Ngm-wb-0NK" secondAttribute="leading" constant="16" id="hIB-UD-w2C"/>
                                                             <constraint firstAttribute="bottom" secondItem="FHr-8k-VZ5" secondAttribute="bottom" constant="12" id="m00-Gs-Lbf"/>
+                                                            <constraint firstAttribute="height" constant="96" id="vKX-3s-caD"/>
                                                             <constraint firstItem="41j-gd-6f4" firstAttribute="top" secondItem="Ngm-wb-0NK" secondAttribute="top" constant="16" id="vkS-9a-D3x"/>
                                                             <constraint firstItem="NCK-mF-ACA" firstAttribute="centerY" secondItem="FHr-8k-VZ5" secondAttribute="centerY" id="zKe-Sb-2Pe"/>
                                                         </constraints>
@@ -241,10 +243,10 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="F2E-W2-qF8">
-                                                <rect key="frame" x="199" y="0.0" width="183" height="240"/>
+                                                <rect key="frame" x="199" y="0.0" width="183" height="208"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WHu-iZ-rTL" customClass="PressableView" customModule="Tennis_Notes" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="0.0" width="183" height="112"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="183" height="96"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V9C-mg-2k6">
                                                                 <rect key="frame" x="16" y="16" width="40" height="40"/>
@@ -271,8 +273,8 @@
                                                                 </userDefinedRuntimeAttributes>
                                                             </view>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Errors" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="occ-pA-mmS">
-                                                                <rect key="frame" x="16" y="73.5" width="62.5" height="26.5"/>
-                                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                                                <rect key="frame" x="16" y="64.5" width="48" height="19.5"/>
+                                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                                                 <color key="textColor" name="TextLightSecondary"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
@@ -286,7 +288,7 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chevron.right" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="hP6-Yy-Hj0">
-                                                                <rect key="frame" x="82.5" y="79.5" width="16" height="14.5"/>
+                                                                <rect key="frame" x="68" y="67" width="16" height="14.5"/>
                                                                 <color key="tintColor" name="TextLightSecondary"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="16" id="FqH-8l-jCT"/>
@@ -299,6 +301,7 @@
                                                         <gestureRecognizers/>
                                                         <constraints>
                                                             <constraint firstItem="hP6-Yy-Hj0" firstAttribute="centerY" secondItem="occ-pA-mmS" secondAttribute="centerY" id="1OL-NS-hBj"/>
+                                                            <constraint firstAttribute="height" constant="96" id="CaP-uW-Laf"/>
                                                             <constraint firstItem="occ-pA-mmS" firstAttribute="leading" secondItem="WHu-iZ-rTL" secondAttribute="leading" constant="16" id="El1-D2-5tO"/>
                                                             <constraint firstItem="vq3-07-vqv" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="V9C-mg-2k6" secondAttribute="trailing" constant="8" symbolic="YES" id="IgP-wu-I3u"/>
                                                             <constraint firstItem="vq3-07-vqv" firstAttribute="top" secondItem="WHu-iZ-rTL" secondAttribute="top" constant="16" id="WdA-DY-RMa"/>
@@ -318,7 +321,7 @@
                                                         </connections>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ViY-bI-K75" customClass="PressableView" customModule="Tennis_Notes" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="128" width="183" height="112"/>
+                                                        <rect key="frame" x="0.0" y="112" width="183" height="96"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HTK-3Z-0dp">
                                                                 <rect key="frame" x="16" y="16" width="40" height="40"/>
@@ -345,8 +348,8 @@
                                                                 </userDefinedRuntimeAttributes>
                                                             </view>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Matches" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gjB-BU-WfU">
-                                                                <rect key="frame" x="16" y="73.5" width="89" height="26.5"/>
-                                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                                                <rect key="frame" x="16" y="64.5" width="66.5" height="19.5"/>
+                                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                                                 <color key="textColor" name="TextLightSecondary"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
@@ -360,7 +363,7 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chevron.right" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="OR7-SS-ON9">
-                                                                <rect key="frame" x="109" y="79.5" width="16" height="14.5"/>
+                                                                <rect key="frame" x="86.5" y="67" width="16" height="14.5"/>
                                                                 <color key="tintColor" name="TextLightSecondary"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="16" id="Afo-GD-U7z"/>
@@ -373,6 +376,7 @@
                                                         <gestureRecognizers/>
                                                         <constraints>
                                                             <constraint firstItem="1ke-T0-pl0" firstAttribute="top" secondItem="ViY-bI-K75" secondAttribute="top" constant="16" id="14v-ti-6Lw"/>
+                                                            <constraint firstAttribute="height" constant="96" id="65V-iH-GOE"/>
                                                             <constraint firstAttribute="trailing" secondItem="1ke-T0-pl0" secondAttribute="trailing" constant="16" id="Min-KO-h5Z"/>
                                                             <constraint firstItem="OR7-SS-ON9" firstAttribute="leading" secondItem="gjB-BU-WfU" secondAttribute="trailing" constant="4" id="Pej-j7-OWh"/>
                                                             <constraint firstAttribute="bottom" secondItem="gjB-BU-WfU" secondAttribute="bottom" constant="12" id="Spc-O3-gjC"/>
@@ -402,7 +406,6 @@
                                     <constraint firstAttribute="bottom" secondItem="lcj-qP-loz" secondAttribute="bottom" id="oYn-bO-z6Q"/>
                                     <constraint firstItem="lcj-qP-loz" firstAttribute="top" secondItem="bdz-1M-JZ2" secondAttribute="top" id="sOo-yT-Ksa"/>
                                     <constraint firstItem="lcj-qP-loz" firstAttribute="leading" secondItem="bdz-1M-JZ2" secondAttribute="leading" id="t7J-U8-ETO"/>
-                                    <constraint firstAttribute="height" constant="240" id="yNo-H9-Hul"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -504,17 +507,6 @@
         <!--Focus-->
         <scene sceneID="jfR-QX-98X">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="bav-tV-Aaf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="JgF-PP-KEg">
-                    <connections>
-                        <action selector="didTapSelectorTargets:" destination="SCO-eF-Hio" id="xV3-i8-84s"/>
-                    </connections>
-                </tapGestureRecognizer>
-                <tapGestureRecognizer id="yDO-fC-OEB">
-                    <connections>
-                        <action selector="didTapSelectorErrors:" destination="SCO-eF-Hio" id="NDA-va-y8f"/>
-                    </connections>
-                </tapGestureRecognizer>
                 <viewController storyboardIdentifier="Focus" useStoryboardIdentifierAsRestorationIdentifier="YES" id="SCO-eF-Hio" userLabel="Focus" customClass="FocusViewController" customModule="Tennis_Notes" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ovU-SY-vCB">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -711,6 +703,17 @@
                         <outlet property="tableSelectorTargets" destination="SSo-Dv-nyJ" id="0fl-ya-A1B"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bav-tV-Aaf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="JgF-PP-KEg">
+                    <connections>
+                        <action selector="didTapSelectorTargets:" destination="SCO-eF-Hio" id="xV3-i8-84s"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="yDO-fC-OEB">
+                    <connections>
+                        <action selector="didTapSelectorErrors:" destination="SCO-eF-Hio" id="NDA-va-y8f"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1446.376811594203" y="79.6875"/>
         </scene>
@@ -722,7 +725,7 @@
                         <imageReference key="image" image="bookmark" catalog="system" symbolScale="large"/>
                     </tabBarItem>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="jjU-eL-zqu">
-                        <rect key="frame" x="0.0" y="44" width="414" height="104"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <textAttributes key="largeTitleTextAttributes">
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

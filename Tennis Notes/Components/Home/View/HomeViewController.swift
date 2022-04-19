@@ -13,14 +13,8 @@ class HomeViewController: UIViewController {
             refresh()
         }
     }
-
-    // MARK: Views
-
-    // MARK: UI Constants
-
+    
     // MARK: Variables
-
-    // MARK: Quotes
     private var quotes: [Quote?] = []
 
     // MARK: Interface Builder Outlets
@@ -111,16 +105,6 @@ extension HomeViewController {
     
     private func tapTabItem(item: Shortcut) {
         tabBarController?.selectedIndex = item.tabBarItemIndex()
-        switch item {
-        case .targets, .errors:
-            let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let secondVC = storyboard.instantiateViewController(withIdentifier: "Focus")
-            secondVC.delegate = self
-        case .players, .matches:
-            let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let secondVC = storyboard.instantiateViewController(withIdentifier: "Notes")
-            secondVC.delegate = self
-        }
     }
 }
 
