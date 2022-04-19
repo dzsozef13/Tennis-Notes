@@ -12,4 +12,7 @@ protocol NotesEventHandlerProtocol {
     func didLoad()
     func willAppear()
     func traitCollectionDidChange()
+    
+    func didTapSelectorPlayers()
+    func didTapSelectorMatches()
 }

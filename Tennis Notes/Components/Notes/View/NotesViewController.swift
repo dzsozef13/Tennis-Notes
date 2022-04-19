@@ -24,7 +24,7 @@ class NotesViewController: UIViewController {
     private let notificationCenter: NotificationCenter = .default
     
     // MARK: Variables
-    private var selectedTable: Table = .players
+    private var selectedTable: Table?
 
     // MARK: UI Objects
 
@@ -37,13 +37,13 @@ class NotesViewController: UIViewController {
 
     // MARK: Interface Builder Actions
     @IBAction func didTapSelectorPlayers(_ sender: Any) {
-//        eventHandler.didTapSelectorTargets()
+        eventHandler.didTapSelectorPlayers()
         selectedTable = .players
         refreshTableSelectors()
     }
     
     @IBAction func didTapSelectorMatches(_ sender: Any) {
-//        eventHandler.didTapSelectorErrors()
+        eventHandler.didTapSelectorMatches()
         selectedTable = .matches
         refreshTableSelectors()
     }
@@ -58,6 +58,7 @@ class NotesViewController: UIViewController {
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        initializeTableSelectors()
         eventHandler.willAppear()
     }
 
@@ -88,7 +89,20 @@ extension NotesViewController {
         // Set titles
         tableSelectorPlayers?.setTitleLabel(for: "Players")
         tableSelectorMatches?.setTitleLabel(for: "Matches")
-
+        // Load saved case
+        guard let usedShortcut: String = UserDefaults.standard.object(forKey: "SelectedNotesTable") as? Shortcut.RawValue else {
+            selectedTable = .players
+            refreshTableSelectors()
+            return
+        }
+        // Check if already selected
+        if usedShortcut == Shortcut.players.rawValue {
+            selectedTable = .players
+        }
+        if usedShortcut == Shortcut.matches.rawValue {
+            selectedTable = .matches
+        }
+        // Update selectors
         refreshTableSelectors()
     }
 }
@@ -110,6 +124,8 @@ extension NotesViewController {
             tableSelectorPlayers?.activateSelector()
         case .matches:
             tableSelectorMatches?.activateSelector()
+        default:
+            tableSelectorPlayers?.activateSelector()
         }
     }
 }

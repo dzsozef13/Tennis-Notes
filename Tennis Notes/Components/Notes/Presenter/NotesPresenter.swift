@@ -21,6 +21,9 @@ class NotesPresenter {
     // MARK: Routing data
 
     // MARK: Fetched data
+    
+    // MARK: Varilables
+    private let userDefaults = UserDefaults.standard
 
     init(viewController: NotesViewControllerProtocol) {
         self.viewController = viewController
@@ -46,6 +49,7 @@ class NotesPresenter {
 
 // MARK: Event Handler
 extension NotesPresenter: NotesEventHandlerProtocol {
+    
     func prepare(for segue: UIStoryboardSegue) {
         if let scene = segue.identifier {
             let selector = NSSelectorFromString("routeTo\(scene)WithSegue:")
@@ -66,6 +70,15 @@ extension NotesPresenter: NotesEventHandlerProtocol {
 
     func traitCollectionDidChange() {
         viewController?.themeRefresh()
+    }
+    
+    // MARK: Actions sent from UI
+    func didTapSelectorPlayers() {
+        userDefaults.set(Shortcut.players.rawValue, forKey: "SelectedNotesTable")
+    }
+    
+    func didTapSelectorMatches() {
+        userDefaults.set(Shortcut.matches.rawValue, forKey: "SelectedNotesTable")
     }
 }
 

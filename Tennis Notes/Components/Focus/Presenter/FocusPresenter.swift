@@ -21,6 +21,9 @@ class FocusPresenter {
     // MARK: Routing data
 
     // MARK: Fetched data
+    
+    // MARK: Variables
+    private let userDefaults = UserDefaults.standard
 
     init(viewController: FocusViewControllerProtocol) {
         self.viewController = viewController
@@ -70,11 +73,11 @@ extension FocusPresenter: FocusEventHandlerProtocol {
     
     // MARK: Actions sent from UI
     func didTapSelectorTargets() {
-        
+        userDefaults.set(Shortcut.targets.rawValue, forKey: "SelectedFocusTable")
     }
     
     func didTapSelectorErrors() {
-        
+        userDefaults.set(Shortcut.errors.rawValue, forKey: "SelectedFocusTable")
     }
 }
 

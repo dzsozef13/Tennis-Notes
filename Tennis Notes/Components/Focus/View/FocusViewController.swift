@@ -21,9 +21,7 @@ class FocusViewController: UIViewController {
     }
     
     // MARK: Variables
-    private let notificationCenter = NotificationCenter.default
     private let defaults = UserDefaults.standard
-    public var delegate: ShortcutDelegate?
     private var selectedTable: Table?
 
     // MARK: Interface Builder Outlets
@@ -55,7 +53,6 @@ class FocusViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         initializeViews()
-        initializeNotificationListeners()
         eventHandler.willAppear()
     }
     
@@ -86,22 +83,21 @@ extension FocusViewController {
         // Set titles
         tableSelectorTargets?.setTitleLabel(for: "Targets")
         tableSelectorErrors?.setTitleLabel(for: "Errors")
+        // Load saved case
+        guard let usedShortcut: String = UserDefaults.standard.object(forKey: "SelectedFocusTable") as? Shortcut.RawValue else {
+            selectedTable = .targets
+            refreshTableSelectors()
+            return
+        }
+        // Check if already selected
+        if usedShortcut == Shortcut.targets.rawValue {
+            selectedTable = .targets
+        }
+        if usedShortcut == Shortcut.errors.rawValue {
+            selectedTable = .errors
+        }
+        // Update selectors
         refreshTableSelectors()
-    }
-    
-    private func initializeNotificationListeners() {
-        notificationCenter.addObserver(
-            self,
-            selector: #selector(didUseTargetsShortcut),
-            name: NSNotification.Name(rawValue: Shortcut.targets.rawValue),
-            object: nil
-        )
-        notificationCenter.addObserver(
-            self,
-            selector: #selector(didUseErrorsShortcut),
-            name: NSNotification.Name(rawValue: Shortcut.errors.rawValue),
-            object: nil
-        )
     }
 }
 
@@ -110,20 +106,6 @@ extension FocusViewController {
     private func refresh() {
         assert(Thread.isMainThread)
         // Refresh ViewController on ViewModel changes
-    }
-    
-    @objc private func didUseTargetsShortcut() {
-        if selectedTable != .targets {
-            self.selectedTable = .targets
-            refreshTableSelectors()
-        }
-    }
-    
-    @objc private func didUseErrorsShortcut() {
-        if selectedTable != .errors {
-            self.selectedTable = .errors
-            refreshTableSelectors()
-        }
     }
     
     private func refreshTableSelectors() {
@@ -191,15 +173,5 @@ extension FocusViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return UITableView.automaticDimension
-    }
-}
-
-protocol ShortcutDelegate: AnyObject {
-    func showTable(shortcut: Shortcut)
-}
-
-extension FocusViewController: ShortcutDelegate {
-    func showTable(shortcut: Shortcut) {
-        
     }
 }

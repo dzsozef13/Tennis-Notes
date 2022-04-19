@@ -17,10 +17,13 @@ class HomePresenter {
             refreshViewModel()
         }
     }
-    
-    private let shortcutDelay: CGFloat = 0.25
-    private let notificationCenter = NotificationCenter.default
 
+    // MARK: Variables
+    private var shortcutDelay: CGFloat = 0.25
+    
+    private let userDefaults = UserDefaults.standard
+    private let notificationCenter = NotificationCenter.default
+    
     // MARK: Routing data
 
     // MARK: Fetched data
@@ -72,25 +75,21 @@ extension HomePresenter: HomeEventHandlerProtocol {
         viewController?.themeRefresh()
     }
     
-    // MARK: Segues
+    // MARK: Shortcuts
     func didTapTargetsShortcut() {
-        DispatchQueue.main.asyncAfter(deadline: .now() + shortcutDelay, execute: {
-            self.notificationCenter.post(name: NSNotification.Name(rawValue: Shortcut.targets.rawValue), object: nil)
-        })
+        userDefaults.set(Shortcut.targets.rawValue, forKey: "SelectedFocusTable")
     }
     
     func didTapErrorsShortcut() {
-        DispatchQueue.main.asyncAfter(deadline: .now() + shortcutDelay, execute: {
-            self.notificationCenter.post(name: NSNotification.Name(rawValue: Shortcut.errors.rawValue), object: nil)
-        })
+        userDefaults.set(Shortcut.errors.rawValue, forKey: "SelectedFocusTable")
     }
     
     func didTapPlayersShortcut() {
-        notificationCenter.post(name: NSNotification.Name(rawValue: Shortcut.players.rawValue), object: nil)
+        userDefaults.set(Shortcut.players.rawValue, forKey: "SelectedNotesTable")
     }
     
     func didTapMatchesShortcut() {
-        notificationCenter.post(name: NSNotification.Name(rawValue: Shortcut.matches.rawValue), object: nil)
+        userDefaults.set(Shortcut.matches.rawValue, forKey: "SelectedNotesTable")
     }
 }
 
