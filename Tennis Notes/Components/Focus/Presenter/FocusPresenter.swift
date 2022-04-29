@@ -21,6 +21,8 @@ class FocusPresenter {
     // MARK: Routing data
 
     // MARK: Fetched data
+    var targetNotes: [TargetNote] = []
+    var errorNotes: [ErrorNote] = []
     
     // MARK: Variables
     private let userDefaults = UserDefaults.standard
@@ -38,7 +40,7 @@ class FocusPresenter {
     }
 
     func refreshViewModel() {
-        let viewModel = FocusViewModel()
+        let viewModel = FocusViewModel(targetNotes: self.targetNotes, errorNotes: self.errorNotes)
         viewController?.viewModel = viewModel
     }
 
@@ -49,6 +51,7 @@ class FocusPresenter {
 
 // MARK: Event Handler
 extension FocusPresenter: FocusEventHandlerProtocol {
+    
     func prepare(for segue: UIStoryboardSegue) {
         if let scene = segue.identifier {
             let selector = NSSelectorFromString("routeTo\(scene)WithSegue:")
@@ -60,7 +63,10 @@ extension FocusPresenter: FocusEventHandlerProtocol {
 
     func didLoad() {
         viewController?.languageRefresh()
-        // Place here component's initial load code
+        
+        // Load notes
+        presentTargetNotes()
+        presentErrorNotes()
     }
 
     func willAppear() {
@@ -79,10 +85,21 @@ extension FocusPresenter: FocusEventHandlerProtocol {
     func didTapSelectorErrors() {
         userDefaults.set(Shortcut.errors.rawValue, forKey: "SelectedFocusTable")
     }
+
 }
 
 // MARK: Presenter
 extension FocusPresenter: FocusPresenterProtocol {
-
+    func presentTargetNotes() {
+        self.targetNotes = interactor.fetchTargetNotes()
+        refreshViewModel()
+        viewController?.tableViewRefresh()
+    }
+    
+    func presentErrorNotes() {
+        self.errorNotes = interactor.fetchErrorNotes()
+        refreshViewModel()
+        viewController?.tableViewRefresh()
+    }
 }
 

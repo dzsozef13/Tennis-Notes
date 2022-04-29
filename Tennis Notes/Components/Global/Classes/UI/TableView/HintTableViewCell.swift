@@ -9,18 +9,23 @@ import UIKit
 
 class HintTableViewCell: PressableTableViewCell {
 
-    // Reuseable Cell Identifier
+    // MARK: Reuseable Cell Identifier
     static let identifier: String = "HintTableViewCell"
     
-    // IBO Outlets
+    // MARK: IBO Outlets
     @IBOutlet weak var hintIcon: UIImageView?
     @IBOutlet weak var hintTitle: UILabel?
     @IBOutlet weak var hintMessage: UILabel?
+    @IBOutlet weak var cellView: UIView?
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        
+        // MARK: Styling
+        self.cellView?.layer.cornerRadius = TableViewCell().cornerRadius()
     }
     
+    // MARK: Setup
     func setupView(icon: UIImage, title: String, message: String) {
         self.hintIcon?.image = icon
         self.hintTitle?.text = title

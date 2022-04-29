@@ -104,6 +104,9 @@ extension HomeViewController {
     }
     
     private func tapTabItem(item: Shortcut) {
+//        DispatchQueue.main.asyncAfter(deadline: .now() + 0.1, execute: {
+//            self.tabBarController?.selectedIndex = item.tabBarItemIndex()
+//        })
         tabBarController?.selectedIndex = item.tabBarItemIndex()
     }
 }

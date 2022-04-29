@@ -6,5 +6,6 @@
 import Foundation
 
 struct FocusViewModel {
-    
+    let targetNotes: [TargetNote]
+    let errorNotes: [ErrorNote]
 }

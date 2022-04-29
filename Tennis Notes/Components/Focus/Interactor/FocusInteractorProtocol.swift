@@ -8,6 +8,8 @@ import Foundation
 protocol FocusInteractorProtocol: AnyObject {
 
     // MARK: In
+    func fetchTargetNotes() -> [TargetNote]
+    func fetchErrorNotes() -> [ErrorNote]
 
     // MARK: Out
 

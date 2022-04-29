@@ -15,8 +15,8 @@ class TableSelector: PressableView {
     static let normalColor: UIColor = Assets.Colors.backgroundTertiary.color
     static let activeColor: UIColor = Assets.Colors.accentColor.color
     // Title label colors
-    static let normalTitleColor: UIColor = Assets.Colors.backgroundQuaternary.color
-    static let activeTitleColor: UIColor = Assets.Colors.textDarkPrimary.color
+    static let normalTitleColor: UIColor = Assets.Colors.textLightTertiary.color
+    static let activeTitleColor: UIColor = Assets.Colors.backgroundPrimary.color
     // Title font size
     static let fontSize: CGFloat = 18
     static let animationLenght: CGFloat = 0

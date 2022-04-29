@@ -6,5 +6,6 @@
 import Foundation
 
 protocol FocusPresenterProtocol: AnyObject {
-    
+    func presentTargetNotes()
+    func presentErrorNotes()
 }

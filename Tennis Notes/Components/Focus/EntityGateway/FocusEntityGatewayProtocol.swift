@@ -6,5 +6,6 @@
 import Foundation
 
 protocol FocusEntityGatewayProtocol {
-    
+    func fetchTargetNotes() -> [TargetNote]
+    func fetchErrorNotes() -> [ErrorNote]
 }

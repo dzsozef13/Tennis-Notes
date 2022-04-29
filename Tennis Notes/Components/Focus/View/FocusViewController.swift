@@ -28,6 +28,8 @@ class FocusViewController: UIViewController {
     // Table Selectors
     @IBOutlet weak var tableSelectorTargets: TableSelector?
     @IBOutlet weak var tableSelectorErrors: TableSelector?
+    // Table View
+    @IBOutlet weak var tableView: UITableView?
     
     // MARK: Interface Builder Actions
     // Table Selector Actions
@@ -151,6 +153,13 @@ extension FocusViewController: FocusViewControllerProtocol {
         assert(Thread.isMainThread)
         // Refresh ViewController on theme change
     }
+    
+    // MARK: Table View Refreshing
+    func tableViewRefresh() {
+        assert(Thread.isMainThread)
+        // Refresh TableView on data change
+        self.tableView?.reloadData()
+    }
 }
 
 // MARK: Table View
@@ -162,13 +171,48 @@ extension FocusViewController: UITableViewDelegate {
 
 extension FocusViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        guard let targetNotes = viewModel?.targetNotes, let errorNotes = viewModel?.errorNotes else { return 1 }
+        switch selectedTable {
+        case .targets:
+            if !targetNotes.isEmpty {
+                return targetNotes.count
+            } else { return 1 }
+        case .errors:
+            if !errorNotes.isEmpty {
+                return errorNotes.count
+            } else { return 1 }
+        default:
+            return 1
+        }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: HintTableViewCell.identifier, for: indexPath) as! HintTableViewCell
-        cell.setupView(icon: UIImage(systemName: "plus") ?? UIImage(), title: "New Target", message: "Add a new target you want to focus on next time you go to practice or play a match.")
-        return cell
+        guard let targetNotes = viewModel?.targetNotes, let errorNotes = viewModel?.errorNotes else { return UITableViewCell() }
+        let row = indexPath.row
+        switch selectedTable {
+        case .targets:
+            if !targetNotes.isEmpty {
+                let cell = tableView.dequeueReusableCell(withIdentifier: TargetTableViewCell.identifier, for: indexPath) as! TargetTableViewCell
+                cell.setupView(target: targetNotes[row])
+                return cell
+            } else {
+                let cell = tableView.dequeueReusableCell(withIdentifier: HintTableViewCell.identifier, for: indexPath) as! HintTableViewCell
+                cell.setupView(icon: UIImage(systemName: "plus") ?? UIImage(), title: "New Target", message: "Add a new target you want to focus on next time you go to practice or play a match.")
+                return cell
+            }
+        case .errors:
+            if !errorNotes.isEmpty {
+                let cell = tableView.dequeueReusableCell(withIdentifier: HintTableViewCell.identifier, for: indexPath) as! HintTableViewCell
+                cell.setupView(icon: UIImage(systemName: "plus") ?? UIImage(), title: "New Target", message: "Add a new target you want to focus on next time you go to practice or play a match.")
+                return cell
+            } else {
+                let cell = tableView.dequeueReusableCell(withIdentifier: HintTableViewCell.identifier, for: indexPath) as! HintTableViewCell
+                cell.setupView(icon: UIImage(systemName: "plus") ?? UIImage(), title: "New Target", message: "Add a new target you want to focus on next time you go to practice or play a match.")
+                return cell
+            }
+        default:
+            return UITableViewCell()
+        }
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

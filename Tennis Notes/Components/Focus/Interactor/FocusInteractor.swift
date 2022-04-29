@@ -19,6 +19,13 @@ class FocusInteractor {
 extension FocusInteractor: FocusInteractorProtocol {
     
     // MARK: In
+    func fetchTargetNotes() -> [TargetNote] {
+        entityGateway.fetchTargetNotes()
+    }
+    
+    func fetchErrorNotes() -> [ErrorNote] {
+        entityGateway.fetchErrorNotes()
+    }
     
     // MARK: Out
 }

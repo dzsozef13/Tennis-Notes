@@ -34,8 +34,40 @@
 		BC219E20280C12E50002D210 /* RobotoMono-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BC219E0E280C12E40002D210 /* RobotoMono-Thin.ttf */; };
 		BC219E21280C12E50002D210 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = BC219E0F280C12E40002D210 /* README.txt */; };
 		BC219E22280C12E50002D210 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = BC219E10280C12E40002D210 /* LICENSE.txt */; };
+		BC3CF6D6281738780016FA63 /* AddFocusPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3CF6C5281738780016FA63 /* AddFocusPresenterProtocol.swift */; };
+		BC3CF6D7281738780016FA63 /* AddFocusEventHandlerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3CF6C6281738780016FA63 /* AddFocusEventHandlerProtocol.swift */; };
+		BC3CF6D8281738780016FA63 /* AddFocusRouteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3CF6C7281738780016FA63 /* AddFocusRouteModel.swift */; };
+		BC3CF6D9281738780016FA63 /* AddFocusPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3CF6C8281738780016FA63 /* AddFocusPresenter.swift */; };
+		BC3CF6DA281738780016FA63 /* AddFocusViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3CF6CA281738780016FA63 /* AddFocusViewControllerProtocol.swift */; };
+		BC3CF6DB281738780016FA63 /* AddFocusViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3CF6CB281738780016FA63 /* AddFocusViewModel.swift */; };
+		BC3CF6DC281738780016FA63 /* AddFocusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3CF6CC281738780016FA63 /* AddFocusViewController.swift */; };
+		BC3CF6DD281738780016FA63 /* AddFocusInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3CF6CE281738780016FA63 /* AddFocusInteractor.swift */; };
+		BC3CF6DE281738780016FA63 /* AddFocusInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3CF6CF281738780016FA63 /* AddFocusInteractorProtocol.swift */; };
+		BC3CF6DF281738780016FA63 /* AddFocusEntityGatewayProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3CF6D1281738780016FA63 /* AddFocusEntityGatewayProtocol.swift */; };
+		BC3CF6E0281738780016FA63 /* AddFocusEntityGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3CF6D2281738780016FA63 /* AddFocusEntityGateway.swift */; };
+		BC3CF6E1281738780016FA63 /* AddFocusRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3CF6D4281738780016FA63 /* AddFocusRouter.swift */; };
+		BC3CF6E2281738780016FA63 /* AddFocusRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3CF6D5281738780016FA63 /* AddFocusRouterProtocol.swift */; };
+		BC3CF6F6281738830016FA63 /* AddNotePresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3CF6E5281738830016FA63 /* AddNotePresenterProtocol.swift */; };
+		BC3CF6F7281738830016FA63 /* AddNoteRouteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3CF6E6281738830016FA63 /* AddNoteRouteModel.swift */; };
+		BC3CF6F8281738830016FA63 /* AddNoteEventHandlerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3CF6E7281738830016FA63 /* AddNoteEventHandlerProtocol.swift */; };
+		BC3CF6F9281738830016FA63 /* AddNotePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3CF6E8281738830016FA63 /* AddNotePresenter.swift */; };
+		BC3CF6FA281738830016FA63 /* AddNoteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3CF6EA281738830016FA63 /* AddNoteViewModel.swift */; };
+		BC3CF6FB281738830016FA63 /* AddNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3CF6EB281738830016FA63 /* AddNoteViewController.swift */; };
+		BC3CF6FC281738830016FA63 /* AddNoteViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3CF6EC281738830016FA63 /* AddNoteViewControllerProtocol.swift */; };
+		BC3CF6FD281738830016FA63 /* AddNoteInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3CF6EE281738830016FA63 /* AddNoteInteractorProtocol.swift */; };
+		BC3CF6FE281738830016FA63 /* AddNoteInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3CF6EF281738830016FA63 /* AddNoteInteractor.swift */; };
+		BC3CF6FF281738830016FA63 /* AddNoteEntityGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3CF6F1281738830016FA63 /* AddNoteEntityGateway.swift */; };
+		BC3CF700281738830016FA63 /* AddNoteEntityGatewayProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3CF6F2281738830016FA63 /* AddNoteEntityGatewayProtocol.swift */; };
+		BC3CF701281738830016FA63 /* AddNoteRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3CF6F4281738830016FA63 /* AddNoteRouterProtocol.swift */; };
+		BC3CF702281738830016FA63 /* AddNoteRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3CF6F5281738830016FA63 /* AddNoteRouter.swift */; };
 		BC42FD98280C41B000357216 /* Shortcuts.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC42FD97280C41B000357216 /* Shortcuts.swift */; };
 		BC83F8392804A75B00D73527 /* PressableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC83F8382804A75B00D73527 /* PressableView.swift */; };
+		BCA08E13281B007300017EF9 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA08E12281B007300017EF9 /* TableViewCell.swift */; };
+		BCA08E2C281C1A2900017EF9 /* TargetNote+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA08E24281C1A2900017EF9 /* TargetNote+CoreDataClass.swift */; };
+		BCA08E2E281C1A2900017EF9 /* ErrorNote+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA08E26281C1A2900017EF9 /* ErrorNote+CoreDataClass.swift */; };
+		BCA08E30281C1A2900017EF9 /* MatchNote+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA08E28281C1A2900017EF9 /* MatchNote+CoreDataClass.swift */; };
+		BCA08E32281C1A2900017EF9 /* PlayerNote+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA08E2A281C1A2900017EF9 /* PlayerNote+CoreDataClass.swift */; };
+		BCA08E35281C1F5D00017EF9 /* ManagedContextObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA08E34281C1F5D00017EF9 /* ManagedContextObject.swift */; };
 		BCC8F3D1280224DC00F9AAB3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC8F3D0280224DC00F9AAB3 /* AppDelegate.swift */; };
 		BCC8F3D3280224DC00F9AAB3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC8F3D2280224DC00F9AAB3 /* SceneDelegate.swift */; };
 		BCC8F3D8280224DC00F9AAB3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCC8F3D6280224DC00F9AAB3 /* Main.storyboard */; };
@@ -96,14 +128,6 @@
 		BCC8F4862802523900F9AAB3 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BCC8F4842802523900F9AAB3 /* Model.xcdatamodeld */; };
 		BCC8F4882802E54200F9AAB3 /* RouteModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC8F4872802E54200F9AAB3 /* RouteModelProtocol.swift */; };
 		BCC8F48A2802E55D00F9AAB3 /* RouteProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC8F4892802E55D00F9AAB3 /* RouteProtocol.swift */; };
-		BCEE15DF280357190051BE2F /* MatchNote+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEE15D7280357190051BE2F /* MatchNote+CoreDataClass.swift */; };
-		BCEE15E0280357190051BE2F /* MatchNote+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEE15D8280357190051BE2F /* MatchNote+CoreDataProperties.swift */; };
-		BCEE15E1280357190051BE2F /* ErrorNote+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEE15D9280357190051BE2F /* ErrorNote+CoreDataClass.swift */; };
-		BCEE15E2280357190051BE2F /* ErrorNote+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEE15DA280357190051BE2F /* ErrorNote+CoreDataProperties.swift */; };
-		BCEE15E3280357190051BE2F /* PlayerNote+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEE15DB280357190051BE2F /* PlayerNote+CoreDataClass.swift */; };
-		BCEE15E4280357190051BE2F /* PlayerNote+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEE15DC280357190051BE2F /* PlayerNote+CoreDataProperties.swift */; };
-		BCEE15E5280357190051BE2F /* TargetNote+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEE15DD280357190051BE2F /* TargetNote+CoreDataClass.swift */; };
-		BCEE15E6280357190051BE2F /* TargetNote+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEE15DE280357190051BE2F /* TargetNote+CoreDataProperties.swift */; };
 		BCEE15EF28036F930051BE2F /* TableSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEE15EE28036F930051BE2F /* TableSelector.swift */; };
 		BCEE15F6280379220051BE2F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = BCEE15F8280379220051BE2F /* Localizable.strings */; };
 		BCEE15FE280379F70051BE2F /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCEE15FD280379F70051BE2F /* Colors.xcassets */; };
@@ -142,8 +166,40 @@
 		BC219E0E280C12E40002D210 /* RobotoMono-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoMono-Thin.ttf"; sourceTree = "<group>"; };
 		BC219E0F280C12E40002D210 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
 		BC219E10280C12E40002D210 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		BC3CF6C5281738780016FA63 /* AddFocusPresenterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddFocusPresenterProtocol.swift; sourceTree = "<group>"; };
+		BC3CF6C6281738780016FA63 /* AddFocusEventHandlerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddFocusEventHandlerProtocol.swift; sourceTree = "<group>"; };
+		BC3CF6C7281738780016FA63 /* AddFocusRouteModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddFocusRouteModel.swift; sourceTree = "<group>"; };
+		BC3CF6C8281738780016FA63 /* AddFocusPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddFocusPresenter.swift; sourceTree = "<group>"; };
+		BC3CF6CA281738780016FA63 /* AddFocusViewControllerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddFocusViewControllerProtocol.swift; sourceTree = "<group>"; };
+		BC3CF6CB281738780016FA63 /* AddFocusViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddFocusViewModel.swift; sourceTree = "<group>"; };
+		BC3CF6CC281738780016FA63 /* AddFocusViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddFocusViewController.swift; sourceTree = "<group>"; };
+		BC3CF6CE281738780016FA63 /* AddFocusInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddFocusInteractor.swift; sourceTree = "<group>"; };
+		BC3CF6CF281738780016FA63 /* AddFocusInteractorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddFocusInteractorProtocol.swift; sourceTree = "<group>"; };
+		BC3CF6D1281738780016FA63 /* AddFocusEntityGatewayProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddFocusEntityGatewayProtocol.swift; sourceTree = "<group>"; };
+		BC3CF6D2281738780016FA63 /* AddFocusEntityGateway.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddFocusEntityGateway.swift; sourceTree = "<group>"; };
+		BC3CF6D4281738780016FA63 /* AddFocusRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddFocusRouter.swift; sourceTree = "<group>"; };
+		BC3CF6D5281738780016FA63 /* AddFocusRouterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddFocusRouterProtocol.swift; sourceTree = "<group>"; };
+		BC3CF6E5281738830016FA63 /* AddNotePresenterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNotePresenterProtocol.swift; sourceTree = "<group>"; };
+		BC3CF6E6281738830016FA63 /* AddNoteRouteModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNoteRouteModel.swift; sourceTree = "<group>"; };
+		BC3CF6E7281738830016FA63 /* AddNoteEventHandlerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNoteEventHandlerProtocol.swift; sourceTree = "<group>"; };
+		BC3CF6E8281738830016FA63 /* AddNotePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNotePresenter.swift; sourceTree = "<group>"; };
+		BC3CF6EA281738830016FA63 /* AddNoteViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNoteViewModel.swift; sourceTree = "<group>"; };
+		BC3CF6EB281738830016FA63 /* AddNoteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNoteViewController.swift; sourceTree = "<group>"; };
+		BC3CF6EC281738830016FA63 /* AddNoteViewControllerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNoteViewControllerProtocol.swift; sourceTree = "<group>"; };
+		BC3CF6EE281738830016FA63 /* AddNoteInteractorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNoteInteractorProtocol.swift; sourceTree = "<group>"; };
+		BC3CF6EF281738830016FA63 /* AddNoteInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNoteInteractor.swift; sourceTree = "<group>"; };
+		BC3CF6F1281738830016FA63 /* AddNoteEntityGateway.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNoteEntityGateway.swift; sourceTree = "<group>"; };
+		BC3CF6F2281738830016FA63 /* AddNoteEntityGatewayProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNoteEntityGatewayProtocol.swift; sourceTree = "<group>"; };
+		BC3CF6F4281738830016FA63 /* AddNoteRouterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNoteRouterProtocol.swift; sourceTree = "<group>"; };
+		BC3CF6F5281738830016FA63 /* AddNoteRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNoteRouter.swift; sourceTree = "<group>"; };
 		BC42FD97280C41B000357216 /* Shortcuts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shortcuts.swift; sourceTree = "<group>"; };
 		BC83F8382804A75B00D73527 /* PressableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PressableView.swift; sourceTree = "<group>"; };
+		BCA08E12281B007300017EF9 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		BCA08E24281C1A2900017EF9 /* TargetNote+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TargetNote+CoreDataClass.swift"; sourceTree = "<group>"; };
+		BCA08E26281C1A2900017EF9 /* ErrorNote+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ErrorNote+CoreDataClass.swift"; sourceTree = "<group>"; };
+		BCA08E28281C1A2900017EF9 /* MatchNote+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MatchNote+CoreDataClass.swift"; sourceTree = "<group>"; };
+		BCA08E2A281C1A2900017EF9 /* PlayerNote+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PlayerNote+CoreDataClass.swift"; sourceTree = "<group>"; };
+		BCA08E34281C1F5D00017EF9 /* ManagedContextObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagedContextObject.swift; sourceTree = "<group>"; };
 		BCC8F3CD280224DC00F9AAB3 /* Tennis Notes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tennis Notes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCC8F3D0280224DC00F9AAB3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BCC8F3D2280224DC00F9AAB3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -204,14 +260,6 @@
 		BCC8F4852802523900F9AAB3 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		BCC8F4872802E54200F9AAB3 /* RouteModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteModelProtocol.swift; sourceTree = "<group>"; };
 		BCC8F4892802E55D00F9AAB3 /* RouteProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteProtocol.swift; sourceTree = "<group>"; };
-		BCEE15D7280357190051BE2F /* MatchNote+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MatchNote+CoreDataClass.swift"; sourceTree = "<group>"; };
-		BCEE15D8280357190051BE2F /* MatchNote+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MatchNote+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		BCEE15D9280357190051BE2F /* ErrorNote+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ErrorNote+CoreDataClass.swift"; sourceTree = "<group>"; };
-		BCEE15DA280357190051BE2F /* ErrorNote+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ErrorNote+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		BCEE15DB280357190051BE2F /* PlayerNote+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PlayerNote+CoreDataClass.swift"; sourceTree = "<group>"; };
-		BCEE15DC280357190051BE2F /* PlayerNote+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PlayerNote+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		BCEE15DD280357190051BE2F /* TargetNote+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TargetNote+CoreDataClass.swift"; sourceTree = "<group>"; };
-		BCEE15DE280357190051BE2F /* TargetNote+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TargetNote+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		BCEE15EE28036F930051BE2F /* TableSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableSelector.swift; sourceTree = "<group>"; };
 		BCEE15F7280379220051BE2F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		BCEE15F9280379310051BE2F /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -295,6 +343,126 @@
 			path = static;
 			sourceTree = "<group>";
 		};
+		BC3CF6C3281738780016FA63 /* AddFocus */ = {
+			isa = PBXGroup;
+			children = (
+				BC3CF6C9281738780016FA63 /* View */,
+				BC3CF6C4281738780016FA63 /* Presenter */,
+				BC3CF6CD281738780016FA63 /* Interactor */,
+				BC3CF6D0281738780016FA63 /* EntityGateway */,
+				BC3CF6D3281738780016FA63 /* Router */,
+			);
+			path = AddFocus;
+			sourceTree = "<group>";
+		};
+		BC3CF6C4281738780016FA63 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				BC3CF6C5281738780016FA63 /* AddFocusPresenterProtocol.swift */,
+				BC3CF6C6281738780016FA63 /* AddFocusEventHandlerProtocol.swift */,
+				BC3CF6C7281738780016FA63 /* AddFocusRouteModel.swift */,
+				BC3CF6C8281738780016FA63 /* AddFocusPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		BC3CF6C9281738780016FA63 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BC3CF6CA281738780016FA63 /* AddFocusViewControllerProtocol.swift */,
+				BC3CF6CB281738780016FA63 /* AddFocusViewModel.swift */,
+				BC3CF6CC281738780016FA63 /* AddFocusViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BC3CF6CD281738780016FA63 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				BC3CF6CE281738780016FA63 /* AddFocusInteractor.swift */,
+				BC3CF6CF281738780016FA63 /* AddFocusInteractorProtocol.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		BC3CF6D0281738780016FA63 /* EntityGateway */ = {
+			isa = PBXGroup;
+			children = (
+				BC3CF6D1281738780016FA63 /* AddFocusEntityGatewayProtocol.swift */,
+				BC3CF6D2281738780016FA63 /* AddFocusEntityGateway.swift */,
+			);
+			path = EntityGateway;
+			sourceTree = "<group>";
+		};
+		BC3CF6D3281738780016FA63 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				BC3CF6D4281738780016FA63 /* AddFocusRouter.swift */,
+				BC3CF6D5281738780016FA63 /* AddFocusRouterProtocol.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		BC3CF6E3281738830016FA63 /* AddNote */ = {
+			isa = PBXGroup;
+			children = (
+				BC3CF6E9281738830016FA63 /* View */,
+				BC3CF6E4281738830016FA63 /* Presenter */,
+				BC3CF6ED281738830016FA63 /* Interactor */,
+				BC3CF6F0281738830016FA63 /* EntityGateway */,
+				BC3CF6F3281738830016FA63 /* Router */,
+			);
+			path = AddNote;
+			sourceTree = "<group>";
+		};
+		BC3CF6E4281738830016FA63 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				BC3CF6E5281738830016FA63 /* AddNotePresenterProtocol.swift */,
+				BC3CF6E6281738830016FA63 /* AddNoteRouteModel.swift */,
+				BC3CF6E7281738830016FA63 /* AddNoteEventHandlerProtocol.swift */,
+				BC3CF6E8281738830016FA63 /* AddNotePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		BC3CF6E9281738830016FA63 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BC3CF6EA281738830016FA63 /* AddNoteViewModel.swift */,
+				BC3CF6EB281738830016FA63 /* AddNoteViewController.swift */,
+				BC3CF6EC281738830016FA63 /* AddNoteViewControllerProtocol.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BC3CF6ED281738830016FA63 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				BC3CF6EE281738830016FA63 /* AddNoteInteractorProtocol.swift */,
+				BC3CF6EF281738830016FA63 /* AddNoteInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		BC3CF6F0281738830016FA63 /* EntityGateway */ = {
+			isa = PBXGroup;
+			children = (
+				BC3CF6F1281738830016FA63 /* AddNoteEntityGateway.swift */,
+				BC3CF6F2281738830016FA63 /* AddNoteEntityGatewayProtocol.swift */,
+			);
+			path = EntityGateway;
+			sourceTree = "<group>";
+		};
+		BC3CF6F3281738830016FA63 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				BC3CF6F4281738830016FA63 /* AddNoteRouterProtocol.swift */,
+				BC3CF6F5281738830016FA63 /* AddNoteRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
 		BC83F8362804A62400D73527 /* Global */ = {
 			isa = PBXGroup;
 			children = (
@@ -308,10 +476,7 @@
 		BC83F83A2804BAA000D73527 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				BC83F8382804A75B00D73527 /* PressableView.swift */,
-				BCEE15EE28036F930051BE2F /* TableSelector.swift */,
-				BC219DEB280A1BD60002D210 /* HintTableViewCell.swift */,
-				BC219DED280A21CD0002D210 /* PressableTableViewCell.swift */,
+				BCA08E0E281AF16D00017EF9 /* UI */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -320,8 +485,29 @@
 			isa = PBXGroup;
 			children = (
 				BC42FD97280C41B000357216 /* Shortcuts.swift */,
+				BCA08E34281C1F5D00017EF9 /* ManagedContextObject.swift */,
 			);
 			path = Enums;
+			sourceTree = "<group>";
+		};
+		BCA08E0E281AF16D00017EF9 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				BCA08E0F281AF18D00017EF9 /* TableView */,
+				BC83F8382804A75B00D73527 /* PressableView.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		BCA08E0F281AF18D00017EF9 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				BCEE15EE28036F930051BE2F /* TableSelector.swift */,
+				BCA08E12281B007300017EF9 /* TableViewCell.swift */,
+				BC219DEB280A1BD60002D210 /* HintTableViewCell.swift */,
+				BC219DED280A21CD0002D210 /* PressableTableViewCell.swift */,
+			);
+			path = TableView;
 			sourceTree = "<group>";
 		};
 		BCC8F3C4280224DC00F9AAB3 = {
@@ -494,6 +680,7 @@
 				BCC8F4312802346A00F9AAB3 /* Interactor */,
 				BCC8F4342802346A00F9AAB3 /* EntityGateway */,
 				BCC8F4372802346A00F9AAB3 /* Router */,
+				BC3CF6C3281738780016FA63 /* AddFocus */,
 			);
 			path = Focus;
 			sourceTree = "<group>";
@@ -554,6 +741,7 @@
 				BCC8F4442802346A00F9AAB3 /* Interactor */,
 				BCC8F4472802346A00F9AAB3 /* EntityGateway */,
 				BCC8F44A2802346A00F9AAB3 /* Router */,
+				BC3CF6E3281738830016FA63 /* AddNote */,
 			);
 			path = Notes;
 			sourceTree = "<group>";
@@ -648,48 +836,12 @@
 		BCEE15E72803574D0051BE2F /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				BCEE15EA280357CC0051BE2F /* Target */,
-				BCEE15EB280357D30051BE2F /* Error */,
-				BCEE15E8280357B90051BE2F /* Player */,
-				BCEE15E9280357C60051BE2F /* Match */,
+				BCA08E24281C1A2900017EF9 /* TargetNote+CoreDataClass.swift */,
+				BCA08E26281C1A2900017EF9 /* ErrorNote+CoreDataClass.swift */,
+				BCA08E28281C1A2900017EF9 /* MatchNote+CoreDataClass.swift */,
+				BCA08E2A281C1A2900017EF9 /* PlayerNote+CoreDataClass.swift */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		BCEE15E8280357B90051BE2F /* Player */ = {
-			isa = PBXGroup;
-			children = (
-				BCEE15DB280357190051BE2F /* PlayerNote+CoreDataClass.swift */,
-				BCEE15DC280357190051BE2F /* PlayerNote+CoreDataProperties.swift */,
-			);
-			path = Player;
-			sourceTree = "<group>";
-		};
-		BCEE15E9280357C60051BE2F /* Match */ = {
-			isa = PBXGroup;
-			children = (
-				BCEE15D7280357190051BE2F /* MatchNote+CoreDataClass.swift */,
-				BCEE15D8280357190051BE2F /* MatchNote+CoreDataProperties.swift */,
-			);
-			path = Match;
-			sourceTree = "<group>";
-		};
-		BCEE15EA280357CC0051BE2F /* Target */ = {
-			isa = PBXGroup;
-			children = (
-				BCEE15DD280357190051BE2F /* TargetNote+CoreDataClass.swift */,
-				BCEE15DE280357190051BE2F /* TargetNote+CoreDataProperties.swift */,
-			);
-			path = Target;
-			sourceTree = "<group>";
-		};
-		BCEE15EB280357D30051BE2F /* Error */ = {
-			isa = PBXGroup;
-			children = (
-				BCEE15D9280357190051BE2F /* ErrorNote+CoreDataClass.swift */,
-				BCEE15DA280357190051BE2F /* ErrorNote+CoreDataProperties.swift */,
-			);
-			path = Error;
 			sourceTree = "<group>";
 		};
 		BCEE15EC2803594B0051BE2F /* Fonts */ = {
@@ -816,6 +968,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BCC8F4562802346B00F9AAB3 /* SettingsEntityGatewayProtocol.swift in Sources */,
+				BC3CF6D8281738780016FA63 /* AddFocusRouteModel.swift in Sources */,
 				BCC8F4732802346B00F9AAB3 /* FocusRouterProtocol.swift in Sources */,
 				BCC8F4692802346B00F9AAB3 /* FocusPresenterProtocol.swift in Sources */,
 				BCC8F45C2802346B00F9AAB3 /* HomeRouteModel.swift in Sources */,
@@ -828,32 +981,48 @@
 				BCC8F47E2802346B00F9AAB3 /* NotesEntityGatewayProtocol.swift in Sources */,
 				BCC8F46A2802346B00F9AAB3 /* FocusPresenter.swift in Sources */,
 				BCC8F45B2802346B00F9AAB3 /* HomeEventHandlerProtocol.swift in Sources */,
+				BC3CF6DE281738780016FA63 /* AddFocusInteractorProtocol.swift in Sources */,
+				BCA08E32281C1A2900017EF9 /* PlayerNote+CoreDataClass.swift in Sources */,
+				BCA08E2E281C1A2900017EF9 /* ErrorNote+CoreDataClass.swift in Sources */,
 				BCC8F47B2802346B00F9AAB3 /* NotesInteractorProtocol.swift in Sources */,
-				BCEE15E4280357190051BE2F /* PlayerNote+CoreDataProperties.swift in Sources */,
-				BCEE15DF280357190051BE2F /* MatchNote+CoreDataClass.swift in Sources */,
+				BC3CF6DA281738780016FA63 /* AddFocusViewControllerProtocol.swift in Sources */,
 				BCC8F4702802346B00F9AAB3 /* FocusEntityGatewayProtocol.swift in Sources */,
 				BCC8F4632802346B00F9AAB3 /* HomeEntityGatewayProtocol.swift in Sources */,
+				BC3CF6F8281738830016FA63 /* AddNoteEventHandlerProtocol.swift in Sources */,
 				BCC8F44E2802346B00F9AAB3 /* SettingsEventHandlerProtocol.swift in Sources */,
 				BCC8F4652802346B00F9AAB3 /* HomeRouter.swift in Sources */,
 				BCC8F44F2802346B00F9AAB3 /* SettingsRouteModel.swift in Sources */,
 				BCC8F45F2802346B00F9AAB3 /* HomeViewController.swift in Sources */,
 				BCC8F4532802346B00F9AAB3 /* SettingsViewController.swift in Sources */,
 				BCC8F4602802346B00F9AAB3 /* HomeViewControllerProtocol.swift in Sources */,
-				BCEE15E3280357190051BE2F /* PlayerNote+CoreDataClass.swift in Sources */,
+				BCA08E2C281C1A2900017EF9 /* TargetNote+CoreDataClass.swift in Sources */,
+				BC3CF6FD281738830016FA63 /* AddNoteInteractorProtocol.swift in Sources */,
 				BCC8F4882802E54200F9AAB3 /* RouteModelProtocol.swift in Sources */,
+				BCA08E30281C1A2900017EF9 /* MatchNote+CoreDataClass.swift in Sources */,
+				BC3CF6E1281738780016FA63 /* AddFocusRouter.swift in Sources */,
 				BCC8F46E2802346B00F9AAB3 /* FocusInteractorProtocol.swift in Sources */,
-				BCEE15E5280357190051BE2F /* TargetNote+CoreDataClass.swift in Sources */,
 				BCC8F44D2802346B00F9AAB3 /* SettingsPresenterProtocol.swift in Sources */,
+				BC3CF6DB281738780016FA63 /* AddFocusViewModel.swift in Sources */,
+				BC3CF6E2281738780016FA63 /* AddFocusRouterProtocol.swift in Sources */,
 				BC219DF0280B708A0002D210 /* AppStorage.swift in Sources */,
+				BC3CF6DD281738780016FA63 /* AddFocusInteractor.swift in Sources */,
 				BCC8F47C2802346B00F9AAB3 /* NotesInteractor.swift in Sources */,
 				BCC8F46B2802346B00F9AAB3 /* FocusViewModel.swift in Sources */,
 				BCC8F4572802346B00F9AAB3 /* SettingsEntityGateway.swift in Sources */,
+				BC3CF6E0281738780016FA63 /* AddFocusEntityGateway.swift in Sources */,
+				BC3CF6F7281738830016FA63 /* AddNoteRouteModel.swift in Sources */,
 				BCC8F3D1280224DC00F9AAB3 /* AppDelegate.swift in Sources */,
 				BCC8F45A2802346B00F9AAB3 /* HomePresenterProtocol.swift in Sources */,
+				BC3CF702281738830016FA63 /* AddNoteRouter.swift in Sources */,
+				BC3CF6F9281738830016FA63 /* AddNotePresenter.swift in Sources */,
 				BCC8F3D3280224DC00F9AAB3 /* SceneDelegate.swift in Sources */,
-				BCEE15E2280357190051BE2F /* ErrorNote+CoreDataProperties.swift in Sources */,
+				BC3CF6FE281738830016FA63 /* AddNoteInteractor.swift in Sources */,
+				BC3CF6DC281738780016FA63 /* AddFocusViewController.swift in Sources */,
 				BCC8F4772802346B00F9AAB3 /* NotesRouteModel.swift in Sources */,
+				BC3CF6D9281738780016FA63 /* AddFocusPresenter.swift in Sources */,
 				BC219DFC280B76410002D210 /* AppContext.swift in Sources */,
+				BC3CF6FC281738830016FA63 /* AddNoteViewControllerProtocol.swift in Sources */,
+				BC3CF700281738830016FA63 /* AddNoteEntityGatewayProtocol.swift in Sources */,
 				BCC8F4762802346B00F9AAB3 /* NotesPresenter.swift in Sources */,
 				BC219DEA280A11870002D210 /* ErrorTableViewCell.swift in Sources */,
 				BCEE1609280380D10051BE2F /* Strings.swift in Sources */,
@@ -862,18 +1031,26 @@
 				BCC8F4582802346B00F9AAB3 /* SettingsRouter.swift in Sources */,
 				BCEE15EF28036F930051BE2F /* TableSelector.swift in Sources */,
 				BCC8F47A2802346B00F9AAB3 /* NotesViewControllerProtocol.swift in Sources */,
-				BCEE15E1280357190051BE2F /* ErrorNote+CoreDataClass.swift in Sources */,
+				BC3CF6FA281738830016FA63 /* AddNoteViewModel.swift in Sources */,
 				BC219DFA280B75E00002D210 /* QuotesManagers.swift in Sources */,
+				BC3CF6DF281738780016FA63 /* AddFocusEntityGatewayProtocol.swift in Sources */,
 				BCC8F4712802346B00F9AAB3 /* FocusEntityGateway.swift in Sources */,
+				BCA08E35281C1F5D00017EF9 /* ManagedContextObject.swift in Sources */,
 				BCC8F4502802346B00F9AAB3 /* SettingsPresenter.swift in Sources */,
 				BC219DF5280B71A50002D210 /* Quote .swift in Sources */,
 				BCC8F47D2802346B00F9AAB3 /* NotesEntityGateway.swift in Sources */,
 				BCC8F4592802346B00F9AAB3 /* SettingsRouterProtocol.swift in Sources */,
 				BCC8F45E2802346B00F9AAB3 /* HomeViewModel.swift in Sources */,
+				BCA08E13281B007300017EF9 /* TableViewCell.swift in Sources */,
+				BC3CF6F6281738830016FA63 /* AddNotePresenterProtocol.swift in Sources */,
 				BCC8F4802802346B00F9AAB3 /* NotesRouter.swift in Sources */,
+				BC3CF6D7281738780016FA63 /* AddFocusEventHandlerProtocol.swift in Sources */,
 				BCC8F4522802346B00F9AAB3 /* SettingsViewControllerProtocol.swift in Sources */,
-				BCEE15E0280357190051BE2F /* MatchNote+CoreDataProperties.swift in Sources */,
+				BC3CF6FB281738830016FA63 /* AddNoteViewController.swift in Sources */,
+				BC3CF6D6281738780016FA63 /* AddFocusPresenterProtocol.swift in Sources */,
 				BCC8F4672802346B00F9AAB3 /* FocusEventHandlerProtocol.swift in Sources */,
+				BC3CF6FF281738830016FA63 /* AddNoteEntityGateway.swift in Sources */,
+				BC3CF701281738830016FA63 /* AddNoteRouterProtocol.swift in Sources */,
 				BCC8F4862802523900F9AAB3 /* Model.xcdatamodeld in Sources */,
 				BCC8F4542802346B00F9AAB3 /* SettingsInteractorProtocol.swift in Sources */,
 				BCC8F46C2802346B00F9AAB3 /* FocusViewControllerProtocol.swift in Sources */,
@@ -883,7 +1060,6 @@
 				BC219DEE280A21CE0002D210 /* PressableTableViewCell.swift in Sources */,
 				BCC8F4512802346B00F9AAB3 /* SettingsViewModel.swift in Sources */,
 				BCC8F4742802346B00F9AAB3 /* NotesPresenterProtocol.swift in Sources */,
-				BCEE15E6280357190051BE2F /* TargetNote+CoreDataProperties.swift in Sources */,
 				BC219DE8280A117A0002D210 /* TargetTableViewCell.swift in Sources */,
 				BC219DEC280A1BD60002D210 /* HintTableViewCell.swift in Sources */,
 				BCC8F4722802346B00F9AAB3 /* FocusRouter.swift in Sources */,
@@ -1058,8 +1234,6 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1087,8 +1261,6 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

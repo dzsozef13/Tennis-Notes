@@ -12,4 +12,5 @@ protocol FocusViewControllerProtocol: AnyObject {
 
     func languageRefresh()
     func themeRefresh()
+    func tableViewRefresh()
 }
