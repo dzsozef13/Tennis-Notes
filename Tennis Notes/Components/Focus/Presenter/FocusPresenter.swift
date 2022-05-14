@@ -12,11 +12,14 @@ class FocusPresenter {
 
     var routeModel: RouteModelProtocol? {
         didSet {
-            guard let routeModel = routeModel as? FocusRouteModel else { return }
+            guard let _ = routeModel as? FocusRouteModel else { return }
             // Initialize properties passed from route model
             refreshViewModel()
         }
     }
+    
+    // MARK: Notifications
+    var notificationCenter = NotificationCenter.default
 
     // MARK: Routing data
 
@@ -70,6 +73,7 @@ extension FocusPresenter: FocusEventHandlerProtocol {
     }
 
     func willAppear() {
+        viewController?.tableViewRefresh()
         viewController?.languageRefresh()
     }
 
@@ -79,11 +83,13 @@ extension FocusPresenter: FocusEventHandlerProtocol {
     
     // MARK: Actions sent from UI
     func didTapSelectorTargets() {
-        userDefaults.set(Shortcut.targets.rawValue, forKey: "SelectedFocusTable")
+        viewController?.tableViewRefresh()
+        userDefaults.set(Table.targets.rawValue, forKey: "SelectedFocusTable")
     }
     
     func didTapSelectorErrors() {
-        userDefaults.set(Shortcut.errors.rawValue, forKey: "SelectedFocusTable")
+        viewController?.tableViewRefresh()
+        userDefaults.set(Table.errors.rawValue, forKey: "SelectedFocusTable")
     }
 
 }

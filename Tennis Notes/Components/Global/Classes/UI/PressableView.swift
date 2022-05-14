@@ -11,7 +11,7 @@ class PressableView: UIView {
     
     // MARK: Static Values
     static let animationLength = 0.05
-    static let scaleAnimationValue: CGFloat = 0.98
+    static let scaleAnimationValue: CGFloat = 0.95
     static let dimAlphaValue: CGFloat = 0.9
     
     // MARK: Lifecycle Methods

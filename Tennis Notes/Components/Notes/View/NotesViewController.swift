@@ -13,12 +13,6 @@ class NotesViewController: UIViewController {
             refresh()
         }
     }
-
-    // MARK: Table Cases
-    enum Table: Equatable {
-        case players
-        case matches
-    }
     
     // MARK: Notification
     private let notificationCenter: NotificationCenter = .default
@@ -90,16 +84,16 @@ extension NotesViewController {
         tableSelectorPlayers?.setTitleLabel(for: "Players")
         tableSelectorMatches?.setTitleLabel(for: "Matches")
         // Load saved case
-        guard let usedShortcut: String = UserDefaults.standard.object(forKey: "SelectedNotesTable") as? Shortcut.RawValue else {
+        guard let usedShortcut: String = UserDefaults.standard.object(forKey: "SelectedNotesTable") as? Table.RawValue else {
             selectedTable = .players
             refreshTableSelectors()
             return
         }
         // Check if already selected
-        if usedShortcut == Shortcut.players.rawValue {
+        if usedShortcut == Table.players.rawValue {
             selectedTable = .players
         }
-        if usedShortcut == Shortcut.matches.rawValue {
+        if usedShortcut == Table.matches.rawValue {
             selectedTable = .matches
         }
         // Update selectors

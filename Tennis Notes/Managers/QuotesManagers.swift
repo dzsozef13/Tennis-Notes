@@ -14,7 +14,7 @@ class QuotesManager {
     init(storage: AppStorage? = AppContext.storage) {
         self.quotes = []
         let storage = AppStorage()
-        storage.loadTasks { (success, quotes) in
+        storage.loadQuotes { (success, quotes) in
             if success {
                 self.quotes = quotes ?? []
             } else {

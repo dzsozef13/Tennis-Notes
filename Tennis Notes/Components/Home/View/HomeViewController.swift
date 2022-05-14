@@ -14,10 +14,14 @@ class HomeViewController: UIViewController {
         }
     }
     
+    let fadeManager = DimView.fadeManager
+    
     // MARK: Variables
     private var quotes: [Quote?] = []
 
     // MARK: Interface Builder Outlets
+    // Main view
+    @IBOutlet var mainView: UIView!
     // Quote labels
     @IBOutlet weak var quoteLabel: UILabel?
     @IBOutlet weak var quoteAuthorLabel: UILabel?
@@ -31,20 +35,28 @@ class HomeViewController: UIViewController {
     // MARK: Interface Builder Actions
     // Shortcuts
     @IBAction func didTapTargetsShortcut(_ sender: Any) {
-        eventHandler.didTapTargetsShortcut()
-        tapTabItem(item: .targets)
+        fadeManager.fadeOut(fade: true, in: mainView) {
+            self.eventHandler.didTapTargetsShortcut()
+            self.tapTabItem(item: .targets)
+        }
     }
     @IBAction func didTapErrorsShortcut(_ sender: Any) {
-        eventHandler.didTapErrorsShortcut()
-        tapTabItem(item: .errors)
+        fadeManager.fadeOut(fade: true, in: mainView) {
+            self.eventHandler.didTapErrorsShortcut()
+            self.tapTabItem(item: .errors)
+        }
     }
     @IBAction func didTapPlayersShortcut(_ sender: Any) {
-        eventHandler.didTapPlayersShortcut()
-        tapTabItem(item: .players)
+        fadeManager.fadeOut(fade: true, in: mainView) {
+            self.eventHandler.didTapPlayersShortcut()
+            self.tapTabItem(item: .players)
+        }
     }
     @IBAction func didTapMatchesShortcut(_ sender: Any) {
-        eventHandler.didTapMatchesShortcut()
-        tapTabItem(item: .matches)
+        fadeManager.fadeOut(fade: true, in: mainView) {
+            self.eventHandler.didTapMatchesShortcut()
+            self.tapTabItem(item: .matches)
+        }
     }
     
     // MARK: Lifecycle Methods
@@ -58,6 +70,8 @@ class HomeViewController: UIViewController {
         super.viewWillAppear(animated)
         initializeQuotes()
         eventHandler.willAppear()
+        // Fade in on appear
+        fadeManager.fadeIn(fade: true, in: mainView, completionHandler: nil)
     }
 
     override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
@@ -103,7 +117,7 @@ extension HomeViewController {
         // Refresh ViewController on ViewModel changes
     }
     
-    private func tapTabItem(item: Shortcut) {
+    private func tapTabItem(item: Table) {
 //        DispatchQueue.main.asyncAfter(deadline: .now() + 0.1, execute: {
 //            self.tabBarController?.selectedIndex = item.tabBarItemIndex()
 //        })

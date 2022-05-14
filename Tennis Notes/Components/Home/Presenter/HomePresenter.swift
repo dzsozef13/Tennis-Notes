@@ -77,19 +77,19 @@ extension HomePresenter: HomeEventHandlerProtocol {
     
     // MARK: Shortcuts
     func didTapTargetsShortcut() {
-        userDefaults.set(Shortcut.targets.rawValue, forKey: "SelectedFocusTable")
+        userDefaults.set(Table.targets.rawValue, forKey: "SelectedFocusTable")
     }
     
     func didTapErrorsShortcut() {
-        userDefaults.set(Shortcut.errors.rawValue, forKey: "SelectedFocusTable")
+        userDefaults.set(Table.errors.rawValue, forKey: "SelectedFocusTable")
     }
     
     func didTapPlayersShortcut() {
-        userDefaults.set(Shortcut.players.rawValue, forKey: "SelectedNotesTable")
+        userDefaults.set(Table.players.rawValue, forKey: "SelectedNotesTable")
     }
     
     func didTapMatchesShortcut() {
-        userDefaults.set(Shortcut.matches.rawValue, forKey: "SelectedNotesTable")
+        userDefaults.set(Table.matches.rawValue, forKey: "SelectedNotesTable")
     }
 }
 

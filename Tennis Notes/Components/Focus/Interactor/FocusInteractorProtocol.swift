@@ -10,6 +10,9 @@ protocol FocusInteractorProtocol: AnyObject {
     // MARK: In
     func fetchTargetNotes() -> [TargetNote]
     func fetchErrorNotes() -> [ErrorNote]
+    
+    func didAddTargetNote()
+    func didAddErrorNote()
 
     // MARK: Out
 

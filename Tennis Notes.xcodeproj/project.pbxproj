@@ -60,7 +60,8 @@
 		BC3CF700281738830016FA63 /* AddNoteEntityGatewayProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3CF6F2281738830016FA63 /* AddNoteEntityGatewayProtocol.swift */; };
 		BC3CF701281738830016FA63 /* AddNoteRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3CF6F4281738830016FA63 /* AddNoteRouterProtocol.swift */; };
 		BC3CF702281738830016FA63 /* AddNoteRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3CF6F5281738830016FA63 /* AddNoteRouter.swift */; };
-		BC42FD98280C41B000357216 /* Shortcuts.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC42FD97280C41B000357216 /* Shortcuts.swift */; };
+		BC42FD98280C41B000357216 /* Tables.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC42FD97280C41B000357216 /* Tables.swift */; };
+		BC69B7A1282EE10600D34176 /* DimView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC69B7A0282EE10600D34176 /* DimView.swift */; };
 		BC83F8392804A75B00D73527 /* PressableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC83F8382804A75B00D73527 /* PressableView.swift */; };
 		BCA08E13281B007300017EF9 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA08E12281B007300017EF9 /* TableViewCell.swift */; };
 		BCA08E2C281C1A2900017EF9 /* TargetNote+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA08E24281C1A2900017EF9 /* TargetNote+CoreDataClass.swift */; };
@@ -68,6 +69,7 @@
 		BCA08E30281C1A2900017EF9 /* MatchNote+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA08E28281C1A2900017EF9 /* MatchNote+CoreDataClass.swift */; };
 		BCA08E32281C1A2900017EF9 /* PlayerNote+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA08E2A281C1A2900017EF9 /* PlayerNote+CoreDataClass.swift */; };
 		BCA08E35281C1F5D00017EF9 /* ManagedContextObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA08E34281C1F5D00017EF9 /* ManagedContextObject.swift */; };
+		BCA08E37281EF5F400017EF9 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA08E36281EF5F400017EF9 /* Notifications.swift */; };
 		BCC8F3D1280224DC00F9AAB3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC8F3D0280224DC00F9AAB3 /* AppDelegate.swift */; };
 		BCC8F3D3280224DC00F9AAB3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC8F3D2280224DC00F9AAB3 /* SceneDelegate.swift */; };
 		BCC8F3D8280224DC00F9AAB3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCC8F3D6280224DC00F9AAB3 /* Main.storyboard */; };
@@ -192,7 +194,8 @@
 		BC3CF6F2281738830016FA63 /* AddNoteEntityGatewayProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNoteEntityGatewayProtocol.swift; sourceTree = "<group>"; };
 		BC3CF6F4281738830016FA63 /* AddNoteRouterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNoteRouterProtocol.swift; sourceTree = "<group>"; };
 		BC3CF6F5281738830016FA63 /* AddNoteRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNoteRouter.swift; sourceTree = "<group>"; };
-		BC42FD97280C41B000357216 /* Shortcuts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shortcuts.swift; sourceTree = "<group>"; };
+		BC42FD97280C41B000357216 /* Tables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tables.swift; sourceTree = "<group>"; };
+		BC69B7A0282EE10600D34176 /* DimView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DimView.swift; sourceTree = "<group>"; };
 		BC83F8382804A75B00D73527 /* PressableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PressableView.swift; sourceTree = "<group>"; };
 		BCA08E12281B007300017EF9 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		BCA08E24281C1A2900017EF9 /* TargetNote+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TargetNote+CoreDataClass.swift"; sourceTree = "<group>"; };
@@ -200,6 +203,7 @@
 		BCA08E28281C1A2900017EF9 /* MatchNote+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MatchNote+CoreDataClass.swift"; sourceTree = "<group>"; };
 		BCA08E2A281C1A2900017EF9 /* PlayerNote+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PlayerNote+CoreDataClass.swift"; sourceTree = "<group>"; };
 		BCA08E34281C1F5D00017EF9 /* ManagedContextObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagedContextObject.swift; sourceTree = "<group>"; };
+		BCA08E36281EF5F400017EF9 /* Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
 		BCC8F3CD280224DC00F9AAB3 /* Tennis Notes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tennis Notes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCC8F3D0280224DC00F9AAB3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BCC8F3D2280224DC00F9AAB3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -484,7 +488,8 @@
 		BC9D58192804CCD3008038DD /* Enums */ = {
 			isa = PBXGroup;
 			children = (
-				BC42FD97280C41B000357216 /* Shortcuts.swift */,
+				BCA08E36281EF5F400017EF9 /* Notifications.swift */,
+				BC42FD97280C41B000357216 /* Tables.swift */,
 				BCA08E34281C1F5D00017EF9 /* ManagedContextObject.swift */,
 			);
 			path = Enums;
@@ -495,6 +500,7 @@
 			children = (
 				BCA08E0F281AF18D00017EF9 /* TableView */,
 				BC83F8382804A75B00D73527 /* PressableView.swift */,
+				BC69B7A0282EE10600D34176 /* DimView.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -975,6 +981,7 @@
 				BCC8F4612802346B00F9AAB3 /* HomeInteractor.swift in Sources */,
 				BCC8F4642802346B00F9AAB3 /* HomeEntityGateway.swift in Sources */,
 				BCEE160A280380D10051BE2F /* Assets.swift in Sources */,
+				BCA08E37281EF5F400017EF9 /* Notifications.swift in Sources */,
 				BCC8F45D2802346B00F9AAB3 /* HomePresenter.swift in Sources */,
 				BCC8F46D2802346B00F9AAB3 /* FocusViewController.swift in Sources */,
 				BCC8F4752802346B00F9AAB3 /* NotesEventHandlerProtocol.swift in Sources */,
@@ -987,6 +994,7 @@
 				BCC8F47B2802346B00F9AAB3 /* NotesInteractorProtocol.swift in Sources */,
 				BC3CF6DA281738780016FA63 /* AddFocusViewControllerProtocol.swift in Sources */,
 				BCC8F4702802346B00F9AAB3 /* FocusEntityGatewayProtocol.swift in Sources */,
+				BC69B7A1282EE10600D34176 /* DimView.swift in Sources */,
 				BCC8F4632802346B00F9AAB3 /* HomeEntityGatewayProtocol.swift in Sources */,
 				BC3CF6F8281738830016FA63 /* AddNoteEventHandlerProtocol.swift in Sources */,
 				BCC8F44E2802346B00F9AAB3 /* SettingsEventHandlerProtocol.swift in Sources */,
@@ -1026,7 +1034,7 @@
 				BCC8F4762802346B00F9AAB3 /* NotesPresenter.swift in Sources */,
 				BC219DEA280A11870002D210 /* ErrorTableViewCell.swift in Sources */,
 				BCEE1609280380D10051BE2F /* Strings.swift in Sources */,
-				BC42FD98280C41B000357216 /* Shortcuts.swift in Sources */,
+				BC42FD98280C41B000357216 /* Tables.swift in Sources */,
 				BCC8F47F2802346B00F9AAB3 /* NotesRouterProtocol.swift in Sources */,
 				BCC8F4582802346B00F9AAB3 /* SettingsRouter.swift in Sources */,
 				BCEE15EF28036F930051BE2F /* TableSelector.swift in Sources */,

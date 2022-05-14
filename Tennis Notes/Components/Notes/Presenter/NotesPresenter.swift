@@ -74,11 +74,11 @@ extension NotesPresenter: NotesEventHandlerProtocol {
     
     // MARK: Actions sent from UI
     func didTapSelectorPlayers() {
-        userDefaults.set(Shortcut.players.rawValue, forKey: "SelectedNotesTable")
+        userDefaults.set(Table.players.rawValue, forKey: "SelectedNotesTable")
     }
     
     func didTapSelectorMatches() {
-        userDefaults.set(Shortcut.matches.rawValue, forKey: "SelectedNotesTable")
+        userDefaults.set(Table.matches.rawValue, forKey: "SelectedNotesTable")
     }
 }
 

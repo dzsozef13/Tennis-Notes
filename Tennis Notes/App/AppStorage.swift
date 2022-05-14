@@ -50,7 +50,7 @@ class AppStorage {
             } catch {
                 print("\("Failed to fetch items:") \(error)")
             }
-        case .match:
+        case .error:
             do {
                 items = try context.fetch(ErrorNote.fetchRequest())
             } catch {
@@ -62,7 +62,7 @@ class AppStorage {
             } catch {
                 print("\("Failed to fetch items:") \(error)")
             }
-        case .error:
+        case .match:
             do {
                 items = try context.fetch(MatchNote.fetchRequest())
             } catch {
@@ -96,7 +96,7 @@ class AppStorage {
     }
     
     // MARK: Load Quotes
-    public func loadTasks(completionHandler: @escaping QuotesCompletionHandler) {
+    public func loadQuotes(completionHandler: @escaping QuotesCompletionHandler) {
 
         if let file = Bundle(for: type(of: self)).url(forResource: "quotes", withExtension: "json") {
             do {

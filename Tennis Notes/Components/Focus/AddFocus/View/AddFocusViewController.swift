@@ -34,6 +34,10 @@ class AddFocusViewController: UIViewController {
         view.endEditing(true)
     }
     
+    @IBAction func didTapCancel(_ sender: Any) {
+        eventHandler.didTapCancel()
+    }
+    
     @IBAction func didTapAdd(_ sender: Any) {
         eventHandler.didTapAdd(title: self.titleTextView?.text, content: self.contentTextView?.text)
     }

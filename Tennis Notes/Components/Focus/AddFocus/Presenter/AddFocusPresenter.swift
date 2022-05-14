@@ -12,7 +12,7 @@ class AddFocusPresenter {
 
     var routeModel: RouteModelProtocol? {
         didSet {
-            guard let routeModel = routeModel as? AddFocusRouteModel else { return }
+            guard let _ = routeModel as? AddFocusRouteModel else { return }
             // Initialize properties passed from route model
             refreshViewModel()
         }
@@ -71,6 +71,10 @@ extension AddFocusPresenter: AddFocusEventHandlerProtocol {
     
     func didTapDone() {
         return
+    }
+    
+    func didTapCancel() {
+        viewController?.dismissView() 
     }
     
     func didTapAdd(title: String?, content: String?) {

@@ -13,18 +13,16 @@ class FocusViewController: UIViewController {
             refresh()
         }
     }
-
-    // MARK: Table Cases
-    private enum Table: Equatable {
-        case targets
-        case errors
-    }
+    
+    let fadeManager = DimView.fadeManager
     
     // MARK: Variables
     private let defaults = UserDefaults.standard
     private var selectedTable: Table?
 
     // MARK: Interface Builder Outlets
+    // Main view
+    @IBOutlet var mainView: UIView!
     // Table Selectors
     @IBOutlet weak var tableSelectorTargets: TableSelector?
     @IBOutlet weak var tableSelectorErrors: TableSelector?
@@ -34,14 +32,26 @@ class FocusViewController: UIViewController {
     // MARK: Interface Builder Actions
     // Table Selector Actions
     @IBAction func didTapSelectorTargets(_ sender: Any) {
-        eventHandler.didTapSelectorTargets()
         selectedTable = .targets
+        eventHandler.didTapSelectorTargets()
         refreshTableSelectors()
     }
     
     @IBAction func didTapSelectorErrors(_ sender: Any) {
-        eventHandler.didTapSelectorErrors()
         selectedTable = .errors
+        eventHandler.didTapSelectorErrors()
+        refreshTableSelectors()
+    }
+    
+    @IBAction func didPanLeft(_ sender: Any) {
+        selectedTable = .targets
+        eventHandler.didTapSelectorTargets()
+        refreshTableSelectors()
+    }
+    
+    @IBAction func didPanRight(_ sender: Any) {
+        selectedTable = .errors
+        eventHandler.didTapSelectorErrors()
         refreshTableSelectors()
     }
     
@@ -56,6 +66,8 @@ class FocusViewController: UIViewController {
         super.viewWillAppear(animated)
         initializeViews()
         eventHandler.willAppear()
+        // Fade in on appear
+        fadeManager.fadeIn(fade: true, in: mainView, completionHandler: nil)
     }
     
     override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
@@ -86,16 +98,16 @@ extension FocusViewController {
         tableSelectorTargets?.setTitleLabel(for: "Targets")
         tableSelectorErrors?.setTitleLabel(for: "Errors")
         // Load saved case
-        guard let usedShortcut: String = UserDefaults.standard.object(forKey: "SelectedFocusTable") as? Shortcut.RawValue else {
+        guard let savedSelectedTable: String = UserDefaults.standard.object(forKey: "SelectedFocusTable") as? Table.RawValue else {
             selectedTable = .targets
             refreshTableSelectors()
             return
         }
         // Check if already selected
-        if usedShortcut == Shortcut.targets.rawValue {
+        if savedSelectedTable == Table.targets.rawValue {
             selectedTable = .targets
         }
-        if usedShortcut == Shortcut.errors.rawValue {
+        if savedSelectedTable == Table.errors.rawValue {
             selectedTable = .errors
         }
         // Update selectors
@@ -202,8 +214,8 @@ extension FocusViewController: UITableViewDataSource {
             }
         case .errors:
             if !errorNotes.isEmpty {
-                let cell = tableView.dequeueReusableCell(withIdentifier: HintTableViewCell.identifier, for: indexPath) as! HintTableViewCell
-                cell.setupView(icon: UIImage(systemName: "plus") ?? UIImage(), title: "New Target", message: "Add a new target you want to focus on next time you go to practice or play a match.")
+                let cell = tableView.dequeueReusableCell(withIdentifier: ErrorTableViewCell.identifier, for: indexPath) as! ErrorTableViewCell
+                cell.setupView(error: errorNotes[row])
                 return cell
             } else {
                 let cell = tableView.dequeueReusableCell(withIdentifier: HintTableViewCell.identifier, for: indexPath) as! HintTableViewCell
