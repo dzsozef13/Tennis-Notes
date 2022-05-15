@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC075D38283173EB009FC4F4 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = BC075D37283173EB009FC4F4 /* FirebaseAnalytics */; };
+		BC075D3A283173EB009FC4F4 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = BC075D39283173EB009FC4F4 /* FirebaseCrashlytics */; };
+		BC075D3C283173EB009FC4F4 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = BC075D3B283173EB009FC4F4 /* FirebaseMessaging */; };
 		BC219DE8280A117A0002D210 /* TargetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC219DE7280A117A0002D210 /* TargetTableViewCell.swift */; };
 		BC219DEA280A11870002D210 /* ErrorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC219DE9280A11870002D210 /* ErrorTableViewCell.swift */; };
 		BC219DEC280A1BD60002D210 /* HintTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC219DEB280A1BD60002D210 /* HintTableViewCell.swift */; };
@@ -283,6 +286,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC075D3C283173EB009FC4F4 /* FirebaseMessaging in Frameworks */,
+				BC075D38283173EB009FC4F4 /* FirebaseAnalytics in Frameworks */,
+				BC075D3A283173EB009FC4F4 /* FirebaseCrashlytics in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -892,6 +898,11 @@
 			dependencies = (
 			);
 			name = "Tennis Notes";
+			packageProductDependencies = (
+				BC075D37283173EB009FC4F4 /* FirebaseAnalytics */,
+				BC075D39283173EB009FC4F4 /* FirebaseCrashlytics */,
+				BC075D3B283173EB009FC4F4 /* FirebaseMessaging */,
+			);
 			productName = "Tennis Notes";
 			productReference = BCC8F3CD280224DC00F9AAB3 /* Tennis Notes.app */;
 			productType = "com.apple.product-type.application";
@@ -922,6 +933,9 @@
 				hu,
 			);
 			mainGroup = BCC8F3C4280224DC00F9AAB3;
+			packageReferences = (
+				BC075D36283173EB009FC4F4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = BCC8F3CE280224DC00F9AAB3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -1304,6 +1318,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BC075D36283173EB009FC4F4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BC075D37283173EB009FC4F4 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BC075D36283173EB009FC4F4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		BC075D39283173EB009FC4F4 /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BC075D36283173EB009FC4F4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+		BC075D3B283173EB009FC4F4 /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BC075D36283173EB009FC4F4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		BCC8F4842802523900F9AAB3 /* Model.xcdatamodeld */ = {

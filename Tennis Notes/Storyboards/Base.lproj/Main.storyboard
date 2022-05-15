@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="RobotoMono-Italic-VariableFont_wght.ttf">
+        <array key="RobotoMono-Italic.ttf">
             <string>RobotoMono-Italic</string>
         </array>
         <array key="RobotoMono-Regular.ttf">
@@ -48,19 +48,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iHH-A8-0me" userLabel="Quote View">
-                                <rect key="frame" x="16" y="204" width="382" height="273"/>
+                                <rect key="frame" x="16" y="156" width="382" height="353"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Ium-38-Gyw">
-                                        <rect key="frame" x="0.0" y="0.0" width="382" height="273"/>
+                                    <stackView opaque="NO" contentMode="center" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Ium-38-Gyw">
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="353"/>
                                         <subviews>
-                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tennis is a tough sport – there are no draws." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="RdE-2A-2am">
-                                                <rect key="frame" x="0.0" y="0.0" width="382" height="209"/>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tennis is a tough sport – there are no draws." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="RdE-2A-2am">
+                                                <rect key="frame" x="0.0" y="0.0" width="382" height="289"/>
                                                 <fontDescription key="fontDescription" name="RobotoMono-Italic" family="Roboto Mono" pointSize="48"/>
                                                 <color key="textColor" name="TextLightPrimary"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="- Roger Federer" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dnF-tn-osd">
-                                                <rect key="frame" x="0.0" y="209" width="382" height="64"/>
+                                                <rect key="frame" x="0.0" y="289" width="382" height="64"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="64" id="Zyk-QQ-Yte"/>
                                                 </constraints>
@@ -73,11 +73,11 @@
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstItem="Ium-38-Gyw" firstAttribute="top" relation="greaterThanOrEqual" secondItem="iHH-A8-0me" secondAttribute="top" id="PQs-la-ME1"/>
-                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="384" id="X1C-5z-4h6"/>
-                                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Ium-38-Gyw" secondAttribute="bottom" id="jeE-SK-tzq"/>
+                                    <constraint firstItem="Ium-38-Gyw" firstAttribute="centerY" secondItem="iHH-A8-0me" secondAttribute="centerY" id="Umm-rX-vKD"/>
                                     <constraint firstItem="Ium-38-Gyw" firstAttribute="leading" secondItem="iHH-A8-0me" secondAttribute="leading" id="kIY-wk-CiM"/>
+                                    <constraint firstAttribute="bottom" secondItem="Ium-38-Gyw" secondAttribute="bottom" id="kwP-Ce-1xc"/>
                                     <constraint firstAttribute="trailing" secondItem="Ium-38-Gyw" secondAttribute="trailing" id="r2a-MN-9bk"/>
+                                    <constraint firstItem="Ium-38-Gyw" firstAttribute="top" secondItem="iHH-A8-0me" secondAttribute="top" id="uNv-Cx-9H6"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bdz-1M-JZ2" userLabel="Shortcuts View">
@@ -413,9 +413,9 @@
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="bdz-1M-JZ2" secondAttribute="bottom" constant="64" id="3W9-2s-X06"/>
                             <constraint firstItem="iHH-A8-0me" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Hmz-1y-Squ"/>
-                            <constraint firstItem="bdz-1M-JZ2" firstAttribute="top" secondItem="iHH-A8-0me" secondAttribute="bottom" constant="64" id="P4D-Zv-Yqa"/>
+                            <constraint firstItem="bdz-1M-JZ2" firstAttribute="top" secondItem="iHH-A8-0me" secondAttribute="bottom" constant="32" id="P4D-Zv-Yqa"/>
                             <constraint firstItem="bdz-1M-JZ2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Zet-s3-tXq"/>
-                            <constraint firstItem="iHH-A8-0me" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="64" id="igi-pc-APn"/>
+                            <constraint firstItem="iHH-A8-0me" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="igi-pc-APn"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="iHH-A8-0me" secondAttribute="trailing" constant="16" id="r3S-p2-lec"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bdz-1M-JZ2" secondAttribute="trailing" constant="16" id="zeg-Ab-CBB"/>
                         </constraints>
@@ -1304,6 +1304,7 @@
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="mainView" destination="WwQ-VK-cFr" id="0w9-UH-Xfj"/>
                         <outlet property="tableSelectorMatches" destination="cMM-x6-7qC" id="CR6-NX-Hso"/>
                         <outlet property="tableSelectorPlayers" destination="IMc-1P-GfH" id="p5V-EV-rX6"/>
                     </connections>

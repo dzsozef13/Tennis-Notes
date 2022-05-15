@@ -14,6 +14,9 @@ class NotesViewController: UIViewController {
         }
     }
     
+    // MARK: Fade Manager
+    let fadeManager = DimView.fadeManager
+    
     // MARK: Notification
     private let notificationCenter: NotificationCenter = .default
     
@@ -23,6 +26,8 @@ class NotesViewController: UIViewController {
     // MARK: UI Objects
 
     // MARK: Interface Builder Outlets
+    // Main view
+    @IBOutlet var mainView: UIView!
     // Table Selectors
     @IBOutlet weak var tableSelectorPlayers: TableSelector?
     @IBOutlet weak var tableSelectorMatches: TableSelector?
@@ -54,6 +59,8 @@ class NotesViewController: UIViewController {
         super.viewWillAppear(animated)
         initializeTableSelectors()
         eventHandler.willAppear()
+        // Fade in on appear
+        fadeManager.fadeIn(fade: true, in: mainView, completionHandler: nil)
     }
 
     override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
@@ -76,7 +83,7 @@ extension NotesViewController {
     }
     
     private func initializeTitle() {
-        title = "Notes"
+        self.navigationItem.title = "Notes ✏️"
     }
     
     private func initializeTableSelectors() {

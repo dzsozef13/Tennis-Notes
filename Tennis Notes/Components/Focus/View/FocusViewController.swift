@@ -14,6 +14,7 @@ class FocusViewController: UIViewController {
         }
     }
     
+    // MARK: Fade Manager
     let fadeManager = DimView.fadeManager
     
     // MARK: Variables
@@ -90,7 +91,7 @@ extension FocusViewController {
     }
     
     private func initializeTitle() {
-        title = "Focus"
+        self.navigationItem.title = "Focus 🎯"
     }
     
     private func initializeTableSelectors() {

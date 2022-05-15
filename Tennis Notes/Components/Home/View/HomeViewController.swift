@@ -14,6 +14,7 @@ class HomeViewController: UIViewController {
         }
     }
     
+    // MARK: Fade Manager
     let fadeManager = DimView.fadeManager
     
     // MARK: Variables
@@ -93,7 +94,7 @@ extension HomeViewController {
     }
     
     private func initializeTitle() {
-        title = "Home"
+        self.navigationItem.title = "Home 🎾"
     }
     
     private func initializeQuotes() {
