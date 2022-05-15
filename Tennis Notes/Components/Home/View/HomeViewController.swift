@@ -14,6 +14,9 @@ class HomeViewController: UIViewController {
         }
     }
     
+    // MARK: Logger
+    let analytics = AnalyticsManager.logger
+    
     // MARK: Fade Manager
     let fadeManager = DimView.fadeManager
     
@@ -40,24 +43,32 @@ class HomeViewController: UIViewController {
             self.eventHandler.didTapTargetsShortcut()
             self.tapTabItem(item: .targets)
         }
+        
+        analytics.log(event: "used_shortcut", parameters: ["shortcut" : "targets"])
     }
     @IBAction func didTapErrorsShortcut(_ sender: Any) {
         fadeManager.fadeOut(fade: true, in: mainView) {
             self.eventHandler.didTapErrorsShortcut()
             self.tapTabItem(item: .errors)
         }
+        
+        analytics.log(event: "used_shortcut", parameters: ["shortcut" : "errors"])
     }
     @IBAction func didTapPlayersShortcut(_ sender: Any) {
         fadeManager.fadeOut(fade: true, in: mainView) {
             self.eventHandler.didTapPlayersShortcut()
             self.tapTabItem(item: .players)
         }
+        
+        analytics.log(event: "used_shortcut", parameters: ["shortcut" : "players"])
     }
     @IBAction func didTapMatchesShortcut(_ sender: Any) {
         fadeManager.fadeOut(fade: true, in: mainView) {
             self.eventHandler.didTapMatchesShortcut()
             self.tapTabItem(item: .matches)
         }
+        
+        analytics.log(event: "used_shortcut", parameters: ["shortcut" : "matches"])
     }
     
     // MARK: Lifecycle Methods
