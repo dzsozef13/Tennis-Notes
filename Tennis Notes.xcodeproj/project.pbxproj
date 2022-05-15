@@ -10,6 +10,8 @@
 		BC075D38283173EB009FC4F4 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = BC075D37283173EB009FC4F4 /* FirebaseAnalytics */; };
 		BC075D3A283173EB009FC4F4 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = BC075D39283173EB009FC4F4 /* FirebaseCrashlytics */; };
 		BC075D3C283173EB009FC4F4 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = BC075D3B283173EB009FC4F4 /* FirebaseMessaging */; };
+		BC075D3E28317495009FC4F4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BC075D3D28317495009FC4F4 /* GoogleService-Info.plist */; };
+		BC075D4028317536009FC4F4 /* AnalyticsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC075D3F28317536009FC4F4 /* AnalyticsManager.swift */; };
 		BC219DE8280A117A0002D210 /* TargetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC219DE7280A117A0002D210 /* TargetTableViewCell.swift */; };
 		BC219DEA280A11870002D210 /* ErrorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC219DE9280A11870002D210 /* ErrorTableViewCell.swift */; };
 		BC219DEC280A1BD60002D210 /* HintTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC219DEB280A1BD60002D210 /* HintTableViewCell.swift */; };
@@ -144,6 +146,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BC075D3D28317495009FC4F4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		BC075D3F28317536009FC4F4 /* AnalyticsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsManager.swift; sourceTree = "<group>"; };
 		BC219DE7280A117A0002D210 /* TargetTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetTableViewCell.swift; sourceTree = "<group>"; };
 		BC219DE9280A11870002D210 /* ErrorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorTableViewCell.swift; sourceTree = "<group>"; };
 		BC219DEB280A1BD60002D210 /* HintTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HintTableViewCell.swift; sourceTree = "<group>"; };
@@ -316,6 +320,7 @@
 			isa = PBXGroup;
 			children = (
 				BC219DF9280B75E00002D210 /* QuotesManagers.swift */,
+				BC075D3F28317536009FC4F4 /* AnalyticsManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -819,6 +824,7 @@
 			isa = PBXGroup;
 			children = (
 				BCC8F3DE280224DE00F9AAB3 /* Info.plist */,
+				BC075D3D28317495009FC4F4 /* GoogleService-Info.plist */,
 				BCC8F3D9280224DE00F9AAB3 /* Icons.xcassets */,
 				BCEE15FD280379F70051BE2F /* Colors.xcassets */,
 				BCEE15FF28037A060051BE2F /* Images.xcassets */,
@@ -963,6 +969,7 @@
 				BC219E1F280C12E50002D210 /* RobotoMono-Italic.ttf in Resources */,
 				BC219E1C280C12E50002D210 /* RobotoMono-Light.ttf in Resources */,
 				BC219E22280C12E50002D210 /* LICENSE.txt in Resources */,
+				BC075D3E28317495009FC4F4 /* GoogleService-Info.plist in Resources */,
 				BCEE15F6280379220051BE2F /* Localizable.strings in Resources */,
 				BC219DF7280B72800002D210 /* quotes.json in Resources */,
 				BC219E11280C12E50002D210 /* RobotoMono-VariableFont_wght.ttf in Resources */,
@@ -1044,6 +1051,7 @@
 				BC3CF6D9281738780016FA63 /* AddFocusPresenter.swift in Sources */,
 				BC219DFC280B76410002D210 /* AppContext.swift in Sources */,
 				BC3CF6FC281738830016FA63 /* AddNoteViewControllerProtocol.swift in Sources */,
+				BC075D4028317536009FC4F4 /* AnalyticsManager.swift in Sources */,
 				BC3CF700281738830016FA63 /* AddNoteEntityGatewayProtocol.swift in Sources */,
 				BCC8F4762802346B00F9AAB3 /* NotesPresenter.swift in Sources */,
 				BC219DEA280A11870002D210 /* ErrorTableViewCell.swift in Sources */,
