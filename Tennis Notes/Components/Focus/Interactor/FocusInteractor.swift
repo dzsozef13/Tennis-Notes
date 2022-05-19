@@ -45,4 +45,20 @@ extension FocusInteractor: FocusInteractorProtocol {
     }
     
     // MARK: Out
+    
+    func didDeleteTargetNote(note: TargetNote) {
+        entityGateway.deleteTargetNote(note: note)
+    }
+    
+    func didDeleteErrorNote(note: ErrorNote) {
+        entityGateway.deleteErrorNote(note: note)
+    }
+    
+    func didToggleTargetNote(note: TargetNote) {
+        entityGateway.toggleTargetNote(note: note)
+    }
+    
+    func didToggleErrorNote(note: ErrorNote) {
+        entityGateway.toggleErrorNote(note: note)
+    }
 }

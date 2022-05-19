@@ -24,4 +24,20 @@ extension FocusEntityGateway: FocusEntityGatewayProtocol {
     func fetchErrorNotes() -> [ErrorNote] {
         return storage?.fetchItems(item: .error) as! [ErrorNote]
     }
+    
+    func deleteTargetNote(note: TargetNote) {
+        storage?.deleteTargetNote(note: note)
+    }
+    
+    func deleteErrorNote(note: ErrorNote) {
+        storage?.deleteErrorNote(note: note)
+    }
+    
+    func toggleTargetNote(note: TargetNote) {
+        storage?.toggleTargetNote(note: note)
+    }
+    
+    func toggleErrorNote(note: ErrorNote) {
+        storage?.toggleErrorNote(note: note)
+    }
 }

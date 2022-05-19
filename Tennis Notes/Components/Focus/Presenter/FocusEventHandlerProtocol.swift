@@ -15,4 +15,10 @@ protocol FocusEventHandlerProtocol {
     
     func didTapSelectorTargets()
     func didTapSelectorErrors()
+
+    func didDeleteTargetNote(note: TargetNote)
+    func didDeleteErrorNote(note: ErrorNote)
+    
+    func didToggleTargetNote(note: TargetNote)
+    func didToggleErrorNote(note: ErrorNote)
 }

@@ -44,18 +44,6 @@ class FocusViewController: UIViewController {
         refreshTableSelectors()
     }
     
-    @IBAction func didPanLeft(_ sender: Any) {
-        selectedTable = .targets
-        eventHandler.didTapSelectorTargets()
-        refreshTableSelectors()
-    }
-    
-    @IBAction func didPanRight(_ sender: Any) {
-        selectedTable = .errors
-        eventHandler.didTapSelectorErrors()
-        refreshTableSelectors()
-    }
-    
     // MARK: Lifecycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -231,4 +219,50 @@ extension FocusViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return UITableView.automaticDimension
     }
+    
+    func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        guard let targetNotes = viewModel?.targetNotes, let errorNotes = viewModel?.errorNotes else { return UISwipeActionsConfiguration() }
+        let deleteAction = UIContextualAction(style: .destructive, title: nil) { (_, _, completionHandler) in
+            switch self.selectedTable {
+            case .targets:
+                self.eventHandler.didDeleteTargetNote(note: targetNotes[indexPath.row])
+            case .errors:
+                self.eventHandler.didDeleteErrorNote(note: errorNotes[indexPath.row])
+            default:
+                return
+            }
+            completionHandler(true)
+        }
+        
+        // Style configuration
+        deleteAction.image = UIImage(systemName: "trash")?.withTintColor(Assets.Colors.accentColor.color, renderingMode: .alwaysOriginal)
+        deleteAction.backgroundColor = Assets.Colors.backgroundPrimary.color
+        let configuration = UISwipeActionsConfiguration(actions: [deleteAction])
+        return configuration
+    }
+    
+    func tableView(_ tableView: UITableView, leadingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        guard let targetNotes = viewModel?.targetNotes, let errorNotes = viewModel?.errorNotes else { return UISwipeActionsConfiguration() }
+        let deleteAction = UIContextualAction(style: .normal, title: nil) { (_, _, completionHandler) in
+            completionHandler(true)
+            
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.8) {
+                switch self.selectedTable {
+                case .targets:
+                    self.eventHandler.didToggleTargetNote(note: targetNotes[indexPath.row])
+                case .errors:
+                    self.eventHandler.didToggleErrorNote(note: errorNotes[indexPath.row])
+                default:
+                    return
+                }
+            }
+        }
+        
+        // Style configuration
+        deleteAction.image = UIImage(systemName: "checkmark.seal")?.withTintColor(Assets.Colors.accentColor.color, renderingMode: .alwaysOriginal)
+        deleteAction.backgroundColor = Assets.Colors.backgroundPrimary.color
+        let configuration = UISwipeActionsConfiguration(actions: [deleteAction])
+        return configuration
+    }
+    
 }

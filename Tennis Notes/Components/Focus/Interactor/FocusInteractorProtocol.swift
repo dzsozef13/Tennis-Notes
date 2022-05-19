@@ -15,5 +15,10 @@ protocol FocusInteractorProtocol: AnyObject {
     func didAddErrorNote()
 
     // MARK: Out
-
+    func didDeleteTargetNote(note: TargetNote)
+    func didDeleteErrorNote(note: ErrorNote)
+    
+    func didToggleTargetNote(note: TargetNote)
+    func didToggleErrorNote(note: ErrorNote)
+    
 }

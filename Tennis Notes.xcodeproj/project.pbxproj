@@ -12,6 +12,14 @@
 		BC075D3C283173EB009FC4F4 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = BC075D3B283173EB009FC4F4 /* FirebaseMessaging */; };
 		BC075D3E28317495009FC4F4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BC075D3D28317495009FC4F4 /* GoogleService-Info.plist */; };
 		BC075D4028317536009FC4F4 /* AnalyticsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC075D3F28317536009FC4F4 /* AnalyticsManager.swift */; };
+		BC075D692836D468009FC4F4 /* ErrorNote+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC075D612836D468009FC4F4 /* ErrorNote+CoreDataClass.swift */; };
+		BC075D6A2836D468009FC4F4 /* ErrorNote+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC075D622836D468009FC4F4 /* ErrorNote+CoreDataProperties.swift */; };
+		BC075D6B2836D468009FC4F4 /* PlayerNote+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC075D632836D468009FC4F4 /* PlayerNote+CoreDataClass.swift */; };
+		BC075D6C2836D468009FC4F4 /* PlayerNote+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC075D642836D468009FC4F4 /* PlayerNote+CoreDataProperties.swift */; };
+		BC075D6D2836D468009FC4F4 /* MatchNote+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC075D652836D468009FC4F4 /* MatchNote+CoreDataClass.swift */; };
+		BC075D6E2836D468009FC4F4 /* MatchNote+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC075D662836D468009FC4F4 /* MatchNote+CoreDataProperties.swift */; };
+		BC075D6F2836D468009FC4F4 /* TargetNote+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC075D672836D468009FC4F4 /* TargetNote+CoreDataClass.swift */; };
+		BC075D702836D468009FC4F4 /* TargetNote+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC075D682836D468009FC4F4 /* TargetNote+CoreDataProperties.swift */; };
 		BC219DE8280A117A0002D210 /* TargetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC219DE7280A117A0002D210 /* TargetTableViewCell.swift */; };
 		BC219DEA280A11870002D210 /* ErrorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC219DE9280A11870002D210 /* ErrorTableViewCell.swift */; };
 		BC219DEC280A1BD60002D210 /* HintTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC219DEB280A1BD60002D210 /* HintTableViewCell.swift */; };
@@ -69,10 +77,6 @@
 		BC69B7A1282EE10600D34176 /* DimView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC69B7A0282EE10600D34176 /* DimView.swift */; };
 		BC83F8392804A75B00D73527 /* PressableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC83F8382804A75B00D73527 /* PressableView.swift */; };
 		BCA08E13281B007300017EF9 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA08E12281B007300017EF9 /* TableViewCell.swift */; };
-		BCA08E2C281C1A2900017EF9 /* TargetNote+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA08E24281C1A2900017EF9 /* TargetNote+CoreDataClass.swift */; };
-		BCA08E2E281C1A2900017EF9 /* ErrorNote+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA08E26281C1A2900017EF9 /* ErrorNote+CoreDataClass.swift */; };
-		BCA08E30281C1A2900017EF9 /* MatchNote+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA08E28281C1A2900017EF9 /* MatchNote+CoreDataClass.swift */; };
-		BCA08E32281C1A2900017EF9 /* PlayerNote+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA08E2A281C1A2900017EF9 /* PlayerNote+CoreDataClass.swift */; };
 		BCA08E35281C1F5D00017EF9 /* ManagedContextObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA08E34281C1F5D00017EF9 /* ManagedContextObject.swift */; };
 		BCA08E37281EF5F400017EF9 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA08E36281EF5F400017EF9 /* Notifications.swift */; };
 		BCC8F3D1280224DC00F9AAB3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC8F3D0280224DC00F9AAB3 /* AppDelegate.swift */; };
@@ -148,6 +152,14 @@
 /* Begin PBXFileReference section */
 		BC075D3D28317495009FC4F4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BC075D3F28317536009FC4F4 /* AnalyticsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsManager.swift; sourceTree = "<group>"; };
+		BC075D612836D468009FC4F4 /* ErrorNote+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ErrorNote+CoreDataClass.swift"; sourceTree = "<group>"; };
+		BC075D622836D468009FC4F4 /* ErrorNote+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ErrorNote+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		BC075D632836D468009FC4F4 /* PlayerNote+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PlayerNote+CoreDataClass.swift"; sourceTree = "<group>"; };
+		BC075D642836D468009FC4F4 /* PlayerNote+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PlayerNote+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		BC075D652836D468009FC4F4 /* MatchNote+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MatchNote+CoreDataClass.swift"; sourceTree = "<group>"; };
+		BC075D662836D468009FC4F4 /* MatchNote+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MatchNote+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		BC075D672836D468009FC4F4 /* TargetNote+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TargetNote+CoreDataClass.swift"; sourceTree = "<group>"; };
+		BC075D682836D468009FC4F4 /* TargetNote+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TargetNote+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		BC219DE7280A117A0002D210 /* TargetTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetTableViewCell.swift; sourceTree = "<group>"; };
 		BC219DE9280A11870002D210 /* ErrorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorTableViewCell.swift; sourceTree = "<group>"; };
 		BC219DEB280A1BD60002D210 /* HintTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HintTableViewCell.swift; sourceTree = "<group>"; };
@@ -205,10 +217,6 @@
 		BC69B7A0282EE10600D34176 /* DimView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DimView.swift; sourceTree = "<group>"; };
 		BC83F8382804A75B00D73527 /* PressableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PressableView.swift; sourceTree = "<group>"; };
 		BCA08E12281B007300017EF9 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
-		BCA08E24281C1A2900017EF9 /* TargetNote+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TargetNote+CoreDataClass.swift"; sourceTree = "<group>"; };
-		BCA08E26281C1A2900017EF9 /* ErrorNote+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ErrorNote+CoreDataClass.swift"; sourceTree = "<group>"; };
-		BCA08E28281C1A2900017EF9 /* MatchNote+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MatchNote+CoreDataClass.swift"; sourceTree = "<group>"; };
-		BCA08E2A281C1A2900017EF9 /* PlayerNote+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PlayerNote+CoreDataClass.swift"; sourceTree = "<group>"; };
 		BCA08E34281C1F5D00017EF9 /* ManagedContextObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagedContextObject.swift; sourceTree = "<group>"; };
 		BCA08E36281EF5F400017EF9 /* Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
 		BCC8F3CD280224DC00F9AAB3 /* Tennis Notes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tennis Notes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -854,10 +862,14 @@
 		BCEE15E72803574D0051BE2F /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				BCA08E24281C1A2900017EF9 /* TargetNote+CoreDataClass.swift */,
-				BCA08E26281C1A2900017EF9 /* ErrorNote+CoreDataClass.swift */,
-				BCA08E28281C1A2900017EF9 /* MatchNote+CoreDataClass.swift */,
-				BCA08E2A281C1A2900017EF9 /* PlayerNote+CoreDataClass.swift */,
+				BC075D612836D468009FC4F4 /* ErrorNote+CoreDataClass.swift */,
+				BC075D622836D468009FC4F4 /* ErrorNote+CoreDataProperties.swift */,
+				BC075D632836D468009FC4F4 /* PlayerNote+CoreDataClass.swift */,
+				BC075D642836D468009FC4F4 /* PlayerNote+CoreDataProperties.swift */,
+				BC075D652836D468009FC4F4 /* MatchNote+CoreDataClass.swift */,
+				BC075D662836D468009FC4F4 /* MatchNote+CoreDataProperties.swift */,
+				BC075D672836D468009FC4F4 /* TargetNote+CoreDataClass.swift */,
+				BC075D682836D468009FC4F4 /* TargetNote+CoreDataProperties.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1010,8 +1022,7 @@
 				BCC8F46A2802346B00F9AAB3 /* FocusPresenter.swift in Sources */,
 				BCC8F45B2802346B00F9AAB3 /* HomeEventHandlerProtocol.swift in Sources */,
 				BC3CF6DE281738780016FA63 /* AddFocusInteractorProtocol.swift in Sources */,
-				BCA08E32281C1A2900017EF9 /* PlayerNote+CoreDataClass.swift in Sources */,
-				BCA08E2E281C1A2900017EF9 /* ErrorNote+CoreDataClass.swift in Sources */,
+				BC075D6B2836D468009FC4F4 /* PlayerNote+CoreDataClass.swift in Sources */,
 				BCC8F47B2802346B00F9AAB3 /* NotesInteractorProtocol.swift in Sources */,
 				BC3CF6DA281738780016FA63 /* AddFocusViewControllerProtocol.swift in Sources */,
 				BCC8F4702802346B00F9AAB3 /* FocusEntityGatewayProtocol.swift in Sources */,
@@ -1024,10 +1035,8 @@
 				BCC8F45F2802346B00F9AAB3 /* HomeViewController.swift in Sources */,
 				BCC8F4532802346B00F9AAB3 /* SettingsViewController.swift in Sources */,
 				BCC8F4602802346B00F9AAB3 /* HomeViewControllerProtocol.swift in Sources */,
-				BCA08E2C281C1A2900017EF9 /* TargetNote+CoreDataClass.swift in Sources */,
 				BC3CF6FD281738830016FA63 /* AddNoteInteractorProtocol.swift in Sources */,
 				BCC8F4882802E54200F9AAB3 /* RouteModelProtocol.swift in Sources */,
-				BCA08E30281C1A2900017EF9 /* MatchNote+CoreDataClass.swift in Sources */,
 				BC3CF6E1281738780016FA63 /* AddFocusRouter.swift in Sources */,
 				BCC8F46E2802346B00F9AAB3 /* FocusInteractorProtocol.swift in Sources */,
 				BCC8F44D2802346B00F9AAB3 /* SettingsPresenterProtocol.swift in Sources */,
@@ -1038,8 +1047,10 @@
 				BCC8F47C2802346B00F9AAB3 /* NotesInteractor.swift in Sources */,
 				BCC8F46B2802346B00F9AAB3 /* FocusViewModel.swift in Sources */,
 				BCC8F4572802346B00F9AAB3 /* SettingsEntityGateway.swift in Sources */,
+				BC075D6A2836D468009FC4F4 /* ErrorNote+CoreDataProperties.swift in Sources */,
 				BC3CF6E0281738780016FA63 /* AddFocusEntityGateway.swift in Sources */,
 				BC3CF6F7281738830016FA63 /* AddNoteRouteModel.swift in Sources */,
+				BC075D692836D468009FC4F4 /* ErrorNote+CoreDataClass.swift in Sources */,
 				BCC8F3D1280224DC00F9AAB3 /* AppDelegate.swift in Sources */,
 				BCC8F45A2802346B00F9AAB3 /* HomePresenterProtocol.swift in Sources */,
 				BC3CF702281738830016FA63 /* AddNoteRouter.swift in Sources */,
@@ -1050,6 +1061,7 @@
 				BCC8F4772802346B00F9AAB3 /* NotesRouteModel.swift in Sources */,
 				BC3CF6D9281738780016FA63 /* AddFocusPresenter.swift in Sources */,
 				BC219DFC280B76410002D210 /* AppContext.swift in Sources */,
+				BC075D6C2836D468009FC4F4 /* PlayerNote+CoreDataProperties.swift in Sources */,
 				BC3CF6FC281738830016FA63 /* AddNoteViewControllerProtocol.swift in Sources */,
 				BC075D4028317536009FC4F4 /* AnalyticsManager.swift in Sources */,
 				BC3CF700281738830016FA63 /* AddNoteEntityGatewayProtocol.swift in Sources */,
@@ -1065,10 +1077,13 @@
 				BC219DFA280B75E00002D210 /* QuotesManagers.swift in Sources */,
 				BC3CF6DF281738780016FA63 /* AddFocusEntityGatewayProtocol.swift in Sources */,
 				BCC8F4712802346B00F9AAB3 /* FocusEntityGateway.swift in Sources */,
+				BC075D6D2836D468009FC4F4 /* MatchNote+CoreDataClass.swift in Sources */,
 				BCA08E35281C1F5D00017EF9 /* ManagedContextObject.swift in Sources */,
 				BCC8F4502802346B00F9AAB3 /* SettingsPresenter.swift in Sources */,
+				BC075D6F2836D468009FC4F4 /* TargetNote+CoreDataClass.swift in Sources */,
 				BC219DF5280B71A50002D210 /* Quote .swift in Sources */,
 				BCC8F47D2802346B00F9AAB3 /* NotesEntityGateway.swift in Sources */,
+				BC075D6E2836D468009FC4F4 /* MatchNote+CoreDataProperties.swift in Sources */,
 				BCC8F4592802346B00F9AAB3 /* SettingsRouterProtocol.swift in Sources */,
 				BCC8F45E2802346B00F9AAB3 /* HomeViewModel.swift in Sources */,
 				BCA08E13281B007300017EF9 /* TableViewCell.swift in Sources */,
@@ -1089,6 +1104,7 @@
 				BCC8F4662802346B00F9AAB3 /* HomeRouterProtocol.swift in Sources */,
 				BC219DEE280A21CE0002D210 /* PressableTableViewCell.swift in Sources */,
 				BCC8F4512802346B00F9AAB3 /* SettingsViewModel.swift in Sources */,
+				BC075D702836D468009FC4F4 /* TargetNote+CoreDataProperties.swift in Sources */,
 				BCC8F4742802346B00F9AAB3 /* NotesPresenterProtocol.swift in Sources */,
 				BC219DE8280A117A0002D210 /* TargetTableViewCell.swift in Sources */,
 				BC219DEC280A1BD60002D210 /* HintTableViewCell.swift in Sources */,

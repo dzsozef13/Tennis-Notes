@@ -2,7 +2,7 @@
 //  ErrorNote+CoreDataClass.swift
 //  Tennis Notes
 //
-//  Created by Punk József on 2022. 04. 29..
+//  Created by Punk József on 2022. 05. 19..
 //
 //
 
@@ -11,5 +11,9 @@ import CoreData
 
 @objc(ErrorNote)
 public class ErrorNote: NSManagedObject {
-
+    override public func awakeFromFetch() {
+        if self.corrected == nil {
+            self.corrected = false
+        }
+    }
 }

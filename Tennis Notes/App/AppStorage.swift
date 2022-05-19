@@ -95,6 +95,40 @@ class AppStorage {
         self.saveContext()
     }
     
+    func deleteTargetNote(note: TargetNote) {
+        let context = persistentContainer.viewContext
+        // Delete target note from  context
+        context.delete(note)
+        self.saveContext()
+    }
+    
+    func deleteErrorNote(note: ErrorNote) {
+        let context = persistentContainer.viewContext
+        // Delete error note from  context
+        context.delete(note)
+        self.saveContext()
+    }
+    
+    func toggleTargetNote(note: TargetNote) {
+        let context = persistentContainer.viewContext
+        if note.achieved == 1 {
+            note.achieved = 0
+        } else {
+            note.achieved = 1
+        }
+        self.saveContext()
+    }
+    
+    func toggleErrorNote(note: ErrorNote) {
+        let context = persistentContainer.viewContext
+        if note.corrected == 1 {
+            note.corrected = 0
+        } else {
+            note.corrected = 1
+        }
+        self.saveContext()
+    }
+    
     // MARK: Load Quotes
     public func loadQuotes(completionHandler: @escaping QuotesCompletionHandler) {
 

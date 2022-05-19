@@ -91,7 +91,28 @@ extension FocusPresenter: FocusEventHandlerProtocol {
         viewController?.tableViewRefresh()
         userDefaults.set(Table.errors.rawValue, forKey: "SelectedFocusTable")
     }
-
+    
+    // MARK: Delete Notes
+    func didDeleteTargetNote(note: TargetNote) {
+        interactor.didDeleteTargetNote(note: note)
+        presentTargetNotes()
+    }
+    
+    func didDeleteErrorNote(note: ErrorNote) {
+        interactor.didDeleteErrorNote(note: note)
+        presentErrorNotes()
+    }
+    
+    func didToggleTargetNote(note: TargetNote) {
+        interactor.didToggleTargetNote(note: note)
+        presentTargetNotes()
+    }
+    
+    func didToggleErrorNote(note: ErrorNote) {
+        interactor.didToggleErrorNote(note: note)
+        presentErrorNotes()
+    }
+    
 }
 
 // MARK: Presenter
