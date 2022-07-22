@@ -238,7 +238,17 @@ extension FocusViewController: UITableViewDataSource {
         deleteAction.image = UIImage(systemName: "trash")?.withTintColor(Assets.Colors.accentColor.color, renderingMode: .alwaysOriginal)
         deleteAction.backgroundColor = Assets.Colors.backgroundPrimary.color
         let configuration = UISwipeActionsConfiguration(actions: [deleteAction])
-        return configuration
+        
+        switch selectedTable {
+        case .targets:
+            if !targetNotes.isEmpty { return configuration }
+            else { return nil }
+        case .errors:
+            if !errorNotes.isEmpty { return configuration }
+            else { return nil }
+        default:
+            return nil
+        }
     }
     
     func tableView(_ tableView: UITableView, leadingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
@@ -259,10 +269,20 @@ extension FocusViewController: UITableViewDataSource {
         }
         
         // Style configuration
-        deleteAction.image = UIImage(systemName: "checkmark.seal")?.withTintColor(Assets.Colors.accentColor.color, renderingMode: .alwaysOriginal)
+        deleteAction.image = UIImage(systemName: "checkmark")?.withTintColor(Assets.Colors.accentColor.color, renderingMode: .alwaysOriginal)
         deleteAction.backgroundColor = Assets.Colors.backgroundPrimary.color
         let configuration = UISwipeActionsConfiguration(actions: [deleteAction])
-        return configuration
+        
+        switch selectedTable {
+        case .targets:
+            if !targetNotes.isEmpty { return configuration }
+            else { return nil }
+        case .errors:
+            if !errorNotes.isEmpty { return configuration }
+            else { return nil }
+        default:
+            return nil
+        }
     }
     
 }

@@ -9,9 +9,11 @@ import Foundation
 import FirebaseAnalytics
 
 class AnalyticsManager {
+    
     static let logger = AnalyticsManager()
     
     public func log(event: String, parameters: [String : Any]?) {
         Analytics.logEvent(event, parameters: parameters)
     }
+    
 }
