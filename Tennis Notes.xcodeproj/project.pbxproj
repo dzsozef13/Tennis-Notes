@@ -20,6 +20,9 @@
 		BC075D6E2836D468009FC4F4 /* MatchNote+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC075D662836D468009FC4F4 /* MatchNote+CoreDataProperties.swift */; };
 		BC075D6F2836D468009FC4F4 /* TargetNote+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC075D672836D468009FC4F4 /* TargetNote+CoreDataClass.swift */; };
 		BC075D702836D468009FC4F4 /* TargetNote+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC075D682836D468009FC4F4 /* TargetNote+CoreDataProperties.swift */; };
+		BC192A14288ACA3F00033890 /* PlayerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC192A13288ACA3F00033890 /* PlayerTableViewCell.swift */; };
+		BC192A16288ACA5400033890 /* MatchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC192A15288ACA5400033890 /* MatchTableViewCell.swift */; };
+		BC192A19288BEB5400033890 /* Date+Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC192A18288BEB5400033890 /* Date+Formatter.swift */; };
 		BC219DE8280A117A0002D210 /* TargetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC219DE7280A117A0002D210 /* TargetTableViewCell.swift */; };
 		BC219DEA280A11870002D210 /* ErrorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC219DE9280A11870002D210 /* ErrorTableViewCell.swift */; };
 		BC219DEC280A1BD60002D210 /* HintTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC219DEB280A1BD60002D210 /* HintTableViewCell.swift */; };
@@ -160,6 +163,9 @@
 		BC075D662836D468009FC4F4 /* MatchNote+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MatchNote+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		BC075D672836D468009FC4F4 /* TargetNote+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TargetNote+CoreDataClass.swift"; sourceTree = "<group>"; };
 		BC075D682836D468009FC4F4 /* TargetNote+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TargetNote+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		BC192A13288ACA3F00033890 /* PlayerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerTableViewCell.swift; sourceTree = "<group>"; };
+		BC192A15288ACA5400033890 /* MatchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchTableViewCell.swift; sourceTree = "<group>"; };
+		BC192A18288BEB5400033890 /* Date+Formatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Formatter.swift"; sourceTree = "<group>"; };
 		BC219DE7280A117A0002D210 /* TargetTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetTableViewCell.swift; sourceTree = "<group>"; };
 		BC219DE9280A11870002D210 /* ErrorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorTableViewCell.swift; sourceTree = "<group>"; };
 		BC219DEB280A1BD60002D210 /* HintTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HintTableViewCell.swift; sourceTree = "<group>"; };
@@ -307,6 +313,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BC192A12288ACA1500033890 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				BC192A13288ACA3F00033890 /* PlayerTableViewCell.swift */,
+				BC192A15288ACA5400033890 /* MatchTableViewCell.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		BC192A17288BEAFA00033890 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BC192A18288BEB5400033890 /* Date+Formatter.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		BC219DE6280A11640002D210 /* UI */ = {
 			isa = PBXGroup;
 			children = (
@@ -492,6 +515,7 @@
 				BC219DF3280B71970002D210 /* Entities */,
 				BC9D58192804CCD3008038DD /* Enums */,
 				BC83F83A2804BAA000D73527 /* Classes */,
+				BC192A17288BEAFA00033890 /* Extensions */,
 			);
 			path = Global;
 			sourceTree = "<group>";
@@ -556,9 +580,9 @@
 			children = (
 				BCC8F48328023A7500F9AAB3 /* App */,
 				BC219DF8280B75CD0002D210 /* Managers */,
-				BCC8F4822802349500F9AAB3 /* Resources */,
 				BCC8F4002802346A00F9AAB3 /* Components */,
 				BCEE15E72803574D0051BE2F /* Model */,
+				BCC8F4822802349500F9AAB3 /* Resources */,
 				BCC8F4812802347D00F9AAB3 /* Storyboards */,
 			);
 			path = "Tennis Notes";
@@ -761,6 +785,7 @@
 		BCC8F43A2802346A00F9AAB3 /* Notes */ = {
 			isa = PBXGroup;
 			children = (
+				BC192A12288ACA1500033890 /* UI */,
 				BCC8F4402802346A00F9AAB3 /* View */,
 				BCC8F43B2802346A00F9AAB3 /* Presenter */,
 				BCC8F4442802346A00F9AAB3 /* Interactor */,
@@ -1049,6 +1074,7 @@
 				BCC8F4572802346B00F9AAB3 /* SettingsEntityGateway.swift in Sources */,
 				BC075D6A2836D468009FC4F4 /* ErrorNote+CoreDataProperties.swift in Sources */,
 				BC3CF6E0281738780016FA63 /* AddFocusEntityGateway.swift in Sources */,
+				BC192A16288ACA5400033890 /* MatchTableViewCell.swift in Sources */,
 				BC3CF6F7281738830016FA63 /* AddNoteRouteModel.swift in Sources */,
 				BC075D692836D468009FC4F4 /* ErrorNote+CoreDataClass.swift in Sources */,
 				BCC8F3D1280224DC00F9AAB3 /* AppDelegate.swift in Sources */,
@@ -1065,9 +1091,11 @@
 				BC3CF6FC281738830016FA63 /* AddNoteViewControllerProtocol.swift in Sources */,
 				BC075D4028317536009FC4F4 /* AnalyticsManager.swift in Sources */,
 				BC3CF700281738830016FA63 /* AddNoteEntityGatewayProtocol.swift in Sources */,
+				BC192A19288BEB5400033890 /* Date+Formatter.swift in Sources */,
 				BCC8F4762802346B00F9AAB3 /* NotesPresenter.swift in Sources */,
 				BC219DEA280A11870002D210 /* ErrorTableViewCell.swift in Sources */,
 				BCEE1609280380D10051BE2F /* Strings.swift in Sources */,
+				BC192A14288ACA3F00033890 /* PlayerTableViewCell.swift in Sources */,
 				BC42FD98280C41B000357216 /* Tables.swift in Sources */,
 				BCC8F47F2802346B00F9AAB3 /* NotesRouterProtocol.swift in Sources */,
 				BCC8F4582802346B00F9AAB3 /* SettingsRouter.swift in Sources */,
@@ -1201,7 +1229,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -1256,7 +1284,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -1285,7 +1313,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.intuitivecomputers.Tennis-Notes";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.intuitivecomputers.tennis-notes";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -1312,7 +1340,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.intuitivecomputers.Tennis-Notes";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.intuitivecomputers.tennis-notes";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

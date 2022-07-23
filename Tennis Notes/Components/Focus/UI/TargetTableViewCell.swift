@@ -13,6 +13,7 @@ class TargetTableViewCell: UITableViewCell {
     static let identifier: String = "TargetTableViewCell"
     
     // MARK: IBO Outlets
+    @IBOutlet weak var cellView: UIView?
     @IBOutlet weak var titleLabel: UILabel?
     @IBOutlet weak var contentLabel: UILabel?
     @IBOutlet weak var dateLabel: UILabel?
@@ -21,12 +22,15 @@ class TargetTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        
+        // MARK: Styling
+        self.cellView?.layer.cornerRadius = TableViewCell().cornerRadius()
     }
     
     func setupView(target: TargetNote) {
         titleLabel?.text = target.title
         contentLabel?.text = target.note
-        dateLabel?.text = target.date?.formatted()
+        dateLabel?.text = target.date?.string(with: .DMY)
         
         if target.achieved == true {
             achivedLabel?.textColor = Assets.Colors.accentColor.color

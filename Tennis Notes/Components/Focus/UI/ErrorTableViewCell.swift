@@ -13,6 +13,7 @@ class ErrorTableViewCell: UITableViewCell {
     static let identifier: String = "ErrorTableViewCell"
     
     // MARK: IBO Outlets
+    @IBOutlet weak var cellView: UIView!
     @IBOutlet weak var titleLabel: UILabel?
     @IBOutlet weak var contentLabel: UILabel?
     @IBOutlet weak var dateLabel: UILabel?
@@ -21,12 +22,15 @@ class ErrorTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        
+        // MARK: Styling
+        self.cellView?.layer.cornerRadius = TableViewCell().cornerRadius()
     }
     
     func setupView(error: ErrorNote) {
         titleLabel?.text = error.title
         contentLabel?.text = error.note
-        dateLabel?.text = error.date?.formatted()
+        dateLabel?.text = error.date?.string(with: .DMY)
         
         if error.corrected == true {
             correctedLabel?.textColor = Assets.Colors.accentColor.color
